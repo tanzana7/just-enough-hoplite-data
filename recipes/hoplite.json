@@ -415,7 +415,7 @@
         3,
         3
       ],
-      "id": "hoplite:bundle",
+      "id": "hoplite:bundle_item",
       "key": {
         "A": {
           "item": "minecraft:leather"
@@ -610,53 +610,6 @@
       "type": "crafting_shaped"
     },
     {
-      "category": "combat",
-      "craft_limits": [
-        {
-          "max": 1,
-          "period": "unknown",
-          "scope": "unknown"
-        }
-      ],
-      "evidence": {
-        "sources": [
-          {
-            "kind": "in_game",
-            "note": "currentInGameRecipeEvidence / cowboy_boots / IN_GAME_VERIFIED / evidence=[\"screenshot_13\"] / refs=[]"
-          }
-        ],
-        "status": "verified",
-        "verified_at": "2026-10-19T00:00:00Z"
-      },
-      "grid": [
-        3,
-        3
-      ],
-      "id": "hoplite:cowboy_boots",
-      "key": {
-        "A": {
-          "item": "minecraft:chain"
-        },
-        "B": {
-          "item": "minecraft:hay_block"
-        },
-        "C": {
-          "item": "minecraft:leather_boots"
-        }
-      },
-      "mirror": true,
-      "pattern": [
-        "ABA",
-        "BCB",
-        "ABA"
-      ],
-      "result": {
-        "count": 1,
-        "hoplite": "hoplite:horsetamer_boots"
-      },
-      "type": "crafting_shaped"
-    },
-    {
       "category": "legendary",
       "evidence": {
         "sources": [
@@ -847,6 +800,78 @@
     },
     {
       "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "reason": {
+          "en_us": "Conflicting Emerald Blade candidates are retained: the legacy official recipe page differs, the recent community candidate lists Golden Carrot, and the in-game screenshot candidate shows Carrot. The shown layout is a candidate only; do not resolve carrot versus golden carrot without new evidence. Official recipe page still labels the item Emerald Sword and shows a different old recipe. Nov 2025 official patch uses the name Emerald Blade but does not publish a recipe change. Recent community wiki gives Golden Carrot + 2 Emerald Blocks + Bell + Diamond Sword. Verify in-game."
+        },
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestLegendaryRecipeEvidence / emerald_blade_guess / IN_GAME_VERIFIED / evidence=[\"legendary_screenshot_20\"] / refs=[]"
+          },
+          {
+            "kind": "community",
+            "note": "Unofficial community wiki, crawled recently. Useful for newer/current candidate ingredient sets.",
+            "url": "https://hoplite-mc.fandom.com/wiki/Legendaries"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe page. Some entries are known to be stale when later patch notes explicitly changed recipes.",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-emerald-sword.png"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official patch notes; major recipe updates and legendary rotation.",
+            "url": "https://www.hoplite.gg/news/patch-notes-nov-29th-2025"
+          }
+        ],
+        "status": "disputed"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:emerald_sword",
+      "key": {
+        "A": {
+          "item": "minecraft:carrot"
+        },
+        "B": {
+          "item": "minecraft:emerald_block"
+        },
+        "C": {
+          "item": "minecraft:diamond_sword"
+        },
+        "D": {
+          "item": "minecraft:bell"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:emerald_sword"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
       "evidence": {
         "sources": [
           {
@@ -1001,96 +1026,6 @@
       "type": "crafting_shaped"
     },
     {
-      "category": "legendary",
-      "craft_limits": [
-        {
-          "max": 1,
-          "period": "unknown",
-          "scope": "unknown"
-        }
-      ],
-      "evidence": {
-        "sources": [
-          {
-            "kind": "community",
-            "note": "legendaryItems / gerald_the_sniffer / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
-          }
-        ],
-        "status": "unverified"
-      },
-      "grid": [
-        3,
-        3
-      ],
-      "id": "hoplite:gerald_the_sniffer",
-      "key": {
-        "A": {
-          "item": "minecraft:diamond"
-        },
-        "B": {
-          "item": "minecraft:mossy_cobblestone"
-        },
-        "C": {
-          "item": "minecraft:music_disc_13"
-        }
-      },
-      "mirror": true,
-      "pattern": [
-        "ABA",
-        "BCB",
-        "ABA"
-      ],
-      "result": {
-        "count": 1,
-        "hoplite": "hoplite:legendary_sniffer"
-      },
-      "type": "crafting_shaped"
-    },
-    {
-      "category": "vanilla",
-      "craft_limits": [
-        {
-          "max": 2,
-          "period": "unknown",
-          "scope": "unknown"
-        }
-      ],
-      "evidence": {
-        "sources": [
-          {
-            "kind": "in_game",
-            "note": "currentInGameRecipeEvidence / golden_apple / IN_GAME_VERIFIED / evidence=[\"screenshot_07\"] / refs=[]; Hoplite recipe UI uses a 4-gold cross recipe rather than vanilla's normal 8-gold recipe."
-          }
-        ],
-        "status": "verified",
-        "verified_at": "2026-10-19T00:00:00Z"
-      },
-      "grid": [
-        3,
-        3
-      ],
-      "id": "hoplite:golden_apple",
-      "key": {
-        "A": {
-          "item": "minecraft:gold_ingot"
-        },
-        "B": {
-          "item": "minecraft:apple"
-        }
-      },
-      "mirror": true,
-      "pattern": [
-        " A ",
-        "ABA",
-        " A "
-      ],
-      "result": {
-        "count": 1,
-        "hoplite": "hoplite:light_apple"
-      },
-      "type": "crafting_shaped"
-    },
-    {
       "category": "combat",
       "craft_limits": [
         {
@@ -1180,55 +1115,6 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:golem_hammer"
-      },
-      "type": "crafting_shaped"
-    },
-    {
-      "category": "tool",
-      "craft_limits": [
-        {
-          "max": 4,
-          "period": "unknown",
-          "scope": "unknown"
-        }
-      ],
-      "evidence": {
-        "sources": [
-          {
-            "kind": "in_game",
-            "note": "latestBatch4Evidence / great_smelters_pickaxe / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_11\", \"batch4_screenshot_12\"] / refs=[]; Tooltip: Efficiency II, Unbreaking I. Tooltip text says it is an upgraded smelter's pickaxe with the auto-smelt effect. The older Great Smelter name is provisionally associated with the live Super Smelter identity; correspondence is unverified."
-          }
-        ],
-        "status": "unverified"
-      },
-      "grid": [
-        3,
-        3
-      ],
-      "id": "hoplite:great_smelters_pickaxe",
-      "key": {
-        "A": {
-          "item": "minecraft:diamond"
-        },
-        "B": {
-          "item": "minecraft:iron_ingot"
-        },
-        "C": {
-          "item": "minecraft:coal"
-        },
-        "D": {
-          "item": "minecraft:stick"
-        }
-      },
-      "mirror": true,
-      "pattern": [
-        "ABA",
-        "CDC",
-        " D "
-      ],
-      "result": {
-        "count": 1,
-        "hoplite": "hoplite:infernal_pickaxe"
       },
       "type": "crafting_shaped"
     },
@@ -1431,6 +1317,102 @@
       "type": "crafting_shaped"
     },
     {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / cowboy_boots / IN_GAME_VERIFIED / evidence=[\"screenshot_13\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:horsetamer_boots",
+      "key": {
+        "A": {
+          "item": "minecraft:chain"
+        },
+        "B": {
+          "item": "minecraft:hay_block"
+        },
+        "C": {
+          "item": "minecraft:leather_boots"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:horsetamer_boots"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "tool",
+      "craft_limits": [
+        {
+          "max": 4,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch4Evidence / great_smelters_pickaxe / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_11\", \"batch4_screenshot_12\"] / refs=[]; Tooltip: Efficiency II, Unbreaking I. Tooltip text says it is an upgraded smelter's pickaxe with the auto-smelt effect. The older Great Smelter name is provisionally associated with the live Super Smelter identity; correspondence is unverified."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:infernal_pickaxe",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:iron_ingot"
+        },
+        "C": {
+          "item": "minecraft:coal"
+        },
+        "D": {
+          "item": "minecraft:stick"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:infernal_pickaxe"
+      },
+      "type": "crafting_shaped"
+    },
+    {
       "category": "legendary",
       "evidence": {
         "sources": [
@@ -1478,6 +1460,52 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:kim_the_transmuter"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / gerald_the_sniffer / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:legendary_sniffer",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:mossy_cobblestone"
+        },
+        "C": {
+          "item": "minecraft:music_disc_13"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:legendary_sniffer"
       },
       "type": "crafting_shaped"
     },
@@ -1581,6 +1609,50 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:light_anvil"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "vanilla",
+      "craft_limits": [
+        {
+          "max": 2,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / golden_apple / IN_GAME_VERIFIED / evidence=[\"screenshot_07\"] / refs=[]; Hoplite recipe UI uses a 4-gold cross recipe rather than vanilla's normal 8-gold recipe."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:light_apple",
+      "key": {
+        "A": {
+          "item": "minecraft:gold_ingot"
+        },
+        "B": {
+          "item": "minecraft:apple"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "ABA",
+        " A "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:light_apple"
       },
       "type": "crafting_shaped"
     },
@@ -1896,7 +1968,7 @@
         3,
         3
       ],
-      "id": "hoplite:nether_reactor_core",
+      "id": "hoplite:nether_reactor",
       "key": {
         "A": {
           "item": "minecraft:light_blue_stained_glass"
@@ -2125,6 +2197,50 @@
       "type": "crafting_shaped"
     },
     {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / shortsword / IN_GAME_VERIFIED / evidence=[\"screenshot_01\", \"screenshot_02\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:quick_sword",
+      "key": {
+        "A": {
+          "item": "minecraft:copper_ingot"
+        },
+        "B": {
+          "item": "minecraft:iron_sword"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:quick_sword"
+      },
+      "type": "crafting_shaped"
+    },
+    {
       "category": "legendary",
       "craft_limits": [
         {
@@ -2279,50 +2395,6 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:sculkweavers_lantern"
-      },
-      "type": "crafting_shaped"
-    },
-    {
-      "category": "combat",
-      "craft_limits": [
-        {
-          "max": 1,
-          "period": "unknown",
-          "scope": "unknown"
-        }
-      ],
-      "evidence": {
-        "sources": [
-          {
-            "kind": "in_game",
-            "note": "currentInGameRecipeEvidence / shortsword / IN_GAME_VERIFIED / evidence=[\"screenshot_01\", \"screenshot_02\"] / refs=[]"
-          }
-        ],
-        "status": "verified",
-        "verified_at": "2026-10-19T00:00:00Z"
-      },
-      "grid": [
-        3,
-        3
-      ],
-      "id": "hoplite:shortsword",
-      "key": {
-        "A": {
-          "item": "minecraft:copper_ingot"
-        },
-        "B": {
-          "item": "minecraft:iron_sword"
-        }
-      },
-      "mirror": true,
-      "pattern": [
-        "AAA",
-        "ABA",
-        "AAA"
-      ],
-      "result": {
-        "count": 1,
-        "hoplite": "hoplite:quick_sword"
       },
       "type": "crafting_shaped"
     },
@@ -2522,6 +2594,56 @@
       "type": "crafting_shaped"
     },
     {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / very_suspicious_stew / IN_GAME_VERIFIED / evidence=[\"screenshot_10\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:suspicious_stew",
+      "key": {
+        "A": {
+          "item": "minecraft:red_mushroom"
+        },
+        "B": {
+          "item": "minecraft:brown_mushroom"
+        },
+        "C": {
+          "item": "minecraft:player_head"
+        },
+        "D": {
+          "item": "minecraft:bowl"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABC",
+        " D ",
+        "   "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:suspicious_stew"
+      },
+      "type": "crafting_shaped"
+    },
+    {
       "category": "legendary",
       "craft_limits": [
         {
@@ -2607,7 +2729,7 @@
         3,
         3
       ],
-      "id": "hoplite:totem_of_undying",
+      "id": "hoplite:totem",
       "key": {
         "A": {
           "item": "minecraft:gold_ingot"
@@ -2625,50 +2747,6 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:totem"
-      },
-      "type": "crafting_shaped"
-    },
-    {
-      "category": "utility_summon",
-      "craft_limits": [
-        {
-          "max": 1,
-          "period": "unknown",
-          "scope": "unknown"
-        }
-      ],
-      "evidence": {
-        "sources": [
-          {
-            "kind": "in_game",
-            "note": "latestBatch4Evidence / tracker_pack / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_14\", \"batch4_screenshot_15\"] / refs=[]; Tooltip: specialized wolf pack item that summons wolves following the nearest player and joining combat after finding a target. Displayed implementation id is minecraft:bone."
-          }
-        ],
-        "status": "verified",
-        "verified_at": "2026-10-19T00:00:00Z"
-      },
-      "grid": [
-        3,
-        3
-      ],
-      "id": "hoplite:tracker_pack",
-      "key": {
-        "A": {
-          "item": "minecraft:bone"
-        },
-        "B": {
-          "item": "minecraft:compass"
-        }
-      },
-      "mirror": true,
-      "pattern": [
-        " A ",
-        "ABA",
-        " A "
-      ],
-      "result": {
-        "count": 1,
-        "hoplite": "hoplite:wishbone"
       },
       "type": "crafting_shaped"
     },
@@ -2713,56 +2791,6 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:trident"
-      },
-      "type": "crafting_shaped"
-    },
-    {
-      "category": "combat",
-      "craft_limits": [
-        {
-          "max": 1,
-          "period": "unknown",
-          "scope": "unknown"
-        }
-      ],
-      "evidence": {
-        "sources": [
-          {
-            "kind": "in_game",
-            "note": "currentInGameRecipeEvidence / very_suspicious_stew / IN_GAME_VERIFIED / evidence=[\"screenshot_10\"] / refs=[]"
-          }
-        ],
-        "status": "verified",
-        "verified_at": "2026-10-19T00:00:00Z"
-      },
-      "grid": [
-        3,
-        3
-      ],
-      "id": "hoplite:very_suspicious_stew",
-      "key": {
-        "A": {
-          "item": "minecraft:red_mushroom"
-        },
-        "B": {
-          "item": "minecraft:brown_mushroom"
-        },
-        "C": {
-          "item": "minecraft:player_head"
-        },
-        "D": {
-          "item": "minecraft:bowl"
-        }
-      },
-      "mirror": true,
-      "pattern": [
-        "ABC",
-        " D ",
-        "   "
-      ],
-      "result": {
-        "count": 1,
-        "hoplite": "hoplite:suspicious_stew"
       },
       "type": "crafting_shaped"
     },
@@ -2856,6 +2884,50 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:war_pick"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility_summon",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch4Evidence / tracker_pack / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_14\", \"batch4_screenshot_15\"] / refs=[]; Tooltip: specialized wolf pack item that summons wolves following the nearest player and joining combat after finding a target. Displayed implementation id is minecraft:bone."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:wishbone",
+      "key": {
+        "A": {
+          "item": "minecraft:bone"
+        },
+        "B": {
+          "item": "minecraft:compass"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "ABA",
+        " A "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:wishbone"
       },
       "type": "crafting_shaped"
     },

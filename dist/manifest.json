@@ -2,17 +2,18 @@
   "data_version": 1,
   "files": [
     {
-      "sha256": "6e2702aa72330d54c63c9f2aec17fff61b9b3b67f69df759db173cb145d078b5",
-      "size": 357546,
+      "sha256": "d52c5329cf37e5e9eb25edb9401113538e4135c3303f761227a23909171dad14",
+      "size": 362705,
       "url": "https://raw.githubusercontent.com/%3Cowner%3E/just-enough-hoplite-data/0000000000000000000000000000000000000000/items/hoplite.json"
     },
     {
-      "sha256": "b94fd043af287556bc97ea86f9df7c7203c67a89df57b9b1ea635271afe55e5f",
-      "size": 77235,
+      "sha256": "f11e0584ea8fb8c77f6ca94cd59c9d31f90a26bbf61a792aa387ab2bfa9677bc",
+      "size": 80001,
       "url": "https://raw.githubusercontent.com/%3Cowner%3E/just-enough-hoplite-data/0000000000000000000000000000000000000000/recipes/hoplite.json"
     }
   ],
   "id_redirects": {
+    "hoplite:emerald_blade": "hoplite:emerald_sword",
     "hoplite:headhunter_chestpiece": "hoplite:headhunters_might",
     "hoplite:reapers_scythe": "hoplite:reaper_scythe"
   },

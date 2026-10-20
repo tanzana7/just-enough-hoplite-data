@@ -124,10 +124,12 @@
     "items": 84,
     "items_without_matcher": 31,
     "legendary_items": 51,
-    "legendary_recipes": 31,
+    "legendary_recipes": 32,
     "matchers": 53,
-    "recipes": 60,
-    "unresolved": 35
+    "recipes": 61,
+    "render_fallbacks": 12,
+    "render_stack_autofilled": 19,
+    "unresolved": 34
   },
   "provenance": {
     "hoplite:agony": "currentInGameRecipeEvidence",
@@ -138,59 +140,190 @@
     "hoplite:barbed_rod": "latestBatch4Evidence",
     "hoplite:beehive_blaster": "legendaryItems",
     "hoplite:blazing_crossbow": "currentInGameRecipeEvidence",
-    "hoplite:bundle": "latestBatch4Evidence",
+    "hoplite:bundle_item": "latestBatch4Evidence",
     "hoplite:cactus_chestplate": "currentInGameRecipeEvidence",
     "hoplite:chrono_sword": "legendaryItems",
     "hoplite:cloud_sword": "legendaryItems",
     "hoplite:corrupted_crossbow": "legendaryItems",
-    "hoplite:cowboy_boots": "currentInGameRecipeEvidence",
     "hoplite:crimson_chainsword": "legendaryItems",
     "hoplite:crystallization_shard": "currentInGameRecipeEvidence",
     "hoplite:dragon_katana": "legendaryItems",
     "hoplite:eagle_eye_bow": "legendaryItems",
+    "hoplite:emerald_sword": "latestLegendaryRecipeEvidence",
     "hoplite:enderbow": "legendaryItems",
     "hoplite:explosive_pickaxe": "latestBatch4Evidence",
     "hoplite:freezing_chakram": "legendaryItems",
-    "hoplite:gerald_the_sniffer": "legendaryItems",
-    "hoplite:golden_apple": "currentInGameRecipeEvidence",
     "hoplite:golden_head": "currentInGameRecipeEvidence",
     "hoplite:golem_hammer": "legendaryItems",
-    "hoplite:great_smelters_pickaxe": "latestBatch4Evidence",
     "hoplite:grimoire": "legendaryItems",
     "hoplite:guardian_cannon": "legendaryItems",
     "hoplite:harpoon_launcher": "legendaryItems",
     "hoplite:headhunters_might": "legendaryItems",
+    "hoplite:horsetamer_boots": "currentInGameRecipeEvidence",
+    "hoplite:infernal_pickaxe": "latestBatch4Evidence",
     "hoplite:kim_the_transmuter": "legendaryItems",
+    "hoplite:legendary_sniffer": "legendaryItems",
     "hoplite:lich_staff": "legendaryItems",
     "hoplite:light_anvil": "userConfirmedCorrections",
+    "hoplite:light_apple": "currentInGameRecipeEvidence",
     "hoplite:light_netherite_sword": "currentInGameRecipeEvidence",
     "hoplite:lumberjacks_axe": "latestBatch4Evidence",
     "hoplite:mace": "currentInGameRecipeEvidence",
     "hoplite:magma_cannon": "legendaryItems",
     "hoplite:midas_sword": "legendaryItems",
     "hoplite:mjolnir": "legendaryItems",
-    "hoplite:nether_reactor_core": "latestBatch4Evidence",
+    "hoplite:nether_reactor": "latestBatch4Evidence",
     "hoplite:obsidian": "userConfirmedCorrections",
     "hoplite:panacea": "currentInGameRecipeEvidence",
     "hoplite:poseidons_trident": "legendaryItems",
     "hoplite:pufferfish_cannon": "legendaryItems",
+    "hoplite:quick_sword": "currentInGameRecipeEvidence",
     "hoplite:reaper_scythe": "legendaryItems",
     "hoplite:saddle": "latestLegendaryRecipeEvidence",
     "hoplite:sculkweavers_lantern": "legendaryItems",
-    "hoplite:shortsword": "currentInGameRecipeEvidence",
     "hoplite:shrink_ray": "legendaryItems",
     "hoplite:skeleton_leggings": "currentInGameRecipeEvidence",
     "hoplite:smelters_pickaxe": "latestBatch4Evidence",
     "hoplite:sonic_crossbow": "legendaryItems",
+    "hoplite:suspicious_stew": "currentInGameRecipeEvidence",
     "hoplite:tim_the_enchanter": "legendaryItems",
-    "hoplite:totem_of_undying": "latestBatch3Evidence",
-    "hoplite:tracker_pack": "latestBatch4Evidence",
+    "hoplite:totem": "latestBatch3Evidence",
     "hoplite:trident": "latestBatch3Evidence",
-    "hoplite:very_suspicious_stew": "currentInGameRecipeEvidence",
     "hoplite:void_staff": "legendaryItems",
     "hoplite:war_pick": "legendaryItems",
+    "hoplite:wishbone": "latestBatch4Evidence",
     "hoplite:wither_sickles": "legendaryItems"
   },
+  "render_fallback_ids": [
+    "hoplite:death_note",
+    "hoplite:dragon_katana",
+    "hoplite:dragonflame_catalyst",
+    "hoplite:elder_eye_of_possession",
+    "hoplite:enderbow",
+    "hoplite:fountain_of_fate",
+    "hoplite:harpoon_launcher",
+    "hoplite:magma_club",
+    "hoplite:mjolnir",
+    "hoplite:sceptre_of_arachne",
+    "hoplite:shrink_ray",
+    "hoplite:void_staff"
+  ],
+  "render_stack_autofill": [
+    {
+      "base_item": "minecraft:crossbow",
+      "custom_model_data": 5,
+      "id": "hoplite:armadillo_detonator",
+      "model": "civilization:item/tools/armadillo_detonator/normal/default"
+    },
+    {
+      "base_item": "minecraft:bow",
+      "custom_model_data": 9,
+      "id": "hoplite:beehive_blaster",
+      "model": "civilization:item/tools/beehive_blaster/normal/default"
+    },
+    {
+      "base_item": "minecraft:iron_sword",
+      "custom_model_data": 10,
+      "id": "hoplite:chrono_sword",
+      "model": "civilization:item/tools/chrono_sword/normal"
+    },
+    {
+      "base_item": "minecraft:diamond_sword",
+      "custom_model_data": 7,
+      "id": "hoplite:cloud_sword",
+      "model": "civilization:item/tools/cloud_sword/normal"
+    },
+    {
+      "base_item": "minecraft:crossbow",
+      "custom_model_data": 4,
+      "id": "hoplite:corrupted_crossbow",
+      "model": "civilization:item/tools/corrupted_crossbow/normal/default"
+    },
+    {
+      "base_item": "minecraft:diamond_sword",
+      "custom_model_data": 8,
+      "id": "hoplite:crimson_chainsword",
+      "model": "civilization:item/tools/crimson_chainsword/normal"
+    },
+    {
+      "base_item": "minecraft:stone_sword",
+      "custom_model_data": 7,
+      "id": "hoplite:evoker_wand",
+      "model": "civilization:item/tools/evoker_wand/normal"
+    },
+    {
+      "base_item": "minecraft:blaze_rod",
+      "custom_model_data": 18,
+      "id": "hoplite:ghastly_whistle",
+      "model": "civilization:item/tools/ghastly_whistle"
+    },
+    {
+      "base_item": "minecraft:enchanted_book",
+      "custom_model_data": 1,
+      "id": "hoplite:grimoire",
+      "model": "civilization:item/tools/grimoire"
+    },
+    {
+      "base_item": "minecraft:iron_ingot",
+      "custom_model_data": 3,
+      "id": "hoplite:kim_the_transmuter",
+      "model": "civilization:item/tools/kim_the_transmuter"
+    },
+    {
+      "base_item": "minecraft:stone_sword",
+      "custom_model_data": 2,
+      "id": "hoplite:lich_staff",
+      "model": "civilization:item/tools/lich_staff/normal"
+    },
+    {
+      "base_item": "minecraft:blaze_rod",
+      "custom_model_data": 24,
+      "id": "hoplite:magma_cannon",
+      "model": "civilization:item/tools/magma_cannon/normal/default"
+    },
+    {
+      "base_item": "minecraft:bow",
+      "custom_model_data": 8,
+      "id": "hoplite:poseidons_trident",
+      "model": "civilization:item/tools/poseidon_trident/normal/default"
+    },
+    {
+      "base_item": "minecraft:goat_horn",
+      "custom_model_data": 1,
+      "id": "hoplite:ravager_horn",
+      "model": "civilization:item/tools/ravager_horn"
+    },
+    {
+      "base_item": "minecraft:fishing_rod",
+      "custom_model_data": 5,
+      "id": "hoplite:sculkweavers_lantern",
+      "model": "civilization:item/tools/sculkweaver_lantern/normal/default"
+    },
+    {
+      "base_item": "minecraft:crossbow",
+      "custom_model_data": 1,
+      "id": "hoplite:sonic_crossbow",
+      "model": "civilization:item/tools/sonic_crossbow/normal/default"
+    },
+    {
+      "base_item": "minecraft:blaze_rod",
+      "custom_model_data": 17,
+      "id": "hoplite:soul_gauntlet",
+      "model": "civilization:item/tools/soul_gauntlet/normal"
+    },
+    {
+      "base_item": "minecraft:diamond_pickaxe",
+      "custom_model_data": 1,
+      "id": "hoplite:war_pick",
+      "model": "civilization:item/tools/war_pickaxe/normal"
+    },
+    {
+      "base_item": "minecraft:stone_hoe",
+      "custom_model_data": 3,
+      "id": "hoplite:wither_sickles",
+      "model": "civilization:item/tools/wither_sickle/normal"
+    }
+  ],
   "source_details": {
     "hoplite:agony": {
       "confidence": "IN_GAME_VERIFIED",
@@ -280,7 +413,7 @@
       "section": "currentInGameRecipeEvidence",
       "source_refs": []
     },
-    "hoplite:bundle": {
+    "hoplite:bundle_item": {
       "confidence": "IN_GAME_VERIFIED",
       "evidence_ids": [
         "batch4_screenshot_09"
@@ -341,15 +474,6 @@
         "official_patch_2026_05_22"
       ]
     },
-    "hoplite:cowboy_boots": {
-      "confidence": "IN_GAME_VERIFIED",
-      "evidence_ids": [
-        "screenshot_13"
-      ],
-      "notes": [],
-      "section": "currentInGameRecipeEvidence",
-      "source_refs": []
-    },
     "hoplite:crimson_chainsword": {
       "confidence": "COMMUNITY_RECONSTRUCTION",
       "evidence_ids": [],
@@ -404,6 +528,15 @@
         "official_patch_2025_11_29"
       ]
     },
+    "hoplite:emerald_sword": {
+      "confidence": "IN_GAME_VERIFIED",
+      "evidence_ids": [
+        "legendary_screenshot_20"
+      ],
+      "notes": [],
+      "section": "latestLegendaryRecipeEvidence",
+      "source_refs": []
+    },
     "hoplite:enderbow": {
       "confidence": "OFFICIAL_EXACT",
       "evidence_ids": [],
@@ -442,28 +575,6 @@
         "official_patch_2026_05_22"
       ]
     },
-    "hoplite:gerald_the_sniffer": {
-      "confidence": "COMMUNITY_RECONSTRUCTION",
-      "evidence_ids": [],
-      "notes": [
-        "Unofficial recipe data; verify in-game before shipping as authoritative."
-      ],
-      "section": "legendaryItems",
-      "source_refs": [
-        "community_reconstruction"
-      ]
-    },
-    "hoplite:golden_apple": {
-      "confidence": "IN_GAME_VERIFIED",
-      "evidence_ids": [
-        "screenshot_07"
-      ],
-      "notes": [
-        "Hoplite recipe UI uses a 4-gold cross recipe rather than vanilla's normal 8-gold recipe."
-      ],
-      "section": "currentInGameRecipeEvidence",
-      "source_refs": []
-    },
     "hoplite:golden_head": {
       "confidence": "IN_GAME_VERIFIED",
       "evidence_ids": [
@@ -484,19 +595,6 @@
       "source_refs": [
         "community_reconstruction"
       ]
-    },
-    "hoplite:great_smelters_pickaxe": {
-      "confidence": "IN_GAME_VERIFIED",
-      "evidence_ids": [
-        "batch4_screenshot_11",
-        "batch4_screenshot_12"
-      ],
-      "notes": [
-        "Tooltip: Efficiency II, Unbreaking I.",
-        "Tooltip text says it is an upgraded smelter's pickaxe with the auto-smelt effect."
-      ],
-      "section": "latestBatch4Evidence",
-      "source_refs": []
     },
     "hoplite:grimoire": {
       "confidence": "OFFICIAL_EXACT",
@@ -550,6 +648,28 @@
         "official_patch_2025_11_29"
       ]
     },
+    "hoplite:horsetamer_boots": {
+      "confidence": "IN_GAME_VERIFIED",
+      "evidence_ids": [
+        "screenshot_13"
+      ],
+      "notes": [],
+      "section": "currentInGameRecipeEvidence",
+      "source_refs": []
+    },
+    "hoplite:infernal_pickaxe": {
+      "confidence": "IN_GAME_VERIFIED",
+      "evidence_ids": [
+        "batch4_screenshot_11",
+        "batch4_screenshot_12"
+      ],
+      "notes": [
+        "Tooltip: Efficiency II, Unbreaking I.",
+        "Tooltip text says it is an upgraded smelter's pickaxe with the auto-smelt effect."
+      ],
+      "section": "latestBatch4Evidence",
+      "source_refs": []
+    },
     "hoplite:kim_the_transmuter": {
       "confidence": "COMMUNITY_RECONSTRUCTION",
       "evidence_ids": [],
@@ -560,6 +680,17 @@
       "source_refs": [
         "community_reconstruction",
         "official_patch_2025_11_29"
+      ]
+    },
+    "hoplite:legendary_sniffer": {
+      "confidence": "COMMUNITY_RECONSTRUCTION",
+      "evidence_ids": [],
+      "notes": [
+        "Unofficial recipe data; verify in-game before shipping as authoritative."
+      ],
+      "section": "legendaryItems",
+      "source_refs": [
+        "community_reconstruction"
       ]
     },
     "hoplite:lich_staff": {
@@ -584,6 +715,17 @@
         "User confirmed slot mapping: 1,2,3,7,8,9 = iron_ingot; 5 = iron_block."
       ],
       "section": "userConfirmedCorrections",
+      "source_refs": []
+    },
+    "hoplite:light_apple": {
+      "confidence": "IN_GAME_VERIFIED",
+      "evidence_ids": [
+        "screenshot_07"
+      ],
+      "notes": [
+        "Hoplite recipe UI uses a 4-gold cross recipe rather than vanilla's normal 8-gold recipe."
+      ],
+      "section": "currentInGameRecipeEvidence",
       "source_refs": []
     },
     "hoplite:light_netherite_sword": {
@@ -655,7 +797,7 @@
         "official_patch_2025_04_04"
       ]
     },
-    "hoplite:nether_reactor_core": {
+    "hoplite:nether_reactor": {
       "confidence": "IN_GAME_VERIFIED",
       "evidence_ids": [
         "batch4_screenshot_16",
@@ -716,6 +858,16 @@
         "official_patch_2026_05_22"
       ]
     },
+    "hoplite:quick_sword": {
+      "confidence": "IN_GAME_VERIFIED",
+      "evidence_ids": [
+        "screenshot_01",
+        "screenshot_02"
+      ],
+      "notes": [],
+      "section": "currentInGameRecipeEvidence",
+      "source_refs": []
+    },
     "hoplite:reaper_scythe": {
       "confidence": "OFFICIAL_EXACT",
       "evidence_ids": [],
@@ -752,16 +904,6 @@
         "official_patch_2025_04_04",
         "official_patch_2025_06_01"
       ]
-    },
-    "hoplite:shortsword": {
-      "confidence": "IN_GAME_VERIFIED",
-      "evidence_ids": [
-        "screenshot_01",
-        "screenshot_02"
-      ],
-      "notes": [],
-      "section": "currentInGameRecipeEvidence",
-      "source_refs": []
     },
     "hoplite:shrink_ray": {
       "confidence": "COMMUNITY_RECONSTRUCTION",
@@ -810,6 +952,15 @@
         "official_patch_2026_05_22"
       ]
     },
+    "hoplite:suspicious_stew": {
+      "confidence": "IN_GAME_VERIFIED",
+      "evidence_ids": [
+        "screenshot_10"
+      ],
+      "notes": [],
+      "section": "currentInGameRecipeEvidence",
+      "source_refs": []
+    },
     "hoplite:tim_the_enchanter": {
       "confidence": "OFFICIAL_DERIVED",
       "evidence_ids": [],
@@ -823,7 +974,7 @@
         "official_patch_2025_11_29"
       ]
     },
-    "hoplite:totem_of_undying": {
+    "hoplite:totem": {
       "confidence": "IN_GAME_VERIFIED",
       "evidence_ids": [
         "batch3_screenshot_03"
@@ -834,19 +985,6 @@
       "section": "latestBatch3Evidence",
       "source_refs": []
     },
-    "hoplite:tracker_pack": {
-      "confidence": "IN_GAME_VERIFIED",
-      "evidence_ids": [
-        "batch4_screenshot_14",
-        "batch4_screenshot_15"
-      ],
-      "notes": [
-        "Tooltip: specialized wolf pack item that summons wolves following the nearest player and joining combat after finding a target.",
-        "Displayed implementation id is minecraft:bone."
-      ],
-      "section": "latestBatch4Evidence",
-      "source_refs": []
-    },
     "hoplite:trident": {
       "confidence": "IN_GAME_VERIFIED",
       "evidence_ids": [
@@ -854,15 +992,6 @@
       ],
       "notes": [],
       "section": "latestBatch3Evidence",
-      "source_refs": []
-    },
-    "hoplite:very_suspicious_stew": {
-      "confidence": "IN_GAME_VERIFIED",
-      "evidence_ids": [
-        "screenshot_10"
-      ],
-      "notes": [],
-      "section": "currentInGameRecipeEvidence",
       "source_refs": []
     },
     "hoplite:void_staff": {
@@ -890,6 +1019,19 @@
         "official_patch_2025_11_29"
       ]
     },
+    "hoplite:wishbone": {
+      "confidence": "IN_GAME_VERIFIED",
+      "evidence_ids": [
+        "batch4_screenshot_14",
+        "batch4_screenshot_15"
+      ],
+      "notes": [
+        "Tooltip: specialized wolf pack item that summons wolves following the nearest player and joining combat after finding a target.",
+        "Displayed implementation id is minecraft:bone."
+      ],
+      "section": "latestBatch4Evidence",
+      "source_refs": []
+    },
     "hoplite:wither_sickles": {
       "confidence": "COMMUNITY_RECONSTRUCTION",
       "evidence_ids": [],
@@ -915,7 +1057,7 @@
       "source": "legendaryItems"
     },
     {
-      "id": "hoplite:totem_of_undying",
+      "id": "hoplite:totem",
       "reason": "unresolved_custom_ingredient",
       "source": "currentInGameRecipeEvidence"
     },
@@ -1006,11 +1148,6 @@
     },
     {
       "id": "hoplite:firecracker_device_guess",
-      "reason": "unresolved_output",
-      "source": "latestLegendaryRecipeEvidence"
-    },
-    {
-      "id": "hoplite:emerald_blade_guess",
       "reason": "unresolved_output",
       "source": "latestLegendaryRecipeEvidence"
     },
