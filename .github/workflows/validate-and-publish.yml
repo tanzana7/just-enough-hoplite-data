@@ -29,15 +29,32 @@ jobs:
         env:
           JEH_REPO: ${{ vars.JEH_MOD_REPOSITORY }}
           JEH_REF: ${{ vars.JEH_VALIDATOR_REF }}
+          JEH_MOD_TOKEN_PRESENT: ${{ secrets.JEH_MOD_READ_TOKEN != '' }}
         run: |
           test -n "$JEH_REPO"
           test -n "$JEH_REF"
+          if [ "$JEH_MOD_TOKEN_PRESENT" != "true" ]; then
+            echo "::error::Required secret JEH_MOD_READ_TOKEN is not configured."
+            exit 1
+          fi
       - name: Checkout pinned JEH core
         uses: actions/checkout@v4
         with:
           repository: ${{ vars.JEH_MOD_REPOSITORY }}
           ref: ${{ vars.JEH_VALIDATOR_REF }}
           path: .jeh
+          token: ${{ secrets.JEH_MOD_READ_TOKEN }}
+          persist-credentials: false
+      - name: Verify pinned JEH core commit
+        env:
+          EXPECTED_JEH_SHA: ${{ vars.JEH_VALIDATOR_REF }}
+        run: |
+          actual="$(git -C .jeh rev-parse HEAD)"
+          if [ "$actual" != "$EXPECTED_JEH_SHA" ]; then
+            echo "::error::Checked out JEH core does not match JEH_VALIDATOR_REF."
+            exit 1
+          fi
+          echo "Pinned JEH core commit verified: $actual"
       # Source validation deliberately ignores the previous published file hashes.
       - name: Validate editable data and schema
         run: ./.jeh/gradlew -p .jeh :core:runValidator -PjehValidationMode=validate-source -PjehDataRoot="$GITHUB_WORKSPACE"
@@ -45,6 +62,20 @@ jobs:
         run: |
           python -m pip install jsonschema==4.25.1
           python .jeh/tools/validate_schema.py --data "$GITHUB_WORKSPACE"
+      - name: Verify deterministic manifest generation
+        run: |
+          fixture_root="$(mktemp -d)"
+          trap 'rm -rf "$fixture_root"' EXIT
+          for fixture in first second; do
+            mkdir -p "$fixture_root/$fixture"
+            cp -a .data-version dist items recipes id-redirects.json "$fixture_root/$fixture/"
+            ./.jeh/gradlew -p .jeh :core:publishManifest \
+              -PjehDataRoot="$fixture_root/$fixture" \
+              -PjehCommit="$GITHUB_SHA" \
+              -PjehPublishedAt=2026-01-01T00:00:00Z
+          done
+          cmp "$fixture_root/first/.data-version" "$fixture_root/second/.data-version"
+          cmp "$fixture_root/first/dist/manifest.json" "$fixture_root/second/dist/manifest.json"
 
   publish:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.actor != 'github-actions[bot]'
@@ -64,15 +95,32 @@ jobs:
         env:
           JEH_REPO: ${{ vars.JEH_MOD_REPOSITORY }}
           JEH_REF: ${{ vars.JEH_VALIDATOR_REF }}
+          JEH_MOD_TOKEN_PRESENT: ${{ secrets.JEH_MOD_READ_TOKEN != '' }}
         run: |
           test -n "$JEH_REPO"
           test -n "$JEH_REF"
+          if [ "$JEH_MOD_TOKEN_PRESENT" != "true" ]; then
+            echo "::error::Required secret JEH_MOD_READ_TOKEN is not configured."
+            exit 1
+          fi
       - name: Checkout pinned JEH core
         uses: actions/checkout@v4
         with:
           repository: ${{ vars.JEH_MOD_REPOSITORY }}
           ref: ${{ vars.JEH_VALIDATOR_REF }}
           path: .jeh
+          token: ${{ secrets.JEH_MOD_READ_TOKEN }}
+          persist-credentials: false
+      - name: Verify pinned JEH core commit
+        env:
+          EXPECTED_JEH_SHA: ${{ vars.JEH_VALIDATOR_REF }}
+        run: |
+          actual="$(git -C .jeh rev-parse HEAD)"
+          if [ "$actual" != "$EXPECTED_JEH_SHA" ]; then
+            echo "::error::Checked out JEH core does not match JEH_VALIDATOR_REF."
+            exit 1
+          fi
+          echo "Pinned JEH core commit verified: $actual"
       - name: Generate next data version and manifest
         env:
           MERGE_SHA: ${{ github.sha }}
