@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/just-enough-hoplite/items.schema.json",
+  "title": "JEH items schema v2",
+  "type": "object",
+  "required": ["schema_version", "items"],
+  "properties": {
+    "schema_version": {"const": 2},
+    "items": {"type": "array", "items": {"$ref": "#/$defs/item"}}
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[a-z0-9_.-]+:[a-z0-9_./-]+$"},
+    "localized": {
+      "type": "object", "required": ["en_us"],
+      "properties": {"en_us": {"type": "string"}, "ja_jp": {"type": "string"}},
+      "additionalProperties": {"type": "string"}
+    },
+    "source": {
+      "type": "object", "required": ["kind"],
+      "properties": {
+        "kind": {"enum": ["official_page", "official_announcement", "in_game", "community"]},
+        "url": {"type": "string", "format": "uri"}, "note": {"type": "string"}
+      },
+      "additionalProperties": true,
+      "allOf": [
+        {"if": {"properties": {"kind": {"enum": ["official_page", "official_announcement"]}}, "required": ["kind"]}, "then": {"required": ["url"]}},
+        {"if": {"properties": {"kind": {"enum": ["in_game", "community"]}}, "required": ["kind"]}, "then": {"required": ["note"]}}
+      ]
+    },
+    "evidence": {
+      "type": "object", "required": ["status"],
+      "properties": {
+        "status": {"enum": ["unverified", "verified", "disputed"]},
+        "sources": {"type": "array", "items": {"$ref": "#/$defs/source"}},
+        "verified_at": {"type": "string", "format": "date-time"},
+        "reason": {"$ref": "#/$defs/localized"}
+      },
+      "additionalProperties": true,
+      "allOf": [
+        {"if": {"properties": {"status": {"const": "verified"}}, "required": ["status"]}, "then": {"required": ["sources", "verified_at"], "properties": {"sources": {"minItems": 1}}}},
+        {"if": {"properties": {"status": {"const": "disputed"}}, "required": ["status"]}, "then": {"required": ["sources", "reason"], "properties": {"sources": {"minItems": 2}}}}
+      ]
+    },
+    "matcher": {
+      "type": "object", "required": ["item"],
+      "properties": {
+        "item": {"$ref": "#/$defs/id"}, "item_model": {"$ref": "#/$defs/id"},
+        "custom_model_data": {
+          "type": "object", "minProperties": 1,
+          "properties": {
+            "strings": {"type": "array", "items": {"type": "string"}},
+            "floats": {"type": "array", "items": {"type": "number"}},
+            "flags": {"type": "array", "items": {"type": "boolean"}},
+            "colors": {"type": "array", "items": {"type": "integer", "minimum": 0}}
+          },
+          "additionalProperties": true
+        },
+        "custom_data": {
+          "type": "object", "required": ["path", "equals"],
+          "properties": {"path": {"type": "string", "minLength": 1}, "equals": {}},
+          "additionalProperties": true
+        },
+        "custom_name_plain": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "ability": {
+      "type": "object", "required": ["id", "name", "text", "evidence"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "name": {"$ref": "#/$defs/localized"},
+        "text": {"$ref": "#/$defs/localized"}, "evidence": {"$ref": "#/$defs/evidence"}
+      },
+      "additionalProperties": true
+    },
+    "acquisition": {
+      "type": "object", "required": ["id", "kind", "evidence"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "kind": {"enum": ["craft", "loot", "purchase", "reward", "other"]},
+        "recipe_ids": {"type": "array", "items": {"$ref": "#/$defs/id"}, "minItems": 1},
+        "text": {"$ref": "#/$defs/localized"}, "evidence": {"$ref": "#/$defs/evidence"}
+      },
+      "additionalProperties": true,
+      "allOf": [
+        {"if": {"properties": {"kind": {"const": "craft"}}, "required": ["kind"]}, "then": {"required": ["recipe_ids"]}},
+        {"if": {"properties": {"kind": {"enum": ["loot", "purchase", "reward", "other"]}}, "required": ["kind"]}, "then": {"required": ["text"]}}
+      ]
+    },
+    "item": {
+      "type": "object", "required": ["id", "name", "render_stack", "evidence"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "name": {"$ref": "#/$defs/localized"},
+        "render_stack": {
+          "type": "object", "required": ["id"],
+          "properties": {"id": {"$ref": "#/$defs/id"}, "count": {"type": "integer", "minimum": 1}, "components": {"type": "object"}},
+          "additionalProperties": true
+        },
+        "matcher": {"$ref": "#/$defs/matcher"},
+        "aliases": {"type": "array", "items": {"type": "string"}},
+        "description": {"$ref": "#/$defs/localized"},
+        "abilities": {"type": "array", "items": {"$ref": "#/$defs/ability"}},
+        "acquisition": {"type": "array", "items": {"$ref": "#/$defs/acquisition"}},
+        "fallback_icon": {"type": "string", "pattern": "^just_enough_hoplite:fallback/[a-z0-9_-]+(/[a-z0-9_-]+)*$"}, "evidence": {"$ref": "#/$defs/evidence"}
+      },
+      "additionalProperties": true
+    }
+  }
+}

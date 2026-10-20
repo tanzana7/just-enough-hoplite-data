@@ -1,0 +1,12 @@
+# Generated and local-only files
+.gradle/
+build/
+run/
+logs/
+crash-reports/
+screenshots/
+*.log
+*.dump
+*.dump.json
+*Item Dumper*
+reports/live-fixtures.json

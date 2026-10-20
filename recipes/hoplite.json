@@ -1,0 +1,2903 @@
+{
+  "recipes": [
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / agony / IN_GAME_VERIFIED / evidence=[\"screenshot_17\"] / refs=[]; Potion subtype cannot be determined from the static icon alone."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:agony",
+      "key": {
+        "A": {
+          "item": "minecraft:player_head"
+        },
+        "B": {
+          "item": "minecraft:blaze_powder"
+        },
+        "C": {
+          "item": "minecraft:potion"
+        },
+        "D": {
+          "item": "minecraft:nether_wart"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:agony"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "special_summon",
+      "craft_limits": [
+        {
+          "max": 4,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch4Evidence / ares_blessing / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_18\", \"batch4_screenshot_19\"] / refs=[]; Tooltip: summons a chest containing random items; fate is decided by the eye of the god. The output is visually a golden question-mark item while the tooltip shows the implementation id minecraft:paper."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:ares_blessing",
+      "key": {
+        "A": {
+          "item": "minecraft:redstone"
+        },
+        "B": {
+          "item": "minecraft:player_head"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:ares_blessing"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "legendaryItems / artemis_bow / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:artemis_bow\", \"official_patch_2026_05_22\"]",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-artemis.png"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; five new legendaries and latest published rotation found during this audit.",
+            "url": "https://www.hoplite.gg/news/patch-notes-may-22nd-2026"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:artemis_bow",
+      "key": {
+        "A": {
+          "item": "minecraft:feather"
+        },
+        "B": {
+          "item": "minecraft:spyglass"
+        },
+        "C": {
+          "item": "minecraft:diamond"
+        },
+        "D": {
+          "item": "minecraft:bow"
+        },
+        "E": {
+          "item": "minecraft:tnt"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        "AEA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:artemis_bow"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / axolotl_boots / IN_GAME_VERIFIED / evidence=[\"screenshot_14\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:axolotl_boots",
+      "key": {
+        "A": {
+          "item": "minecraft:axolotl_bucket"
+        },
+        "B": {
+          "item": "minecraft:tropical_fish"
+        },
+        "C": {
+          "item": "minecraft:diamond_boots"
+        },
+        "D": {
+          "item": "minecraft:pink_petals"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:axolotl_boots"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / bandit_leggings / IN_GAME_VERIFIED / evidence=[\"screenshot_12\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:bandit_leggings",
+      "key": {
+        "A": {
+          "item": "minecraft:melon_slice"
+        },
+        "B": {
+          "item": "minecraft:gold_ingot"
+        },
+        "C": {
+          "item": "minecraft:iron_leggings"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " A "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:bandit_leggings"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "tool_weapon",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch4Evidence / barbed_rod / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_01\", \"batch4_screenshot_02\"] / refs=[]; Tooltip: can knock back enemies during combat; durability is consumed when it triggers. Bottom-middle dark lump is inferred as coal from the sprite."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:barbed_rod",
+      "key": {
+        "A": {
+          "item": "minecraft:stick"
+        },
+        "B": {
+          "item": "minecraft:string"
+        },
+        "C": {
+          "item": "minecraft:coal"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "  A",
+        " AB",
+        "ACB"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:barbed_rod"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / beehive_blaster / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\", \"official_patch_2025_11_29\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:beehive_blaster",
+      "key": {
+        "A": {
+          "item": "minecraft:bee_nest"
+        },
+        "B": {
+          "item": "minecraft:honeycomb"
+        },
+        "C": {
+          "item": "minecraft:bow"
+        },
+        "D": {
+          "item": "minecraft:gunpowder"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:beehive_blaster"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / blazing_crossbow / IN_GAME_VERIFIED / evidence=[\"screenshot_04\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:blazing_crossbow",
+      "key": {
+        "A": {
+          "item": "minecraft:fire_charge"
+        },
+        "B": {
+          "item": "minecraft:magma_cream"
+        },
+        "C": {
+          "item": "minecraft:blaze_powder"
+        },
+        "D": {
+          "item": "minecraft:crossbow"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        "ABA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:blazing_crossbow"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility_storage",
+      "craft_limits": [
+        {
+          "max": 4,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch4Evidence / bundle / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_09\"] / refs=[]; Tooltip text: item used to store items; right-click to open. The displayed implementation id is minecraft:paper, suggesting a custom-modeled item."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:bundle",
+      "key": {
+        "A": {
+          "item": "minecraft:leather"
+        },
+        "B": {
+          "item": "minecraft:chest"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "ABA",
+        " A "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:bundle_item"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / cactus_chestplate / IN_GAME_VERIFIED / evidence=[\"screenshot_11\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:cactus_chestplate",
+      "key": {
+        "A": {
+          "item": "minecraft:cactus"
+        },
+        "B": {
+          "item": "minecraft:iron_chestplate"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:cactus_chestplate"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / chrono_sword / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_11_29\", \"official_patch_2026_05_22\"]; Grid synthesized from community ingredient list; exact slots require in-game verification. Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:chrono_sword",
+      "key": {
+        "A": {
+          "item": "minecraft:ender_pearl"
+        },
+        "B": {
+          "item": "minecraft:chain"
+        },
+        "C": {
+          "item": "minecraft:diamond_sword"
+        },
+        "D": {
+          "item": "minecraft:soul_lantern"
+        },
+        "E": {
+          "item": "minecraft:clock"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "A A",
+        "BCB",
+        "DED"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:chrono_sword"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / cloud_sword / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\", \"official_patch_2025_11_29\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:cloud_sword",
+      "key": {
+        "A": {
+          "item": "minecraft:feather"
+        },
+        "B": {
+          "item": "minecraft:cake"
+        },
+        "C": {
+          "item": "minecraft:diamond_sword"
+        },
+        "D": {
+          "item": "minecraft:golden_carrot"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "ACA",
+        "ADA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:cloud_sword"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / corrupted_crossbow / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2026_05_22\"]; Exact slot orientation should be checked in-game. Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:corrupted_crossbow",
+      "key": {
+        "A": {
+          "item": "minecraft:fermented_spider_eye"
+        },
+        "B": {
+          "item": "minecraft:nether_wart"
+        },
+        "C": {
+          "item": "minecraft:diamond"
+        },
+        "D": {
+          "item": "minecraft:crossbow"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AB ",
+        "CDC",
+        " BA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:corrupted_crossbow"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / cowboy_boots / IN_GAME_VERIFIED / evidence=[\"screenshot_13\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:cowboy_boots",
+      "key": {
+        "A": {
+          "item": "minecraft:chain"
+        },
+        "B": {
+          "item": "minecraft:hay_block"
+        },
+        "C": {
+          "item": "minecraft:leather_boots"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:horsetamer_boots"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / crimson_chainsword / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:crimson_chainsword",
+      "key": {
+        "A": {
+          "item": "minecraft:rail"
+        },
+        "B": {
+          "item": "minecraft:piglin_head"
+        },
+        "C": {
+          "item": "minecraft:diamond_sword"
+        },
+        "D": {
+          "item": "minecraft:diamond"
+        },
+        "E": {
+          "item": "minecraft:enchanted_golden_apple"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "ACA",
+        "DED"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:crimson_chainsword"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "reason": {
+          "en_us": "Equal-priority screenshot sources disagree; retained layout and alternative (pattern/key/result): [{\"key\": {\"A\": {\"item\": \"minecraft:player_head\"}, \"B\": {\"item\": \"minecraft:amethyst_shard\"}, \"C\": {\"item\": \"minecraft:potion\"}}, \"pattern\": [\" A \", \"BCB\", \" B \"], \"result\": {\"count\": 1, \"hoplite\": \"hoplite:crystallization_shard\"}}, {\"key\": {\"A\": {\"item\": \"minecraft:amethyst_shard\"}, \"B\": {\"item\": \"minecraft:powder_snow_bucket\"}, \"C\": {\"item\": \"minecraft:diamond_pickaxe\"}, \"D\": {\"item\": \"minecraft:iron_block\"}}, \"pattern\": [\"ABA\", \"CDC\", \"ADA\"], \"result\": {\"count\": 1, \"hoplite\": \"hoplite:crystallization_shard\"}}]. Confirmation is required."
+        },
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / crystallization_shard / IN_GAME_VERIFIED / evidence=[\"screenshot_18\"] / refs=[]; Potion subtype cannot be determined from the static icon alone."
+          },
+          {
+            "kind": "in_game",
+            "note": "latestBatch3Evidence / crystallization_shard / IN_GAME_VERIFIED / evidence=[\"batch3_screenshot_17\", \"batch3_screenshot_19\"] / refs=[]; Tooltip confirms display name 結晶化の欠片 and item id minecraft:amethyst_shard. Tooltip text indicates it crystallizes the consumer into an immobile object and grants Knockback Resistance and Resistance II for 15 seconds."
+          }
+        ],
+        "status": "disputed"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:crystallization_shard",
+      "key": {
+        "A": {
+          "item": "minecraft:player_head"
+        },
+        "B": {
+          "item": "minecraft:amethyst_shard"
+        },
+        "C": {
+          "item": "minecraft:potion"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " B "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:crystallization_shard"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / dragon_katana / COMMUNITY_CURRENT / evidence=[] / refs=[\"fandom_dragon_katana\", \"official_patch_2023_12_01\", \"official_image:dragon_katana\", \"official_patch_2025_06_01\", \"official_patch_2025_11_29\", \"official_patch_2026_05_22\"]; Official recipe image is demonstrably stale versus Dec 2023 official patch. Recent community wiki gives a completely newer recipe (Ender Pearl, 2 Diamonds, Dragon Egg, Diamond Sword). Use as current candidate, but verify in-game before release."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:dragon_katana",
+      "key": {
+        "A": {
+          "item": "minecraft:ender_pearl"
+        },
+        "B": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:diamond_sword"
+        },
+        "D": {
+          "item": "minecraft:dragon_egg"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:dragon_katana"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / eagle_eye_bow / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_11_29\"]; Exact slot layout reconstructed from archived recipe data; verify current version. Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:eagle_eye_bow",
+      "key": {
+        "A": {
+          "item": "minecraft:rabbit_foot"
+        },
+        "B": {
+          "item": "minecraft:glowstone_dust"
+        },
+        "C": {
+          "item": "minecraft:diamond"
+        },
+        "D": {
+          "item": "minecraft:bow"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AB ",
+        "CD ",
+        " A "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:eagle_eye_bow"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "legendaryItems / enderbow / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:enderbow\", \"official_patch_2025_04_04\", \"official_patch_2026_05_22\"]",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-enderbow.png"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; new legendaries, rotations, and Reaper Scythe recipe update.",
+            "url": "https://www.hoplite.gg/news/patch-notes-apr-4th-2025"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; five new legendaries and latest published rotation found during this audit.",
+            "url": "https://www.hoplite.gg/news/patch-notes-may-22nd-2026"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:enderbow",
+      "key": {
+        "A": {
+          "item": "minecraft:ender_eye"
+        },
+        "B": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:bow"
+        },
+        "D": {
+          "item": "minecraft:clock"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:enderbow"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "tool",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch4Evidence / explosive_pickaxe / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_05\", \"batch4_screenshot_06\"] / refs=[]; Tooltip: breaks blocks in a certain area and drops the broken blocks."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:explosive_pickaxe",
+      "key": {
+        "A": {
+          "item": "minecraft:redstone_block"
+        },
+        "B": {
+          "item": "minecraft:tnt"
+        },
+        "C": {
+          "item": "minecraft:diamond_pickaxe"
+        },
+        "D": {
+          "item": "minecraft:amethyst_shard"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "ACA",
+        "ADA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:explosive_pickaxe"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / freezing_chakram / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_11_29\", \"official_patch_2026_05_22\"]; Exact layout varies by source; provisional. Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:freezing_chakram",
+      "key": {
+        "A": {
+          "item": "minecraft:powder_snow_bucket"
+        },
+        "B": {
+          "item": "minecraft:amethyst_shard"
+        },
+        "C": {
+          "item": "minecraft:iron_hoe"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "A A",
+        "B B",
+        "C C"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:freezing_chakram"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / gerald_the_sniffer / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:gerald_the_sniffer",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:mossy_cobblestone"
+        },
+        "C": {
+          "item": "minecraft:music_disc_13"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:legendary_sniffer"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "vanilla",
+      "craft_limits": [
+        {
+          "max": 2,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / golden_apple / IN_GAME_VERIFIED / evidence=[\"screenshot_07\"] / refs=[]; Hoplite recipe UI uses a 4-gold cross recipe rather than vanilla's normal 8-gold recipe."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:golden_apple",
+      "key": {
+        "A": {
+          "item": "minecraft:gold_ingot"
+        },
+        "B": {
+          "item": "minecraft:apple"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "ABA",
+        " A "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:light_apple"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 2,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / golden_head / IN_GAME_VERIFIED / evidence=[\"screenshot_08\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:golden_head",
+      "key": {
+        "A": {
+          "item": "minecraft:gold_ingot"
+        },
+        "B": {
+          "item": "minecraft:player_head"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:golden_head"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / golem_hammer / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\"]; Ingredient set corroborated; exact layout provisional. Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:golem_hammer",
+      "key": {
+        "A": {
+          "item": "minecraft:lodestone"
+        },
+        "B": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:iron_block"
+        },
+        "D": {
+          "item": "minecraft:blaze_rod"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AB ",
+        "CBC",
+        " DD"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:golem_hammer"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "tool",
+      "craft_limits": [
+        {
+          "max": 4,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch4Evidence / great_smelters_pickaxe / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_11\", \"batch4_screenshot_12\"] / refs=[]; Tooltip: Efficiency II, Unbreaking I. Tooltip text says it is an upgraded smelter's pickaxe with the auto-smelt effect. The older Great Smelter name is provisionally associated with the live Super Smelter identity; correspondence is unverified."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:great_smelters_pickaxe",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:iron_ingot"
+        },
+        "C": {
+          "item": "minecraft:coal"
+        },
+        "D": {
+          "item": "minecraft:stick"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:infernal_pickaxe"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "legendaryItems / grimoire / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:grimoire\"]",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-grimoire.png"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:grimoire",
+      "key": {
+        "A": {
+          "item": "minecraft:experience_bottle"
+        },
+        "B": {
+          "item": "minecraft:diamond_sword"
+        },
+        "C": {
+          "item": "minecraft:writable_book"
+        },
+        "D": {
+          "item": "minecraft:trident"
+        },
+        "E": {
+          "item": "minecraft:magma_cream"
+        },
+        "F": {
+          "item": "minecraft:bow"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "BCD",
+        "EFE"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:grimoire"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / guardian_cannon / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\", \"official_patch_2025_06_01\", \"official_patch_2026_05_22\"]; Community reconstruction; verify current material variants such as Dark Prismarine in-game. Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:guardian_cannon",
+      "key": {
+        "A": {
+          "item": "minecraft:prismarine_shard"
+        },
+        "B": {
+          "item": "minecraft:gunpowder"
+        },
+        "C": {
+          "item": "minecraft:diamond"
+        },
+        "D": {
+          "item": "minecraft:sponge"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CCC",
+        " DD"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:guardian_cannon"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / harpoon_launcher / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\", \"official_patch_2025_06_01\"]; Exact grid is provisional. Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:harpoon_launcher",
+      "key": {
+        "A": {
+          "item": "minecraft:lead"
+        },
+        "B": {
+          "item": "minecraft:redstone_block"
+        },
+        "C": {
+          "item": "minecraft:fishing_rod"
+        },
+        "D": {
+          "item": "minecraft:trident"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABB",
+        " CB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:harpoon_launcher"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / headhunter_chestpiece / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_11_29\"]; Archived reconstruction; verify current recipe. Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:headhunters_might",
+      "key": {
+        "A": {
+          "item": "minecraft:piglin_head"
+        },
+        "B": {
+          "item": "minecraft:weeping_vines"
+        },
+        "C": {
+          "item": "minecraft:iron_block"
+        },
+        "D": {
+          "item": "minecraft:netherite_ingot"
+        },
+        "E": {
+          "item": "minecraft:diamond_chestplate"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "A B",
+        "C D",
+        " E "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:headhunters_might"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / kim_the_transmuter / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_11_29\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:kim_the_transmuter",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond_pickaxe"
+        },
+        "B": {
+          "item": "minecraft:diamond_axe"
+        },
+        "C": {
+          "item": "minecraft:diamond_shovel"
+        },
+        "D": {
+          "item": "minecraft:cauldron"
+        },
+        "E": {
+          "hoplite": "hoplite:portable_villager"
+        },
+        "F": {
+          "item": "minecraft:brewing_stand"
+        },
+        "G": {
+          "item": "minecraft:bookshelf"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABC",
+        "DEF",
+        "GGG"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:kim_the_transmuter"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "legendaryItems / lich_staff / OFFICIAL_DERIVED / evidence=[] / refs=[\"official_recipes\", \"official_image:lich_staff\", \"official_patch_2025_11_29\", \"lunar_legacy_guide\", \"official_patch_2025_04_04\"]; Nov 2025 official patch: any candle; Obsidian replaced with Bones. Grid preserves official pre-change slots.",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-lich.png"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; major recipe updates and legendary rotation.",
+            "url": "https://www.hoplite.gg/news/patch-notes-nov-29th-2025"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; new legendaries, rotations, and Reaper Scythe recipe update.",
+            "url": "https://www.hoplite.gg/news/patch-notes-apr-4th-2025"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:lich_staff",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:candle"
+        },
+        "C": {
+          "item": "minecraft:ice"
+        },
+        "D": {
+          "item": "minecraft:bone"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:lich_staff"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility",
+      "craft_limits": [
+        {
+          "max": 4,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "userConfirmedCorrections / light_anvil / USER_CONFIRMED / evidence=[] / refs=[]; User confirmed slot mapping: 1,2,3,7,8,9 = iron_ingot; 5 = iron_block."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:light_anvil",
+      "key": {
+        "A": {
+          "item": "minecraft:iron_ingot"
+        },
+        "B": {
+          "item": "minecraft:iron_block"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        " B ",
+        "AAA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:light_anvil"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / light_netherite_sword / IN_GAME_VERIFIED / evidence=[\"screenshot_03\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:light_netherite_sword",
+      "key": {
+        "A": {
+          "item": "minecraft:netherite_scrap"
+        },
+        "B": {
+          "item": "minecraft:obsidian"
+        },
+        "C": {
+          "item": "minecraft:diamond_sword"
+        },
+        "D": {
+          "item": "minecraft:blaze_rod"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:light_netherite_sword"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "tool",
+      "craft_limits": [
+        {
+          "max": 4,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch4Evidence / lumberjacks_axe / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_07\", \"batch4_screenshot_08\"] / refs=[]; Tooltip: Efficiency I. Tooltip text says it can harvest most trees in one swing."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:lumberjacks_axe",
+      "key": {
+        "A": {
+          "item": "minecraft:iron_ingot"
+        },
+        "B": {
+          "item": "minecraft:coal"
+        },
+        "C": {
+          "item": "minecraft:stick"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAB",
+        "AC ",
+        " C "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:lumberjacks_axe"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat_or_vanilla",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / mace / IN_GAME_VERIFIED / evidence=[\"screenshot_06\"] / refs=[]; This is the vanilla Mace recipe displayed in Hoplite's recipe UI."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:mace",
+      "key": {
+        "A": {
+          "item": "minecraft:heavy_core"
+        },
+        "B": {
+          "item": "minecraft:breeze_rod"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "A  ",
+        "B  ",
+        "   "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:mace"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / magma_cannon / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_11_29\"]; Community recipe; verify current recipe before release. Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:magma_cannon",
+      "key": {
+        "A": {
+          "item": "minecraft:magma_block"
+        },
+        "B": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:tnt"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "A A",
+        "BCB",
+        "A A"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:magma_cannon"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "legendaryItems / midas_sword / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:midas_sword\"]",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-midas.png"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:midas_sword",
+      "key": {
+        "A": {
+          "item": "minecraft:enchanted_golden_apple"
+        },
+        "B": {
+          "item": "minecraft:quartz"
+        },
+        "C": {
+          "item": "minecraft:diamond_sword"
+        },
+        "D": {
+          "item": "minecraft:golden_apple"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:midas_sword"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "legendaryItems / mjolnir / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:mjolnir\", \"official_patch_2025_04_04\"]; Older Lunar guide describes a different historical recipe; official current recipe image is preferred.",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-mjolnir.png"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; new legendaries, rotations, and Reaper Scythe recipe update.",
+            "url": "https://www.hoplite.gg/news/patch-notes-apr-4th-2025"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:mjolnir",
+      "key": {
+        "A": {
+          "item": "minecraft:crying_obsidian"
+        },
+        "B": {
+          "item": "minecraft:anvil"
+        },
+        "C": {
+          "item": "minecraft:diamond_axe"
+        },
+        "D": {
+          "item": "minecraft:magma_cream"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "ACA",
+        "ADA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:mjolnir"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "special_block",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch4Evidence / nether_reactor_core / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_16\", \"batch4_screenshot_17\"] / refs=[]; Tooltip: changes nearby blocks into nether-themed blocks, summons nether mobs, and can attract a nether merchant. The output appears as a custom blue cube, but the tooltip shows the underlying item id minecraft:barrier. The blue outer blocks are inferred as light_blue_stained_glass based on the translucent blue sprite."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:nether_reactor_core",
+      "key": {
+        "A": {
+          "item": "minecraft:light_blue_stained_glass"
+        },
+        "B": {
+          "item": "minecraft:obsidian"
+        },
+        "C": {
+          "item": "minecraft:gunpowder"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "ACA",
+        "ABA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:nether_reactor"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "userConfirmedCorrections / obsidian / USER_CONFIRMED / evidence=[] / refs=[]; User confirmed the recipe ingredients are Lava Bucket + Water Bucket. Grid follows the screenshot placement with lava in slot 1 and water in slot 2."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:obsidian",
+      "key": {
+        "A": {
+          "item": "minecraft:lava_bucket"
+        },
+        "B": {
+          "item": "minecraft:water_bucket"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AB ",
+        "   ",
+        "   "
+      ],
+      "result": {
+        "count": 1,
+        "item": "minecraft:obsidian"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "reason": {
+          "en_us": "Equal-priority screenshot sources disagree; retained layout and alternative (pattern/key/result): [{\"key\": {\"A\": {\"item\": \"minecraft:red_tulip\"}, \"B\": {\"item\": \"minecraft:potion\"}, \"C\": {\"item\": \"minecraft:oak_log\"}, \"D\": {\"item\": \"minecraft:player_head\"}}, \"pattern\": [\"ABA\", \"CDC\", \"ABA\"], \"result\": {\"count\": 1, \"hoplite\": \"hoplite:panacea\"}}, {\"key\": {\"A\": {\"item\": \"minecraft:lily_of_the_valley\"}, \"B\": {\"item\": \"minecraft:potion\"}, \"C\": {\"item\": \"minecraft:cherry_planks\"}, \"D\": {\"item\": \"minecraft:magenta_concrete\"}, \"E\": {\"item\": \"minecraft:rabbit_foot\"}, \"F\": {\"item\": \"minecraft:glass_bottle\"}}, \"pattern\": [\"ABA\", \"CDC\", \"EFE\"], \"result\": {\"count\": 1, \"hoplite\": \"hoplite:panacea\"}}]. Confirmation is required."
+        },
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / panacea / IN_GAME_VERIFIED / evidence=[\"screenshot_16\"] / refs=[]; Potion subtype cannot be determined from the static icon alone; preserve generic minecraft:potion until tooltip/NBT is captured."
+          },
+          {
+            "kind": "in_game",
+            "note": "latestBatch3Evidence / panacea / IN_GAME_VERIFIED / evidence=[\"batch3_screenshot_01\"] / refs=[]; Tooltip text confirms the display name Panacea and item id minecraft:potion. Tooltip text: can be replenished up to 5 uses at a shrine; using restores 4 hearts; right-click with berries to refill. Middle and bottom-center ingredients are inferred from partially obscured sprites and should be treated as best-effort guesses."
+          }
+        ],
+        "status": "disputed"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:panacea",
+      "key": {
+        "A": {
+          "item": "minecraft:red_tulip"
+        },
+        "B": {
+          "item": "minecraft:potion"
+        },
+        "C": {
+          "item": "minecraft:oak_log"
+        },
+        "D": {
+          "item": "minecraft:player_head"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        "ABA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:panacea"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / poseidons_trident / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\", \"official_patch_2025_11_29\", \"official_patch_2026_05_22\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:poseidons_trident",
+      "key": {
+        "A": {
+          "item": "minecraft:seagrass"
+        },
+        "B": {
+          "item": "minecraft:nautilus_shell"
+        },
+        "C": {
+          "item": "minecraft:diamond"
+        },
+        "D": {
+          "item": "minecraft:trident"
+        },
+        "E": {
+          "item": "minecraft:water_bucket"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        "AEA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:poseidons_trident"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "legendaryItems / pufferfish_cannon / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:pufferfish_cannon\", \"official_patch_2025_11_29\", \"official_patch_2026_05_22\"]",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-pufferfish-cannon.png"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; major recipe updates and legendary rotation.",
+            "url": "https://www.hoplite.gg/news/patch-notes-nov-29th-2025"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; five new legendaries and latest published rotation found during this audit.",
+            "url": "https://www.hoplite.gg/news/patch-notes-may-22nd-2026"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:pufferfish_cannon",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:pufferfish"
+        },
+        "C": {
+          "item": "minecraft:iron_ingot"
+        },
+        "D": {
+          "item": "minecraft:tnt"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CBC",
+        "CDC"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:pufferfish_cannon"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "legendaryItems / reapers_scythe / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:reapers_scythe\", \"official_patch_2025_04_04\", \"official_patch_2025_06_01\"]; Official Apr 2025 patch states Obsidian was removed; current official recipe image matches that change.",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-scythe.png"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; new legendaries, rotations, and Reaper Scythe recipe update.",
+            "url": "https://www.hoplite.gg/news/patch-notes-apr-4th-2025"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; legendary rotation and item existence.",
+            "url": "https://www.hoplite.gg/news/patch-notes-jun-1st-2025"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:reaper_scythe",
+      "key": {
+        "A": {
+          "item": "minecraft:player_head"
+        },
+        "B": {
+          "item": "minecraft:bone"
+        },
+        "C": {
+          "item": "minecraft:amethyst_shard"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " AA",
+        " BC",
+        "B  "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:reaper_scythe"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility",
+      "craft_limits": [
+        {
+          "max": 4,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestLegendaryRecipeEvidence / saddle / IN_GAME_VERIFIED / evidence=[\"legendary_screenshot_07\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:saddle",
+      "key": {
+        "A": {
+          "item": "minecraft:leather"
+        },
+        "B": {
+          "item": "minecraft:string"
+        },
+        "C": {
+          "item": "minecraft:copper_ingot"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "ABA",
+        "C C"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:saddle"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / sculkweavers_lantern / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\", \"official_patch_2025_06_01\"]; Exact slot layout follows community reconstruction. Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:sculkweavers_lantern",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:soul_lantern"
+        },
+        "C": {
+          "item": "minecraft:sculk_sensor"
+        },
+        "D": {
+          "item": "minecraft:fishing_rod"
+        },
+        "E": {
+          "item": "minecraft:sculk_shrieker"
+        },
+        "F": {
+          "item": "minecraft:gunpowder"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AB ",
+        "CDA",
+        "EF "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:sculkweavers_lantern"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / shortsword / IN_GAME_VERIFIED / evidence=[\"screenshot_01\", \"screenshot_02\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:shortsword",
+      "key": {
+        "A": {
+          "item": "minecraft:copper_ingot"
+        },
+        "B": {
+          "item": "minecraft:iron_sword"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:quick_sword"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / shrink_ray / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\", \"official_patch_2025_06_01\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:shrink_ray",
+      "key": {
+        "A": {
+          "item": "minecraft:prismarine_shard"
+        },
+        "B": {
+          "item": "minecraft:redstone_torch"
+        },
+        "C": {
+          "item": "minecraft:amethyst_shard"
+        },
+        "D": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        "CDC"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:shrink_ray"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / skeleton_leggings / IN_GAME_VERIFIED / evidence=[\"screenshot_15\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:skeleton_leggings",
+      "key": {
+        "A": {
+          "item": "minecraft:bone"
+        },
+        "B": {
+          "item": "minecraft:iron_leggings"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "ABA",
+        "A A"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:skeleton_leggings"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "tool",
+      "craft_limits": [
+        {
+          "max": 4,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch4Evidence / smelters_pickaxe / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_03\", \"batch4_screenshot_04\"] / refs=[]; Tooltip: Efficiency I, Unbreaking I. Tooltip text states that ores mined with it are automatically smelted."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:smelters_pickaxe",
+      "key": {
+        "A": {
+          "item": "minecraft:raw_iron"
+        },
+        "B": {
+          "item": "minecraft:coal"
+        },
+        "C": {
+          "item": "minecraft:stick"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "BCB",
+        " C "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:smelters_pickaxe"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "legendaryItems / sonic_crossbow / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:sonic_crossbow\", \"official_patch_2025_06_01\", \"official_patch_2026_05_22\"]",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-sonic-crossbow.png"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; legendary rotation and item existence.",
+            "url": "https://www.hoplite.gg/news/patch-notes-jun-1st-2025"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; five new legendaries and latest published rotation found during this audit.",
+            "url": "https://www.hoplite.gg/news/patch-notes-may-22nd-2026"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:sonic_crossbow",
+      "key": {
+        "A": {
+          "item": "minecraft:disc_fragment_5"
+        },
+        "B": {
+          "item": "minecraft:echo_shard"
+        },
+        "C": {
+          "item": "minecraft:diamond"
+        },
+        "D": {
+          "item": "minecraft:crossbow"
+        },
+        "E": {
+          "item": "minecraft:firework_star"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        "AEA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:sonic_crossbow"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "legendaryItems / tim_the_enchanter / OFFICIAL_DERIVED / evidence=[] / refs=[\"official_recipes\", \"official_image:tim_the_enchanter\", \"official_patch_2025_11_29\"]; Nov 2025 official patch explicitly replaces the Enchanting Table with Portable Villager.",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-tim.png"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; major recipe updates and legendary rotation.",
+            "url": "https://www.hoplite.gg/news/patch-notes-nov-29th-2025"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:tim_the_enchanter",
+      "key": {
+        "A": {
+          "item": "minecraft:experience_bottle"
+        },
+        "B": {
+          "item": "minecraft:glow_ink_sac"
+        },
+        "C": {
+          "hoplite": "hoplite:portable_villager"
+        },
+        "D": {
+          "item": "minecraft:golden_carrot"
+        },
+        "E": {
+          "item": "minecraft:bookshelf"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "BCD",
+        "EEE"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:tim_the_enchanter"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch3Evidence / totem_of_undying / IN_GAME_VERIFIED / evidence=[\"batch3_screenshot_03\"] / refs=[]; Center sprite is inferred as ghast_tear from its teardrop shape and color."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:totem_of_undying",
+      "key": {
+        "A": {
+          "item": "minecraft:gold_ingot"
+        },
+        "B": {
+          "item": "minecraft:ghast_tear"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "ABA",
+        " A "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:totem"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility_summon",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch4Evidence / tracker_pack / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_14\", \"batch4_screenshot_15\"] / refs=[]; Tooltip: specialized wolf pack item that summons wolves following the nearest player and joining combat after finding a target. Displayed implementation id is minecraft:bone."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:tracker_pack",
+      "key": {
+        "A": {
+          "item": "minecraft:bone"
+        },
+        "B": {
+          "item": "minecraft:compass"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "ABA",
+        " A "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:wishbone"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "weapon",
+      "craft_limits": [
+        {
+          "max": 2,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "latestBatch3Evidence / trident / IN_GAME_VERIFIED / evidence=[\"batch3_screenshot_02\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:trident",
+      "key": {
+        "A": {
+          "item": "minecraft:prismarine_shard"
+        },
+        "B": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " AA",
+        " BA",
+        "B  "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:trident"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "currentInGameRecipeEvidence / very_suspicious_stew / IN_GAME_VERIFIED / evidence=[\"screenshot_10\"] / refs=[]"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:very_suspicious_stew",
+      "key": {
+        "A": {
+          "item": "minecraft:red_mushroom"
+        },
+        "B": {
+          "item": "minecraft:brown_mushroom"
+        },
+        "C": {
+          "item": "minecraft:player_head"
+        },
+        "D": {
+          "item": "minecraft:bowl"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABC",
+        " D ",
+        "   "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:suspicious_stew"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "legendaryItems / void_staff / OFFICIAL_DERIVED / evidence=[] / refs=[\"official_recipes\", \"official_image:void_staff\", \"official_patch_2025_11_29\"]; Nov 2025 official patch explicitly replaces Obsidian with Bones; grid preserves the official pre-change positions.",
+            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image. Check later patch notes for explicit recipe changes.",
+            "url": "https://www.hoplite.gg/recipes/recipe-void-staff.png"
+          },
+          {
+            "kind": "official_announcement",
+            "note": "Official patch notes; major recipe updates and legendary rotation.",
+            "url": "https://www.hoplite.gg/news/patch-notes-nov-29th-2025"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-19T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:void_staff",
+      "key": {
+        "A": {
+          "item": "minecraft:blaze_powder"
+        },
+        "B": {
+          "item": "minecraft:ender_pearl"
+        },
+        "C": {
+          "item": "minecraft:bone"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " AB",
+        " CA",
+        "C  "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:void_staff"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / war_pick / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_11_29\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:war_pick",
+      "key": {
+        "A": {
+          "item": "minecraft:redstone_block"
+        },
+        "B": {
+          "item": "minecraft:player_head"
+        },
+        "C": {
+          "item": "minecraft:diamond_pickaxe"
+        },
+        "D": {
+          "item": "minecraft:tnt"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "ACA",
+        "ADA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:war_pick"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "community",
+            "note": "legendaryItems / wither_sickles / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+          }
+        ],
+        "status": "unverified"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:wither_sickles",
+      "key": {
+        "A": {
+          "item": "minecraft:wither_skeleton_skull"
+        },
+        "B": {
+          "item": "minecraft:diamond_hoe"
+        },
+        "C": {
+          "item": "minecraft:soul_sand"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " C "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:wither_sickles"
+      },
+      "type": "crafting_shaped"
+    }
+  ],
+  "schema_version": 2
+}

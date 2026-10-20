@@ -1,0 +1,94 @@
+name: validate-and-publish
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+    paths-ignore:
+      - dist/manifest.json
+      - .data-version
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: jeh-data-main
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Require validator source configuration
+        env:
+          JEH_REPO: ${{ vars.JEH_MOD_REPOSITORY }}
+          JEH_REF: ${{ vars.JEH_VALIDATOR_REF }}
+        run: |
+          test -n "$JEH_REPO"
+          test -n "$JEH_REF"
+      - name: Checkout pinned JEH core
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.JEH_MOD_REPOSITORY }}
+          ref: ${{ vars.JEH_VALIDATOR_REF }}
+          path: .jeh
+      # Source validation deliberately ignores the previous published file hashes.
+      - name: Validate editable data and schema
+        run: ./.jeh/gradlew -p .jeh :core:runValidator -PjehValidationMode=validate-source -PjehDataRoot="$GITHUB_WORKSPACE"
+      - name: Validate JSON Schema documents
+        run: |
+          python -m pip install jsonschema==4.25.1
+          python .jeh/tools/validate_schema.py --data "$GITHUB_WORKSPACE"
+
+  publish:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.actor != 'github-actions[bot]'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Require validator source configuration
+        env:
+          JEH_REPO: ${{ vars.JEH_MOD_REPOSITORY }}
+          JEH_REF: ${{ vars.JEH_VALIDATOR_REF }}
+        run: |
+          test -n "$JEH_REPO"
+          test -n "$JEH_REF"
+      - name: Checkout pinned JEH core
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.JEH_MOD_REPOSITORY }}
+          ref: ${{ vars.JEH_VALIDATOR_REF }}
+          path: .jeh
+      - name: Generate next data version and manifest
+        env:
+          MERGE_SHA: ${{ github.sha }}
+          PUBLISHED_AT: ${{ github.event.head_commit.timestamp }}
+        run: |
+          ./.jeh/gradlew -p .jeh :core:publishManifest \
+            -PjehDataRoot="$GITHUB_WORKSPACE" \
+            -PjehCommit="$MERGE_SHA" \
+            -PjehPublishedAt="$PUBLISHED_AT"
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .data-version dist/manifest.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "chore(data): publish manifest"
+          git push origin HEAD:main

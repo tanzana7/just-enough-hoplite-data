@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/just-enough-hoplite/overrides.schema.json",
+  "title": "JEH local overrides v2",
+  "type": "object",
+  "required": ["schema_version", "deletes"],
+  "properties": {
+    "schema_version": {"const": 2},
+    "deletes": {
+      "type": "object",
+      "properties": {
+        "items": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9_.-]+:[a-z0-9_./-]+$"}},
+        "recipes": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9_.-]+:[a-z0-9_./-]+$"}}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

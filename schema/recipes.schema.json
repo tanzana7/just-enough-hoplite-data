@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/just-enough-hoplite/recipes.schema.json",
+  "title": "JEH recipes schema v2",
+  "type": "object",
+  "required": ["schema_version", "recipes"],
+  "properties": {
+    "schema_version": {"const": 2},
+    "recipes": {"type": "array", "items": {"$ref": "#/$defs/recipe"}}
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[a-z0-9_.-]+:[a-z0-9_./-]+$"},
+    "source": {
+      "type": "object", "required": ["kind"],
+      "properties": {
+        "kind": {"enum": ["official_page", "official_announcement", "in_game", "community"]},
+        "url": {"type": "string", "format": "uri"}, "note": {"type": "string"}
+      },
+      "additionalProperties": true,
+      "allOf": [
+        {"if": {"properties": {"kind": {"enum": ["official_page", "official_announcement"]}}, "required": ["kind"]}, "then": {"required": ["url"]}},
+        {"if": {"properties": {"kind": {"enum": ["in_game", "community"]}}, "required": ["kind"]}, "then": {"required": ["note"]}}
+      ]
+    },
+    "evidence": {
+      "type": "object", "required": ["status"],
+      "properties": {
+        "status": {"enum": ["unverified", "verified", "disputed"]},
+        "sources": {"type": "array", "items": {"$ref": "#/$defs/source"}},
+        "verified_at": {"type": "string", "format": "date-time"},
+        "reason": {"type": "object", "required": ["en_us"], "properties": {"en_us": {"type": "string"}, "ja_jp": {"type": "string"}}, "additionalProperties": {"type": "string"}}
+      },
+      "additionalProperties": true,
+      "allOf": [
+        {"if": {"properties": {"status": {"const": "verified"}}, "required": ["status"]}, "then": {"required": ["sources", "verified_at"], "properties": {"sources": {"minItems": 1}}}},
+        {"if": {"properties": {"status": {"const": "disputed"}}, "required": ["status"]}, "then": {"required": ["sources", "reason"], "properties": {"sources": {"minItems": 2}}}}
+      ]
+    },
+    "choice": {
+      "type": "object",
+      "properties": {"item": {"$ref": "#/$defs/id"}, "tag": {"$ref": "#/$defs/id"}, "hoplite": {"$ref": "#/$defs/id"}},
+      "additionalProperties": true,
+      "oneOf": [
+        {"required": ["item"], "not": {"anyOf": [{"required": ["tag"]}, {"required": ["hoplite"]}]}},
+        {"required": ["tag"], "not": {"anyOf": [{"required": ["item"]}, {"required": ["hoplite"]}]}},
+        {"required": ["hoplite"], "not": {"anyOf": [{"required": ["item"]}, {"required": ["tag"]}]}}
+      ],
+      "not": {"required": ["count"]}
+    },
+    "ingredient": {
+      "type": "object",
+      "properties": {
+        "item": {"$ref": "#/$defs/id"}, "tag": {"$ref": "#/$defs/id"},
+        "hoplite": {"$ref": "#/$defs/id"},
+        "any_of": {"type": "array", "items": {"$ref": "#/$defs/choice"}, "minItems": 1},
+        "count": {"type": "integer", "minimum": 1}
+      },
+      "additionalProperties": true,
+      "oneOf": [
+        {"required": ["item"], "not": {"anyOf": [{"required": ["tag"]}, {"required": ["hoplite"]}, {"required": ["any_of"]}]}},
+        {"required": ["tag"], "not": {"anyOf": [{"required": ["item"]}, {"required": ["hoplite"]}, {"required": ["any_of"]}]}},
+        {"required": ["hoplite"], "not": {"anyOf": [{"required": ["item"]}, {"required": ["tag"]}, {"required": ["any_of"]}]}},
+        {"required": ["any_of"], "not": {"anyOf": [{"required": ["item"]}, {"required": ["tag"]}, {"required": ["hoplite"]}]}}
+      ]
+    },
+    "result": {
+      "type": "object", "required": ["count"],
+      "properties": {"hoplite": {"$ref": "#/$defs/id"}, "item": {"$ref": "#/$defs/id"}, "count": {"type": "integer", "minimum": 1}},
+      "additionalProperties": true,
+      "oneOf": [
+        {"required": ["hoplite"], "not": {"required": ["item"]}},
+        {"required": ["item"], "not": {"required": ["hoplite"]}}
+      ]
+    },
+    "grid": {
+      "type": "array", "minItems": 2, "maxItems": 2,
+      "prefixItems": [{"type": "integer", "minimum": 1, "maximum": 3}, {"type": "integer", "minimum": 1, "maximum": 3}],
+      "items": false
+    },
+    "limit": {
+      "type": "object", "required": ["max", "scope", "period"],
+      "properties": {
+        "max": {"type": "integer", "minimum": 1},
+        "scope": {"enum": ["player", "team", "match", "unknown"]},
+        "period": {"enum": ["match", "lifetime", "unknown"]},
+        "group_id": {"$ref": "#/$defs/id"}
+      },
+      "additionalProperties": true,
+      "if": {"properties": {"scope": {"const": "match"}}, "required": ["scope"]},
+      "then": {"properties": {"period": {"const": "match"}}}
+    },
+    "common": {
+      "type": "object", "required": ["id", "type", "result", "evidence"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "type": {"enum": ["crafting_shaped", "crafting_shapeless", "special"]},
+        "result": {"$ref": "#/$defs/result"}, "category": {"type": "string"},
+        "craft_limits": {"type": "array", "items": {"$ref": "#/$defs/limit"}},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "recipe": {
+      "oneOf": [
+        {"allOf": [
+          {"$ref": "#/$defs/common"},
+          {"properties": {
+            "type": {"const": "crafting_shaped"}, "grid": {"$ref": "#/$defs/grid"},
+            "pattern": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1, "maxItems": 3},
+            "key": {"type": "object", "minProperties": 1, "propertyNames": {"pattern": "^[^\\s]$"}, "additionalProperties": {"$ref": "#/$defs/ingredient"}},
+            "mirror": {"type": "boolean", "default": true}
+          }, "required": ["grid", "pattern", "key"]}
+        ]},
+        {"allOf": [
+          {"$ref": "#/$defs/common"},
+          {"properties": {
+            "type": {"const": "crafting_shapeless"}, "grid": {"$ref": "#/$defs/grid"},
+            "ingredients": {"type": "array", "items": {"$ref": "#/$defs/ingredient"}, "minItems": 1, "maxItems": 9}
+          }, "required": ["grid", "ingredients"]}
+        ]},
+        {"allOf": [
+          {"$ref": "#/$defs/common"},
+          {"properties": {
+            "type": {"const": "special"}, "layout_id": {"$ref": "#/$defs/id"},
+            "inputs": {"type": "object", "additionalProperties": {"$ref": "#/$defs/ingredient"}},
+            "catalysts": {"type": "object", "additionalProperties": {"$ref": "#/$defs/ingredient"}},
+            "returns": {"type": "object", "additionalProperties": {"$ref": "#/$defs/result"}}
+          }, "required": ["layout_id", "inputs"]}
+        ]}
+      ]
+    }
+  }
+}
