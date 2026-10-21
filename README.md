@@ -1,6 +1,6 @@
 # JEH data repository
 
-This repository holds the independently versioned JSON dataset for Just Enough Hoplite. `schema/` contains the four Draft 2020-12 schemas; `items/` and `recipes/` contain curated records; `dist/manifest.json` describes content-addressed files; `reports/import-report.json` retains summarized importer provenance and unresolved evidence. Raw source captures and live identity fixtures are excluded.
+This repository holds the independently versioned JSON dataset for Just Enough Hoplite. `schema/` contains the four Draft 2020-12 schemas; `items/` and `recipes/` contain curated records; `dist/manifest.json` describes content-addressed files; `reports/` retains importer provenance, live identity fixtures and unresolved evidence.
 
 Validate from the JEH mod checkout with:
 
@@ -9,21 +9,23 @@ Validate from the JEH mod checkout with:
 python ../just-enough-hoplite/tools/validate_schema.py --data .
 ```
 
-To regenerate records locally, provide paths to source captures that you already hold. Raw captures are not stored in this repository. Run from the Mod repository root:
+Regenerate the imported records from the copied evidence with:
 
 ```sh
-python tools/import_seed_data.py \
-  --seed <local-seed-json> \
-  --live <local-live-identity-json> \
-  --render-candidates <local-render-candidates-json> \
-  --output ../just-enough-hoplite-data \
-  --bundled src/main/resources/jeh/bundled
-python tools/prepare_bundled.py --data ../just-enough-hoplite-data --bundled src/main/resources/jeh/bundled
+python ../just-enough-hoplite/tools/import_seed_data.py \
+  --seed ../evidence/jeh_hoplite_recipe_dataset_v8.json \
+  --live ../evidence/jeh_hoplite_live_item_identity_2026-10-19.json \
+  --render-candidates ../evidence/jeh_resource_pack_render_candidates_2026-10-20.json \
+  --current-recipe-dumps ../evidence/jeh_hoplite_current_rotation_2026-10-21.json \
+  --official-regular-recipes ../evidence/jeh_hoplite_official_regular_recipe_evidence_2026-10-21.json \
+  --output . \
+  --bundled ../just-enough-hoplite/src/main/resources/jeh/bundled
+python ../just-enough-hoplite/tools/prepare_bundled.py \
+  --data . --bundled ../just-enough-hoplite/src/main/resources/jeh/bundled
 ```
 
-The importer writes curated records and a summarized provenance report; it does not copy the raw live capture fixture.
-`publishManifest` validates and changes only `.data-version` and `dist/manifest.json`. Configure `JEH_DATA_REPOSITORY`, then run it with a real 40-character commit and publication timestamp. The checked-in offline manifest uses a placeholder repository and cannot be fetched. GitHub publishing requires repository variables that pin the mod checkout and validator ref; those account settings and the cross-repository variables still need owner configuration.
+`publishManifest` validates and changes only `.data-version` and `dist/manifest.json`. Configure `JEH_DATA_REPOSITORY`, then run it with a real 40-character commit and publication timestamp. The checked-in offline manifest uses a placeholder repository and cannot be fetched. GitHub publishing requires repository variables that pin the mod checkout and validator ref; those account settings and the public repository do not exist in this local implementation.
 
 `runValidator` defaults to editable source validation: data PRs do not need to regenerate the manifest. Add `-PjehValidationMode=validate-published` to verify a published fixture, including hashes, sizes and publication URLs. The checked-in offline placeholder intentionally fails that URL policy. `publishManifest` runs both validations around generation. `id-redirects.json` is the editable redirect map and is copied into manifest `id_redirects`.
 
-The current import has 84 items / 61 recipes / 51 legendary items / 32 legendary recipes / 53 civid matchers / 31 items without matchers. Nineteen high-confidence render mappings provide display-only base-item and CustomModelData stacks, leaving 12 fallback icons. Ambiguous and unmapped candidates remain fallbacks. Emerald Blade resolves to `hoplite:emerald_sword`; `hoplite:emerald_blade` redirects to it, and the competing carrot recipes remain disputed. The 34 unresolved report entries are excluded recipe candidates. Panacea and Crystallization Shard also remain disputed.
+The current import has 86 items / 71 recipes / 51 legendary items / 40 legendary recipe records / 53 live-civid identities / 55 total matchers. Official Shortbow and Bundled Arrows layouts are imported from a separate current-source evidence file; the three COMBAT/UTILITY entries whose captured Crafts counts have no available grid remain unregistered pending an in-game recipe dump. The resource-pack render audit supplies base-item + CustomModelData stacks for 19 high-confidence display mappings, leaving 12 actual fallback icons; those mappings are render-only and do not alter matcher or evidence fields. The 10 ambiguous mappings and 2 unmapped items remain fallbacks. The 34 unresolved report entries are excluded recipe candidates. Emerald Blade resolves to the live `hoplite:emerald_sword` ID; the former `hoplite:emerald_blade` ID redirects to it. Its carrot and golden-carrot candidates remain disputed. Panacea and Crystallization Shard also remain disputed, with source alternatives preserved in runtime evidence and the report.

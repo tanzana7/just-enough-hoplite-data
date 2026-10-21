@@ -116,23 +116,480 @@
         }
       },
       "selected": "currentInGameRecipeEvidence"
+    },
+    {
+      "candidate": "currentInGameF8RecipeDumps",
+      "candidate_layout": {
+        "key": {
+          "A": {
+            "item": "minecraft:weeping_vines"
+          },
+          "B": {
+            "item": "minecraft:piglin_head"
+          },
+          "C": {
+            "item": "minecraft:diamond_chestplate"
+          },
+          "D": {
+            "item": "minecraft:iron_block"
+          },
+          "E": {
+            "item": "minecraft:netherite_scrap"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "ACA",
+          "DED"
+        ],
+        "result": {
+          "count": 1,
+          "hoplite": "hoplite:headhunters_might"
+        }
+      },
+      "id": "hoplite:headhunters_might",
+      "kind": "recipe_disagreement",
+      "previous": "legendaryItems",
+      "previous_layout": {
+        "key": {
+          "A": {
+            "item": "minecraft:piglin_head"
+          },
+          "B": {
+            "item": "minecraft:weeping_vines"
+          },
+          "C": {
+            "item": "minecraft:iron_block"
+          },
+          "D": {
+            "item": "minecraft:netherite_ingot"
+          },
+          "E": {
+            "item": "minecraft:diamond_chestplate"
+          }
+        },
+        "pattern": [
+          "A B",
+          "C D",
+          " E "
+        ],
+        "result": {
+          "count": 1,
+          "hoplite": "hoplite:headhunters_might"
+        }
+      },
+      "selected": "currentInGameF8RecipeDumps"
+    },
+    {
+      "candidate": "currentInGameF8RecipeDumps",
+      "candidate_layout": {
+        "key": {
+          "A": {
+            "item": "minecraft:amethyst_shard"
+          },
+          "B": {
+            "item": "minecraft:powder_snow_bucket"
+          },
+          "C": {
+            "item": "minecraft:diamond_hoe"
+          },
+          "D": {
+            "item": "minecraft:iron_block"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "CDC",
+          "ADA"
+        ],
+        "result": {
+          "count": 1,
+          "hoplite": "hoplite:freezing_chakram"
+        }
+      },
+      "id": "hoplite:freezing_chakram",
+      "kind": "recipe_disagreement",
+      "previous": "legendaryItems",
+      "previous_layout": {
+        "key": {
+          "A": {
+            "item": "minecraft:powder_snow_bucket"
+          },
+          "B": {
+            "item": "minecraft:amethyst_shard"
+          },
+          "C": {
+            "item": "minecraft:iron_hoe"
+          }
+        },
+        "pattern": [
+          "A A",
+          "B B",
+          "C C"
+        ],
+        "result": {
+          "count": 1,
+          "hoplite": "hoplite:freezing_chakram"
+        }
+      },
+      "selected": "currentInGameF8RecipeDumps"
     }
   ],
   "counts": {
     "civid": 53,
-    "conflicts": 2,
-    "items": 84,
+    "conflicts": 4,
+    "current_in_game_recipes": 11,
+    "current_official_regular_recipes": 2,
+    "items": 86,
     "items_without_matcher": 31,
     "legendary_items": 51,
-    "legendary_recipes": 32,
-    "matchers": 53,
-    "recipes": 61,
+    "legendary_recipes": 40,
+    "matchers": 55,
+    "recipe_dump_identities": 2,
+    "recipes": 71,
     "render_fallbacks": 12,
     "render_stack_autofilled": 19,
     "unresolved": 34
   },
+  "current_in_game_recipe_dumps": {
+    "hoplite:aiglos": {
+      "captured_at": "2026-10-20T23:25:08.592261400Z",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:ender_pearl"
+        },
+        "C": {
+          "item": "minecraft:trident"
+        },
+        "D": {
+          "item": "minecraft:gold_ingot"
+        },
+        "E": {
+          "item": "minecraft:firework_star"
+        }
+      },
+      "layout_changed": false,
+      "output_civid": "aiglos",
+      "pattern": [
+        " AB",
+        "ACD",
+        "ED "
+      ],
+      "previous_source": null,
+      "source_file": "2026-10-21_082508_648_388525982084433822.json",
+      "status": "verified"
+    },
+    "hoplite:freezing_chakram": {
+      "captured_at": "2026-10-20T23:26:36.837212600Z",
+      "key": {
+        "A": {
+          "item": "minecraft:amethyst_shard"
+        },
+        "B": {
+          "item": "minecraft:powder_snow_bucket"
+        },
+        "C": {
+          "item": "minecraft:diamond_hoe"
+        },
+        "D": {
+          "item": "minecraft:iron_block"
+        }
+      },
+      "layout_changed": true,
+      "output_civid": "freezing_chakram",
+      "pattern": [
+        "ABA",
+        "CDC",
+        "ADA"
+      ],
+      "previous_source": "legendaryItems",
+      "source_file": "2026-10-21_082636_841_12469950415783831665.json",
+      "status": "verified"
+    },
+    "hoplite:gruntilda": {
+      "captured_at": "2026-10-20T23:26:05.015081400Z",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:nether_wart"
+        },
+        "C": {
+          "item": "minecraft:blaze_rod"
+        },
+        "D": {
+          "item": "minecraft:player_head"
+        },
+        "E": {
+          "item": "minecraft:glowstone"
+        }
+      },
+      "layout_changed": false,
+      "output_civid": "gruntilda",
+      "pattern": [
+        "ABA",
+        "CDC",
+        "EEE"
+      ],
+      "previous_source": null,
+      "source_file": "2026-10-21_082605_023_8728808230578379074.json",
+      "status": "verified"
+    },
+    "hoplite:headhunters_might": {
+      "captured_at": "2026-10-20T23:26:29.160595200Z",
+      "key": {
+        "A": {
+          "item": "minecraft:weeping_vines"
+        },
+        "B": {
+          "item": "minecraft:piglin_head"
+        },
+        "C": {
+          "item": "minecraft:diamond_chestplate"
+        },
+        "D": {
+          "item": "minecraft:iron_block"
+        },
+        "E": {
+          "item": "minecraft:netherite_scrap"
+        }
+      },
+      "layout_changed": true,
+      "output_civid": "headhunters_might",
+      "pattern": [
+        "ABA",
+        "ACA",
+        "DED"
+      ],
+      "previous_source": "legendaryItems",
+      "source_file": "2026-10-21_082629_171_15488401109832326780.json",
+      "status": "verified"
+    },
+    "hoplite:legendary_sniffer": {
+      "captured_at": "2026-10-20T23:26:23.868690300Z",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:mossy_cobblestone"
+        },
+        "C": {
+          "item": "minecraft:music_disc_13"
+        }
+      },
+      "layout_changed": false,
+      "output_civid": "legendary_sniffer",
+      "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+      ],
+      "previous_source": "legendaryItems",
+      "source_file": "2026-10-21_082623_875_3329245604423738296.json",
+      "status": "verified"
+    },
+    "hoplite:phantom_bow": {
+      "captured_at": "2026-10-20T23:25:46.776885800Z",
+      "key": {
+        "A": {
+          "item": "minecraft:nether_quartz_ore"
+        },
+        "B": {
+          "item": "minecraft:lapis_block"
+        },
+        "C": {
+          "item": "minecraft:bow"
+        },
+        "D": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "layout_changed": false,
+      "output_civid": "phantom_bow",
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "previous_source": null,
+      "source_file": "2026-10-21_082546_789_2676744681098935871.json",
+      "status": "verified"
+    },
+    "hoplite:reinforced_elytra": {
+      "captured_at": "2026-10-20T23:25:28.385800500Z",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:ender_pearl"
+        },
+        "C": {
+          "item": "minecraft:feather"
+        },
+        "D": {
+          "item": "minecraft:leather_chestplate"
+        },
+        "E": {
+          "item": "minecraft:dragon_egg"
+        }
+      },
+      "layout_changed": false,
+      "output_civid": "reinforced_elytra",
+      "pattern": [
+        "ABA",
+        "CDC",
+        "AEA"
+      ],
+      "previous_source": null,
+      "source_file": "2026-10-21_082528_401_5841746327668526322.json",
+      "status": "verified"
+    },
+    "hoplite:ribbit_reel": {
+      "captured_at": "2026-10-20T23:25:57.970160200Z",
+      "key": {
+        "A": {
+          "item": "minecraft:lily_pad"
+        },
+        "B": {
+          "hoplite": "hoplite:frog_in_a_bucket"
+        },
+        "C": {
+          "item": "minecraft:emerald"
+        },
+        "D": {
+          "item": "minecraft:crossbow"
+        }
+      },
+      "layout_changed": false,
+      "output_civid": "ribbit_reel",
+      "pattern": [
+        "ABA",
+        "CDC",
+        " A "
+      ],
+      "previous_source": null,
+      "source_file": "2026-10-21_082557_990_10480913645564096837.json",
+      "status": "verified"
+    },
+    "hoplite:sakura_tessen": {
+      "captured_at": "2026-10-20T23:26:10.368685700Z",
+      "key": {
+        "A": {
+          "item": "minecraft:pink_petals"
+        },
+        "B": {
+          "item": "minecraft:amethyst_shard"
+        },
+        "C": {
+          "item": "minecraft:iron_block"
+        },
+        "D": {
+          "item": "minecraft:diamond_sword"
+        },
+        "E": {
+          "item": "minecraft:wind_charge"
+        }
+      },
+      "layout_changed": false,
+      "output_civid": "sakura_tessen",
+      "pattern": [
+        "ABA",
+        "CDC",
+        "BEB"
+      ],
+      "previous_source": null,
+      "source_file": "2026-10-21_082610_375_17279304317616572027.json",
+      "status": "verified"
+    },
+    "hoplite:shadow_blade": {
+      "captured_at": "2026-10-20T23:25:25.799146700Z",
+      "key": {
+        "A": {
+          "item": "minecraft:disc_fragment_5"
+        },
+        "B": {
+          "item": "minecraft:black_candle"
+        },
+        "C": {
+          "item": "minecraft:coal_block"
+        },
+        "D": {
+          "item": "minecraft:diamond_sword"
+        }
+      },
+      "layout_changed": false,
+      "output_civid": "shadow_blade",
+      "pattern": [
+        "ABA",
+        "CDC",
+        "ABA"
+      ],
+      "previous_source": null,
+      "source_file": "2026-10-21_082525_799_14676667599064737003.json",
+      "status": "verified"
+    },
+    "hoplite:vampire_sabre": {
+      "captured_at": "2026-10-20T23:26:16.920998800Z",
+      "key": {
+        "A": {
+          "hoplite": "hoplite:vampire_tooth"
+        },
+        "B": {
+          "item": "minecraft:feather"
+        },
+        "C": {
+          "item": "minecraft:diamond_sword"
+        },
+        "D": {
+          "item": "minecraft:gold_ingot"
+        },
+        "E": {
+          "item": "minecraft:spider_eye"
+        }
+      },
+      "layout_changed": false,
+      "output_civid": "vampire_sabre",
+      "pattern": [
+        " A ",
+        "BCB",
+        "DED"
+      ],
+      "previous_source": null,
+      "source_file": "2026-10-21_082616_930_7496788206107466512.json",
+      "status": "verified"
+    }
+  },
+  "current_official_regular_recipes": {
+    "hoplite:bundled_arrows": {
+      "craft_limit": 4,
+      "pattern": [
+        "AAA",
+        "BBB",
+        "CCC"
+      ],
+      "result_count": 20,
+      "status": "verified"
+    },
+    "hoplite:quick_bow": {
+      "craft_limit": 1,
+      "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+      ],
+      "result_count": 1,
+      "status": "verified"
+    }
+  },
   "provenance": {
     "hoplite:agony": "currentInGameRecipeEvidence",
+    "hoplite:aiglos": "currentInGameF8RecipeDumps",
     "hoplite:ares_blessing": "latestBatch4Evidence",
     "hoplite:artemis_bow": "legendaryItems",
     "hoplite:axolotl_boots": "currentInGameRecipeEvidence",
@@ -141,6 +598,7 @@
     "hoplite:beehive_blaster": "legendaryItems",
     "hoplite:blazing_crossbow": "currentInGameRecipeEvidence",
     "hoplite:bundle_item": "latestBatch4Evidence",
+    "hoplite:bundled_arrows": "currentOfficialRegularRecipeEvidence",
     "hoplite:cactus_chestplate": "currentInGameRecipeEvidence",
     "hoplite:chrono_sword": "legendaryItems",
     "hoplite:cloud_sword": "legendaryItems",
@@ -152,17 +610,18 @@
     "hoplite:emerald_sword": "latestLegendaryRecipeEvidence",
     "hoplite:enderbow": "legendaryItems",
     "hoplite:explosive_pickaxe": "latestBatch4Evidence",
-    "hoplite:freezing_chakram": "legendaryItems",
+    "hoplite:freezing_chakram": "currentInGameF8RecipeDumps",
     "hoplite:golden_head": "currentInGameRecipeEvidence",
     "hoplite:golem_hammer": "legendaryItems",
     "hoplite:grimoire": "legendaryItems",
+    "hoplite:gruntilda": "currentInGameF8RecipeDumps",
     "hoplite:guardian_cannon": "legendaryItems",
     "hoplite:harpoon_launcher": "legendaryItems",
-    "hoplite:headhunters_might": "legendaryItems",
+    "hoplite:headhunters_might": "currentInGameF8RecipeDumps",
     "hoplite:horsetamer_boots": "currentInGameRecipeEvidence",
     "hoplite:infernal_pickaxe": "latestBatch4Evidence",
     "hoplite:kim_the_transmuter": "legendaryItems",
-    "hoplite:legendary_sniffer": "legendaryItems",
+    "hoplite:legendary_sniffer": "currentInGameF8RecipeDumps",
     "hoplite:lich_staff": "legendaryItems",
     "hoplite:light_anvil": "userConfirmedCorrections",
     "hoplite:light_apple": "currentInGameRecipeEvidence",
@@ -175,12 +634,18 @@
     "hoplite:nether_reactor": "latestBatch4Evidence",
     "hoplite:obsidian": "userConfirmedCorrections",
     "hoplite:panacea": "currentInGameRecipeEvidence",
+    "hoplite:phantom_bow": "currentInGameF8RecipeDumps",
     "hoplite:poseidons_trident": "legendaryItems",
     "hoplite:pufferfish_cannon": "legendaryItems",
+    "hoplite:quick_bow": "currentOfficialRegularRecipeEvidence",
     "hoplite:quick_sword": "currentInGameRecipeEvidence",
     "hoplite:reaper_scythe": "legendaryItems",
+    "hoplite:reinforced_elytra": "currentInGameF8RecipeDumps",
+    "hoplite:ribbit_reel": "currentInGameF8RecipeDumps",
     "hoplite:saddle": "latestLegendaryRecipeEvidence",
+    "hoplite:sakura_tessen": "currentInGameF8RecipeDumps",
     "hoplite:sculkweavers_lantern": "legendaryItems",
+    "hoplite:shadow_blade": "currentInGameF8RecipeDumps",
     "hoplite:shrink_ray": "legendaryItems",
     "hoplite:skeleton_leggings": "currentInGameRecipeEvidence",
     "hoplite:smelters_pickaxe": "latestBatch4Evidence",
@@ -189,6 +654,7 @@
     "hoplite:tim_the_enchanter": "legendaryItems",
     "hoplite:totem": "latestBatch3Evidence",
     "hoplite:trident": "latestBatch3Evidence",
+    "hoplite:vampire_sabre": "currentInGameF8RecipeDumps",
     "hoplite:void_staff": "legendaryItems",
     "hoplite:war_pick": "legendaryItems",
     "hoplite:wishbone": "latestBatch4Evidence",
@@ -424,6 +890,11 @@
       ],
       "section": "latestBatch4Evidence",
       "source_refs": []
+    },
+    "hoplite:bundled_arrows": {
+      "image_url": "https://www.hoplite.gg/recipes/recipe-bundled-arrows.png",
+      "page_url": "https://www.hoplite.gg/recipes",
+      "section": "currentOfficialRegularRecipeEvidence"
     },
     "hoplite:cactus_chestplate": {
       "confidence": "IN_GAME_VERIFIED",
@@ -857,6 +1328,11 @@
         "official_patch_2025_11_29",
         "official_patch_2026_05_22"
       ]
+    },
+    "hoplite:quick_bow": {
+      "image_url": "https://www.hoplite.gg/recipes/recipe-shortbow.png",
+      "page_url": "https://www.hoplite.gg/recipes",
+      "section": "currentOfficialRegularRecipeEvidence"
     },
     "hoplite:quick_sword": {
       "confidence": "IN_GAME_VERIFIED",

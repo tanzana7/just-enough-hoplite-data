@@ -50,6 +50,52 @@
       "type": "crafting_shaped"
     },
     {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082508_648_388525982084433822.json; captured 2026-10-20T23:25:08.592261400Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [1, 2, 3, 4, 5, 6, 7]; output civid aiglos, base item minecraft:bow, CMD {\"floats\": [7]}"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-20T23:25:08.592261400Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:aiglos",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:ender_pearl"
+        },
+        "C": {
+          "item": "minecraft:trident"
+        },
+        "D": {
+          "item": "minecraft:gold_ingot"
+        },
+        "E": {
+          "item": "minecraft:firework_star"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " AB",
+        "ACD",
+        "ED "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:aiglos"
+      },
+      "type": "crafting_shaped"
+    },
+    {
       "category": "special_summon",
       "craft_limits": [
         {
@@ -433,6 +479,59 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:bundle_item"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility",
+      "craft_limits": [
+        {
+          "max": 4,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "official_page",
+            "note": "Current official Hoplite recipe page; exact ingredient layout confirmed by linked recipe image.",
+            "url": "https://www.hoplite.gg/recipes"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image; 3x3 grid and output count.",
+            "url": "https://www.hoplite.gg/recipes/recipe-bundled-arrows.png"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-21T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:bundled_arrows",
+      "key": {
+        "A": {
+          "item": "minecraft:flint"
+        },
+        "B": {
+          "item": "minecraft:stick"
+        },
+        "C": {
+          "item": "minecraft:feather"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "BBB",
+        "CCC"
+      ],
+      "result": {
+        "count": 20,
+        "hoplite": "hoplite:bundled_arrows"
       },
       "type": "crafting_shaped"
     },
@@ -993,9 +1092,14 @@
           {
             "kind": "community",
             "note": "legendaryItems / freezing_chakram / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_11_29\", \"official_patch_2026_05_22\"]; Exact layout varies by source; provisional. Unofficial recipe data; verify in-game before shipping as authoritative."
+          },
+          {
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082636_841_12469950415783831665.json; captured 2026-10-20T23:26:36.837212600Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid freezing_chakram, base item minecraft:diamond_sword, CMD {\"floats\": [13]}"
           }
         ],
-        "status": "unverified"
+        "status": "verified",
+        "verified_at": "2026-10-20T23:26:36.837212600Z"
       },
       "grid": [
         3,
@@ -1004,20 +1108,23 @@
       "id": "hoplite:freezing_chakram",
       "key": {
         "A": {
-          "item": "minecraft:powder_snow_bucket"
-        },
-        "B": {
           "item": "minecraft:amethyst_shard"
         },
+        "B": {
+          "item": "minecraft:powder_snow_bucket"
+        },
         "C": {
-          "item": "minecraft:iron_hoe"
+          "item": "minecraft:diamond_hoe"
+        },
+        "D": {
+          "item": "minecraft:iron_block"
         }
       },
       "mirror": true,
       "pattern": [
-        "A A",
-        "B B",
-        "C C"
+        "ABA",
+        "CDC",
+        "ADA"
       ],
       "result": {
         "count": 1,
@@ -1175,6 +1282,52 @@
     },
     {
       "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082605_023_8728808230578379074.json; captured 2026-10-20T23:26:05.015081400Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid gruntilda, base item minecraft:iron_ingot, CMD {\"floats\": [4]}"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-20T23:26:05.015081400Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:gruntilda",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:nether_wart"
+        },
+        "C": {
+          "item": "minecraft:blaze_rod"
+        },
+        "D": {
+          "item": "minecraft:player_head"
+        },
+        "E": {
+          "item": "minecraft:glowstone"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        "EEE"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:gruntilda"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
       "craft_limits": [
         {
           "max": 1,
@@ -1278,9 +1431,14 @@
           {
             "kind": "community",
             "note": "legendaryItems / headhunter_chestpiece / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_11_29\"]; Archived reconstruction; verify current recipe. Unofficial recipe data; verify in-game before shipping as authoritative."
+          },
+          {
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082629_171_15488401109832326780.json; captured 2026-10-20T23:26:29.160595200Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid headhunters_might, base item minecraft:diamond_chestplate, CMD {\"floats\": [1]}"
           }
         ],
-        "status": "unverified"
+        "status": "verified",
+        "verified_at": "2026-10-20T23:26:29.160595200Z"
       },
       "grid": [
         3,
@@ -1289,26 +1447,26 @@
       "id": "hoplite:headhunters_might",
       "key": {
         "A": {
-          "item": "minecraft:piglin_head"
-        },
-        "B": {
           "item": "minecraft:weeping_vines"
         },
+        "B": {
+          "item": "minecraft:piglin_head"
+        },
         "C": {
-          "item": "minecraft:iron_block"
+          "item": "minecraft:diamond_chestplate"
         },
         "D": {
-          "item": "minecraft:netherite_ingot"
+          "item": "minecraft:iron_block"
         },
         "E": {
-          "item": "minecraft:diamond_chestplate"
+          "item": "minecraft:netherite_scrap"
         }
       },
       "mirror": true,
       "pattern": [
-        "A B",
-        "C D",
-        " E "
+        "ABA",
+        "ACA",
+        "DED"
       ],
       "result": {
         "count": 1,
@@ -1477,9 +1635,14 @@
           {
             "kind": "community",
             "note": "legendaryItems / gerald_the_sniffer / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+          },
+          {
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082623_875_3329245604423738296.json; captured 2026-10-20T23:26:23.868690300Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid legendary_sniffer, base item minecraft:sniffer_spawn_egg, CMD {\"floats\": [1]}"
           }
         ],
-        "status": "unverified"
+        "status": "verified",
+        "verified_at": "2026-10-20T23:26:23.868690300Z"
       },
       "grid": [
         3,
@@ -2090,6 +2253,49 @@
       "evidence": {
         "sources": [
           {
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082546_789_2676744681098935871.json; captured 2026-10-20T23:25:46.776885800Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [1, 3, 4, 5, 7]; output civid phantom_bow, base item minecraft:bow, CMD {\"floats\": [22]}"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-20T23:25:46.776885800Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:phantom_bow",
+      "key": {
+        "A": {
+          "item": "minecraft:nether_quartz_ore"
+        },
+        "B": {
+          "item": "minecraft:lapis_block"
+        },
+        "C": {
+          "item": "minecraft:bow"
+        },
+        "D": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:phantom_bow"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
             "kind": "community",
             "note": "legendaryItems / poseidons_trident / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\", \"official_patch_2025_11_29\", \"official_patch_2026_05_22\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
           }
@@ -2208,6 +2414,56 @@
       "evidence": {
         "sources": [
           {
+            "kind": "official_page",
+            "note": "Current official Hoplite recipe page; exact ingredient layout confirmed by linked recipe image.",
+            "url": "https://www.hoplite.gg/recipes"
+          },
+          {
+            "kind": "official_page",
+            "note": "Official Hoplite recipe image; 3x3 grid and output count.",
+            "url": "https://www.hoplite.gg/recipes/recipe-shortbow.png"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-21T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:quick_bow",
+      "key": {
+        "A": {
+          "item": "minecraft:copper_ingot"
+        },
+        "B": {
+          "item": "minecraft:bow"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:quick_bow"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "combat",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
             "kind": "in_game",
             "note": "currentInGameRecipeEvidence / shortsword / IN_GAME_VERIFIED / evidence=[\"screenshot_01\", \"screenshot_02\"] / refs=[]"
           }
@@ -2304,6 +2560,95 @@
       "type": "crafting_shaped"
     },
     {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082528_401_5841746327668526322.json; captured 2026-10-20T23:25:28.385800500Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid reinforced_elytra, base item minecraft:elytra, CMD {\"floats\": [1]}"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-20T23:25:28.385800500Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:reinforced_elytra",
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:ender_pearl"
+        },
+        "C": {
+          "item": "minecraft:feather"
+        },
+        "D": {
+          "item": "minecraft:leather_chestplate"
+        },
+        "E": {
+          "item": "minecraft:dragon_egg"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        "AEA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:reinforced_elytra"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082557_990_10480913645564096837.json; captured 2026-10-20T23:25:57.970160200Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 7]; output civid ribbit_reel, base item minecraft:crossbow, CMD {\"floats\": [6]}"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-20T23:25:57.970160200Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:ribbit_reel",
+      "key": {
+        "A": {
+          "item": "minecraft:lily_pad"
+        },
+        "B": {
+          "hoplite": "hoplite:frog_in_a_bucket"
+        },
+        "C": {
+          "item": "minecraft:emerald"
+        },
+        "D": {
+          "item": "minecraft:crossbow"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        " A "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:ribbit_reel"
+      },
+      "type": "crafting_shaped"
+    },
+    {
       "category": "utility",
       "craft_limits": [
         {
@@ -2355,6 +2700,52 @@
       "evidence": {
         "sources": [
           {
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082610_375_17279304317616572027.json; captured 2026-10-20T23:26:10.368685700Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid sakura_tessen, base item minecraft:diamond_sword, CMD {\"floats\": [20]}"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-20T23:26:10.368685700Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:sakura_tessen",
+      "key": {
+        "A": {
+          "item": "minecraft:pink_petals"
+        },
+        "B": {
+          "item": "minecraft:amethyst_shard"
+        },
+        "C": {
+          "item": "minecraft:iron_block"
+        },
+        "D": {
+          "item": "minecraft:diamond_sword"
+        },
+        "E": {
+          "item": "minecraft:wind_charge"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        "BEB"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:sakura_tessen"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
             "kind": "community",
             "note": "legendaryItems / sculkweavers_lantern / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\", \"official_patch_2025_06_01\"]; Exact slot layout follows community reconstruction. Unofficial recipe data; verify in-game before shipping as authoritative."
           }
@@ -2395,6 +2786,49 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:sculkweavers_lantern"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082525_799_14676667599064737003.json; captured 2026-10-20T23:25:25.799146700Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid shadow_blade, base item minecraft:diamond_sword, CMD {\"floats\": [4]}"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-20T23:25:25.799146700Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:shadow_blade",
+      "key": {
+        "A": {
+          "item": "minecraft:disc_fragment_5"
+        },
+        "B": {
+          "item": "minecraft:black_candle"
+        },
+        "C": {
+          "item": "minecraft:coal_block"
+        },
+        "D": {
+          "item": "minecraft:diamond_sword"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "CDC",
+        "ABA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:shadow_blade"
       },
       "type": "crafting_shaped"
     },
@@ -2791,6 +3225,52 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:trident"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082616_930_7496788206107466512.json; captured 2026-10-20T23:26:16.920998800Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [1, 3, 4, 5, 6, 7, 8]; output civid vampire_sabre, base item minecraft:diamond_sword, CMD {\"floats\": [22]}"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-20T23:26:16.920998800Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:vampire_sabre",
+      "key": {
+        "A": {
+          "hoplite": "hoplite:vampire_tooth"
+        },
+        "B": {
+          "item": "minecraft:feather"
+        },
+        "C": {
+          "item": "minecraft:diamond_sword"
+        },
+        "D": {
+          "item": "minecraft:gold_ingot"
+        },
+        "E": {
+          "item": "minecraft:spider_eye"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        "DED"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:vampire_sabre"
       },
       "type": "crafting_shaped"
     },

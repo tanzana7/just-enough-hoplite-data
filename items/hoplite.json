@@ -178,6 +178,25 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082508_648_388525982084433822.json; captured 2026-10-20T23:25:08.592261400Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [1, 2, 3, 4, 5, 6, 7]; output civid aiglos, base item minecraft:bow, CMD {\"floats\": [7]}"
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-20T23:25:08.592261400Z"
+          },
+          "id": "hoplite:aiglos_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:aiglos"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A legendary elvish spear passed down for generations. THROW to create an explosion affected by Aiglos' enchants. The spear will return to you after it lands. 17s Cooldown"
       },
@@ -1791,6 +1810,31 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "official_page",
+                "note": "Current official Hoplite recipe page; exact ingredient layout confirmed by linked recipe image.",
+                "url": "https://www.hoplite.gg/recipes"
+              },
+              {
+                "kind": "official_page",
+                "note": "Official Hoplite recipe image; 3x3 grid and output count.",
+                "url": "https://www.hoplite.gg/recipes/recipe-bundled-arrows.png"
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-21T00:00:00Z"
+          },
+          "id": "hoplite:bundled_arrows_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:bundled_arrows"
+          ]
+        }
+      ],
       "evidence": {
         "sources": [
           {
@@ -3557,9 +3601,14 @@
               {
                 "kind": "community",
                 "note": "legendaryItems / freezing_chakram / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_11_29\", \"official_patch_2026_05_22\"]; Exact layout varies by source; provisional. Unofficial recipe data; verify in-game before shipping as authoritative."
+              },
+              {
+                "kind": "in_game",
+                "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082636_841_12469950415783831665.json; captured 2026-10-20T23:26:36.837212600Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid freezing_chakram, base item minecraft:diamond_sword, CMD {\"floats\": [13]}"
               }
             ],
-            "status": "unverified"
+            "status": "verified",
+            "verified_at": "2026-10-20T23:26:36.837212600Z"
           },
           "id": "hoplite:freezing_chakram_craft",
           "kind": "craft",
@@ -3780,6 +3829,53 @@
         },
         "count": 1,
         "id": "minecraft:diamond_sword"
+      }
+    },
+    {
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "Current in-game JEH Item Dumper F8 ingredient identity; 2026-10-21_082557_990_10480913645564096837.json; slot 12 at GUI coordinates 62,36; civid, base item, and CustomModelData captured directly"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-20T23:25:57.970160200Z"
+      },
+      "id": "hoplite:frog_in_a_bucket",
+      "matcher": {
+        "custom_data": {
+          "equals": "frog_in_a_bucket",
+          "path": "PublicBukkitValues.\"hoplite:civid\""
+        },
+        "custom_model_data": {
+          "floats": [
+            1
+          ]
+        },
+        "item": "minecraft:water_bucket"
+      },
+      "name": {
+        "en_us": "Bucket of Frog"
+      },
+      "render_stack": {
+        "components": {
+          "minecraft:custom_data": {
+            "PublicBukkitValues": {
+              "hoplite:civid": "frog_in_a_bucket"
+            }
+          },
+          "minecraft:custom_model_data": {
+            "floats": [
+              1
+            ]
+          },
+          "minecraft:custom_name": {
+            "text": "Bucket of Frog"
+          }
+        },
+        "count": 1,
+        "id": "minecraft:water_bucket"
       }
     },
     {
@@ -4310,6 +4406,25 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082605_023_8728808230578379074.json; captured 2026-10-20T23:26:05.015081400Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid gruntilda, base item minecraft:iron_ingot, CMD {\"floats\": [4]}"
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-20T23:26:05.015081400Z"
+          },
+          "id": "hoplite:gruntilda_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:gruntilda"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A mysterious witch skilled in the art of alchemy. CRAFT to summon Gruntilda, who will brew 4 potions using her special ingredients before vanishing. GIVE Gruntilda a Water Bottle to brew one of her potions."
       },
@@ -4824,9 +4939,14 @@
               {
                 "kind": "community",
                 "note": "legendaryItems / headhunter_chestpiece / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_11_29\"]; Archived reconstruction; verify current recipe. Unofficial recipe data; verify in-game before shipping as authoritative."
+              },
+              {
+                "kind": "in_game",
+                "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082629_171_15488401109832326780.json; captured 2026-10-20T23:26:29.160595200Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid headhunters_might, base item minecraft:diamond_chestplate, CMD {\"floats\": [1]}"
               }
             ],
-            "status": "unverified"
+            "status": "verified",
+            "verified_at": "2026-10-20T23:26:29.160595200Z"
           },
           "id": "hoplite:headhunters_might_craft",
           "kind": "craft",
@@ -5477,9 +5597,14 @@
               {
                 "kind": "community",
                 "note": "legendaryItems / gerald_the_sniffer / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\"]; Unofficial recipe data; verify in-game before shipping as authoritative."
+              },
+              {
+                "kind": "in_game",
+                "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082623_875_3329245604423738296.json; captured 2026-10-20T23:26:23.868690300Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid legendary_sniffer, base item minecraft:sniffer_spawn_egg, CMD {\"floats\": [1]}"
               }
             ],
-            "status": "unverified"
+            "status": "verified",
+            "verified_at": "2026-10-20T23:26:23.868690300Z"
           },
           "id": "hoplite:legendary_sniffer_craft",
           "kind": "craft",
@@ -7441,6 +7566,25 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082546_789_2676744681098935871.json; captured 2026-10-20T23:25:46.776885800Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [1, 3, 4, 5, 7]; output civid phantom_bow, base item minecraft:bow, CMD {\"floats\": [22]}"
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-20T23:25:46.776885800Z"
+          },
+          "id": "hoplite:phantom_bow_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:phantom_bow"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A legendary bow that inflicts the curse of phantoms upon its victims. SHOOT arrows that have a 20% chance to inflict Blindness and call 2 to 3 phantoms down onto the target, each striking once before flying off. SNEAK + SHOOT to ride your own phantom for 15 seconds. 60s Cooldown"
       },
@@ -8070,6 +8214,31 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "official_page",
+                "note": "Current official Hoplite recipe page; exact ingredient layout confirmed by linked recipe image.",
+                "url": "https://www.hoplite.gg/recipes"
+              },
+              {
+                "kind": "official_page",
+                "note": "Official Hoplite recipe image; 3x3 grid and output count.",
+                "url": "https://www.hoplite.gg/recipes/recipe-shortbow.png"
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-21T00:00:00Z"
+          },
+          "id": "hoplite:quick_bow_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:quick_bow"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A cheap bow that helps you into battle quickly."
       },
@@ -8662,6 +8831,25 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082528_401_5841746327668526322.json; captured 2026-10-20T23:25:28.385800500Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid reinforced_elytra, base item minecraft:elytra, CMD {\"floats\": [1]}"
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-20T23:25:28.385800500Z"
+          },
+          "id": "hoplite:reinforced_elytra_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:reinforced_elytra"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A legendary elytra with the ability to disperse kinetic energy. GLIDE to build up energy. HIT the ground to create an explosion damaging nearby players. SNEAK while gliding to activate a rocket boost. 45s Cooldown Equivalent to an Iron Chestplate"
       },
@@ -9039,6 +9227,25 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082557_990_10480913645564096837.json; captured 2026-10-20T23:25:57.970160200Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 7]; output civid ribbit_reel, base item minecraft:crossbow, CMD {\"floats\": [6]}"
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-20T23:25:57.970160200Z"
+          },
+          "id": "hoplite:ribbit_reel_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:ribbit_reel"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A legendary reel that lets you become one with the amphibians. SHOOT to launch a high-speed frog tongue. Players will be pulled back by the tongue and slowed down. 22s Cooldown JUMP on lilypads to launch yourself forwards."
       },
@@ -9372,6 +9579,25 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082610_375_17279304317616572027.json; captured 2026-10-20T23:26:10.368685700Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid sakura_tessen, base item minecraft:diamond_sword, CMD {\"floats\": [20]}"
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-20T23:26:10.368685700Z"
+          },
+          "id": "hoplite:sakura_tessen_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:sakura_tessen"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A legendary tessen imbued with the magic of the sakura trees. MELEE against players to build up your Petal Arc. Upon reaching a full bar, the next 4 melee attacks will shoot a petal blade that pierces through enemies. Each player hit by the petal blade will recharge the bar by 10%. HOLD RIGHT CLICK to harness the wind and push nearby enemies away and push you backwards. 4s Duration, 24s Cooldown"
       },
@@ -9717,6 +9943,25 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082525_799_14676667599064737003.json; captured 2026-10-20T23:25:25.799146700Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [0, 1, 2, 3, 4, 5, 6, 7, 8]; output civid shadow_blade, base item minecraft:diamond_sword, CMD {\"floats\": [4]}"
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-20T23:25:25.799146700Z"
+          },
+          "id": "hoplite:shadow_blade_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:shadow_blade"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A legendary blade that harnesses the power of the shadows. RIGHT CLICK to gain Invisibility III  and Speed III for 10 seconds. This is cancelled if you get hit or critical hit another player. 32s Cooldown"
       },
@@ -11221,6 +11466,25 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082616_930_7496788206107466512.json; captured 2026-10-20T23:26:16.920998800Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [1, 3, 4, 5, 6, 7, 8]; output civid vampire_sabre, base item minecraft:diamond_sword, CMD {\"floats\": [22]}"
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-20T23:26:16.920998800Z"
+          },
+          "id": "hoplite:vampire_sabre_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:vampire_sabre"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A legendary sabre cursed with an insatiable thirst for blood. MELEE against enemies to siphon 12% of the damage dealt as health. SNEAK + RIGHT CLICK to transform into a bat for 8 seconds, granting flight at the cost of being vulnerable in sunlight. 60s Cooldown RIGHT CLICK to activate Blood Siphon. Your next successful strike drains 3 hunger and 2 hearts from the victim and gives it to you. 45s Cooldown"
       },
@@ -11547,6 +11811,53 @@
         },
         "count": 1,
         "id": "minecraft:diamond_sword"
+      }
+    },
+    {
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "Current in-game JEH Item Dumper F8 ingredient identity; 2026-10-21_082616_930_7496788206107466512.json; slot 12 at GUI coordinates 62,36; civid, base item, and CustomModelData captured directly"
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-20T23:26:16.920998800Z"
+      },
+      "id": "hoplite:vampire_tooth",
+      "matcher": {
+        "custom_data": {
+          "equals": "vampire_tooth",
+          "path": "PublicBukkitValues.\"hoplite:civid\""
+        },
+        "custom_model_data": {
+          "floats": [
+            706
+          ]
+        },
+        "item": "minecraft:paper"
+      },
+      "name": {
+        "en_us": "Vampire Tooth"
+      },
+      "render_stack": {
+        "components": {
+          "minecraft:custom_data": {
+            "PublicBukkitValues": {
+              "hoplite:civid": "vampire_tooth"
+            }
+          },
+          "minecraft:custom_model_data": {
+            "floats": [
+              706
+            ]
+          },
+          "minecraft:custom_name": {
+            "text": "Vampire Tooth"
+          }
+        },
+        "count": 1,
+        "id": "minecraft:paper"
       }
     },
     {

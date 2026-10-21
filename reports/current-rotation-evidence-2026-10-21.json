@@ -1,0 +1,1005 @@
+{
+  "schema_version": 1,
+  "minecraft_version": "26.3",
+  "source_name": "JEH Item Dumper F8 current in-game recipe captures",
+  "grid_coordinates": {
+    "x": [
+      44,
+      62,
+      80
+    ],
+    "y": [
+      36,
+      54,
+      72
+    ]
+  },
+  "new_item_identities": [
+    {
+      "source_file": "2026-10-21_082616_930_7496788206107466512.json",
+      "slot_index": 12,
+      "x": 62,
+      "y": 36,
+      "display_name": "Vampire Tooth",
+      "base_item": "minecraft:paper",
+      "custom_model_data": {
+        "floats": [
+          706
+        ]
+      },
+      "civid": "vampire_tooth",
+      "captured_at": "2026-10-20T23:26:16.920998800Z"
+    },
+    {
+      "source_file": "2026-10-21_082557_990_10480913645564096837.json",
+      "captured_at": "2026-10-20T23:25:57.970160200Z",
+      "slot_index": 12,
+      "x": 62,
+      "y": 36,
+      "display_name": "Bucket of Frog",
+      "base_item": "minecraft:water_bucket",
+      "custom_model_data": {
+        "floats": [
+          1
+        ]
+      },
+      "civid": "frog_in_a_bucket"
+    }
+  ],
+  "recipes": [
+    {
+      "source_file": "2026-10-21_082508_648_388525982084433822.json",
+      "captured_at": "2026-10-20T23:25:08.592261400Z",
+      "output_slot": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54
+      },
+      "output": {
+        "display_name": "Aiglos",
+        "base_item": "minecraft:bow",
+        "custom_model_data": {
+          "floats": [
+            7
+          ]
+        },
+        "civid": "aiglos",
+        "count": 1
+      },
+      "ingredient_slots": [
+        {
+          "slot_index": 12,
+          "x": 62,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        },
+        {
+          "slot_index": 13,
+          "x": 80,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:ender_pearl"
+          }
+        },
+        {
+          "slot_index": 20,
+          "x": 44,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        },
+        {
+          "slot_index": 21,
+          "x": 62,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:trident"
+          }
+        },
+        {
+          "slot_index": 22,
+          "x": 80,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:gold_ingot"
+          }
+        },
+        {
+          "slot_index": 29,
+          "x": 44,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:firework_star"
+          }
+        },
+        {
+          "slot_index": 30,
+          "x": 62,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:gold_ingot"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "2026-10-21_082525_799_14676667599064737003.json",
+      "captured_at": "2026-10-20T23:25:25.799146700Z",
+      "output_slot": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54
+      },
+      "output": {
+        "display_name": "Shadow Blade",
+        "base_item": "minecraft:diamond_sword",
+        "custom_model_data": {
+          "floats": [
+            4
+          ]
+        },
+        "civid": "shadow_blade",
+        "count": 1
+      },
+      "ingredient_slots": [
+        {
+          "slot_index": 11,
+          "x": 44,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:disc_fragment_5"
+          }
+        },
+        {
+          "slot_index": 12,
+          "x": 62,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:black_candle"
+          }
+        },
+        {
+          "slot_index": 13,
+          "x": 80,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:disc_fragment_5"
+          }
+        },
+        {
+          "slot_index": 20,
+          "x": 44,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:coal_block"
+          }
+        },
+        {
+          "slot_index": 21,
+          "x": 62,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:diamond_sword"
+          }
+        },
+        {
+          "slot_index": 22,
+          "x": 80,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:coal_block"
+          }
+        },
+        {
+          "slot_index": 29,
+          "x": 44,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:disc_fragment_5"
+          }
+        },
+        {
+          "slot_index": 30,
+          "x": 62,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:black_candle"
+          }
+        },
+        {
+          "slot_index": 31,
+          "x": 80,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:disc_fragment_5"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "2026-10-21_082528_401_5841746327668526322.json",
+      "captured_at": "2026-10-20T23:25:28.385800500Z",
+      "output_slot": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54
+      },
+      "output": {
+        "display_name": "Reinforced Elytra",
+        "base_item": "minecraft:elytra",
+        "custom_model_data": {
+          "floats": [
+            1
+          ]
+        },
+        "civid": "reinforced_elytra",
+        "count": 1
+      },
+      "ingredient_slots": [
+        {
+          "slot_index": 11,
+          "x": 44,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        },
+        {
+          "slot_index": 12,
+          "x": 62,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:ender_pearl"
+          }
+        },
+        {
+          "slot_index": 13,
+          "x": 80,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        },
+        {
+          "slot_index": 20,
+          "x": 44,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:feather"
+          }
+        },
+        {
+          "slot_index": 21,
+          "x": 62,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:leather_chestplate"
+          }
+        },
+        {
+          "slot_index": 22,
+          "x": 80,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:feather"
+          }
+        },
+        {
+          "slot_index": 29,
+          "x": 44,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        },
+        {
+          "slot_index": 30,
+          "x": 62,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:dragon_egg"
+          }
+        },
+        {
+          "slot_index": 31,
+          "x": 80,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "2026-10-21_082546_789_2676744681098935871.json",
+      "captured_at": "2026-10-20T23:25:46.776885800Z",
+      "output_slot": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54
+      },
+      "output": {
+        "display_name": "Phantom Longbow",
+        "base_item": "minecraft:bow",
+        "custom_model_data": {
+          "floats": [
+            22
+          ]
+        },
+        "civid": "phantom_bow",
+        "count": 1
+      },
+      "ingredient_slots": [
+        {
+          "slot_index": 12,
+          "x": 62,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:nether_quartz_ore"
+          }
+        },
+        {
+          "slot_index": 20,
+          "x": 44,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:lapis_block"
+          }
+        },
+        {
+          "slot_index": 21,
+          "x": 62,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:bow"
+          }
+        },
+        {
+          "slot_index": 22,
+          "x": 80,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:lapis_block"
+          }
+        },
+        {
+          "slot_index": 30,
+          "x": 62,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "2026-10-21_082557_990_10480913645564096837.json",
+      "captured_at": "2026-10-20T23:25:57.970160200Z",
+      "output_slot": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54
+      },
+      "output": {
+        "display_name": "Ribbit Reel",
+        "base_item": "minecraft:crossbow",
+        "custom_model_data": {
+          "floats": [
+            6
+          ]
+        },
+        "civid": "ribbit_reel",
+        "count": 1
+      },
+      "ingredient_slots": [
+        {
+          "slot_index": 11,
+          "x": 44,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:lily_pad"
+          }
+        },
+        {
+          "slot_index": 12,
+          "x": 62,
+          "y": 36,
+          "ingredient": {
+            "civid": "frog_in_a_bucket"
+          }
+        },
+        {
+          "slot_index": 13,
+          "x": 80,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:lily_pad"
+          }
+        },
+        {
+          "slot_index": 20,
+          "x": 44,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:emerald"
+          }
+        },
+        {
+          "slot_index": 21,
+          "x": 62,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:crossbow"
+          }
+        },
+        {
+          "slot_index": 22,
+          "x": 80,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:emerald"
+          }
+        },
+        {
+          "slot_index": 30,
+          "x": 62,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:lily_pad"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "2026-10-21_082605_023_8728808230578379074.json",
+      "captured_at": "2026-10-20T23:26:05.015081400Z",
+      "output_slot": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54
+      },
+      "output": {
+        "display_name": "Gruntilda",
+        "base_item": "minecraft:iron_ingot",
+        "custom_model_data": {
+          "floats": [
+            4
+          ]
+        },
+        "civid": "gruntilda",
+        "count": 1
+      },
+      "ingredient_slots": [
+        {
+          "slot_index": 11,
+          "x": 44,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        },
+        {
+          "slot_index": 12,
+          "x": 62,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:nether_wart"
+          }
+        },
+        {
+          "slot_index": 13,
+          "x": 80,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        },
+        {
+          "slot_index": 20,
+          "x": 44,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:blaze_rod"
+          }
+        },
+        {
+          "slot_index": 21,
+          "x": 62,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:player_head"
+          }
+        },
+        {
+          "slot_index": 22,
+          "x": 80,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:blaze_rod"
+          }
+        },
+        {
+          "slot_index": 29,
+          "x": 44,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:glowstone"
+          }
+        },
+        {
+          "slot_index": 30,
+          "x": 62,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:glowstone"
+          }
+        },
+        {
+          "slot_index": 31,
+          "x": 80,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:glowstone"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "2026-10-21_082610_375_17279304317616572027.json",
+      "captured_at": "2026-10-20T23:26:10.368685700Z",
+      "output_slot": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54
+      },
+      "output": {
+        "display_name": "Sakura Tessen",
+        "base_item": "minecraft:diamond_sword",
+        "custom_model_data": {
+          "floats": [
+            20
+          ]
+        },
+        "civid": "sakura_tessen",
+        "count": 1
+      },
+      "ingredient_slots": [
+        {
+          "slot_index": 11,
+          "x": 44,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:pink_petals"
+          }
+        },
+        {
+          "slot_index": 12,
+          "x": 62,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:amethyst_shard"
+          }
+        },
+        {
+          "slot_index": 13,
+          "x": 80,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:pink_petals"
+          }
+        },
+        {
+          "slot_index": 20,
+          "x": 44,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:iron_block"
+          }
+        },
+        {
+          "slot_index": 21,
+          "x": 62,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:diamond_sword"
+          }
+        },
+        {
+          "slot_index": 22,
+          "x": 80,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:iron_block"
+          }
+        },
+        {
+          "slot_index": 29,
+          "x": 44,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:amethyst_shard"
+          }
+        },
+        {
+          "slot_index": 30,
+          "x": 62,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:wind_charge"
+          }
+        },
+        {
+          "slot_index": 31,
+          "x": 80,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:amethyst_shard"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "2026-10-21_082616_930_7496788206107466512.json",
+      "captured_at": "2026-10-20T23:26:16.920998800Z",
+      "output_slot": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54
+      },
+      "output": {
+        "display_name": "Vampire Sabre",
+        "base_item": "minecraft:diamond_sword",
+        "custom_model_data": {
+          "floats": [
+            22
+          ]
+        },
+        "civid": "vampire_sabre",
+        "count": 1
+      },
+      "ingredient_slots": [
+        {
+          "slot_index": 12,
+          "x": 62,
+          "y": 36,
+          "ingredient": {
+            "civid": "vampire_tooth"
+          }
+        },
+        {
+          "slot_index": 20,
+          "x": 44,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:feather"
+          }
+        },
+        {
+          "slot_index": 21,
+          "x": 62,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:diamond_sword"
+          }
+        },
+        {
+          "slot_index": 22,
+          "x": 80,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:feather"
+          }
+        },
+        {
+          "slot_index": 29,
+          "x": 44,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:gold_ingot"
+          }
+        },
+        {
+          "slot_index": 30,
+          "x": 62,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:spider_eye"
+          }
+        },
+        {
+          "slot_index": 31,
+          "x": 80,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:gold_ingot"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "2026-10-21_082623_875_3329245604423738296.json",
+      "captured_at": "2026-10-20T23:26:23.868690300Z",
+      "output_slot": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54
+      },
+      "output": {
+        "display_name": "Gerald the Sniffer",
+        "base_item": "minecraft:sniffer_spawn_egg",
+        "custom_model_data": {
+          "floats": [
+            1
+          ]
+        },
+        "civid": "legendary_sniffer",
+        "count": 1
+      },
+      "ingredient_slots": [
+        {
+          "slot_index": 11,
+          "x": 44,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        },
+        {
+          "slot_index": 12,
+          "x": 62,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:mossy_cobblestone"
+          }
+        },
+        {
+          "slot_index": 13,
+          "x": 80,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        },
+        {
+          "slot_index": 20,
+          "x": 44,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:mossy_cobblestone"
+          }
+        },
+        {
+          "slot_index": 21,
+          "x": 62,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:music_disc_13"
+          }
+        },
+        {
+          "slot_index": 22,
+          "x": 80,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:mossy_cobblestone"
+          }
+        },
+        {
+          "slot_index": 29,
+          "x": 44,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        },
+        {
+          "slot_index": 30,
+          "x": 62,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:mossy_cobblestone"
+          }
+        },
+        {
+          "slot_index": 31,
+          "x": 80,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "2026-10-21_082629_171_15488401109832326780.json",
+      "captured_at": "2026-10-20T23:26:29.160595200Z",
+      "output_slot": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54
+      },
+      "output": {
+        "display_name": "Headhunter's Chestpiece",
+        "base_item": "minecraft:diamond_chestplate",
+        "custom_model_data": {
+          "floats": [
+            1
+          ]
+        },
+        "civid": "headhunters_might",
+        "count": 1
+      },
+      "ingredient_slots": [
+        {
+          "slot_index": 11,
+          "x": 44,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:weeping_vines"
+          }
+        },
+        {
+          "slot_index": 12,
+          "x": 62,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:piglin_head"
+          }
+        },
+        {
+          "slot_index": 13,
+          "x": 80,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:weeping_vines"
+          }
+        },
+        {
+          "slot_index": 20,
+          "x": 44,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:weeping_vines"
+          }
+        },
+        {
+          "slot_index": 21,
+          "x": 62,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:diamond_chestplate"
+          }
+        },
+        {
+          "slot_index": 22,
+          "x": 80,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:weeping_vines"
+          }
+        },
+        {
+          "slot_index": 29,
+          "x": 44,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:iron_block"
+          }
+        },
+        {
+          "slot_index": 30,
+          "x": 62,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:netherite_scrap"
+          }
+        },
+        {
+          "slot_index": 31,
+          "x": 80,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:iron_block"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "2026-10-21_082636_841_12469950415783831665.json",
+      "captured_at": "2026-10-20T23:26:36.837212600Z",
+      "output_slot": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54
+      },
+      "output": {
+        "display_name": "Freezing Chakram",
+        "base_item": "minecraft:diamond_sword",
+        "custom_model_data": {
+          "floats": [
+            13
+          ]
+        },
+        "civid": "freezing_chakram",
+        "count": 1
+      },
+      "ingredient_slots": [
+        {
+          "slot_index": 11,
+          "x": 44,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:amethyst_shard"
+          }
+        },
+        {
+          "slot_index": 12,
+          "x": 62,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:powder_snow_bucket"
+          }
+        },
+        {
+          "slot_index": 13,
+          "x": 80,
+          "y": 36,
+          "ingredient": {
+            "item": "minecraft:amethyst_shard"
+          }
+        },
+        {
+          "slot_index": 20,
+          "x": 44,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:diamond_hoe"
+          }
+        },
+        {
+          "slot_index": 21,
+          "x": 62,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:iron_block"
+          }
+        },
+        {
+          "slot_index": 22,
+          "x": 80,
+          "y": 54,
+          "ingredient": {
+            "item": "minecraft:diamond_hoe"
+          }
+        },
+        {
+          "slot_index": 29,
+          "x": 44,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:amethyst_shard"
+          }
+        },
+        {
+          "slot_index": 30,
+          "x": 62,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:iron_block"
+          }
+        },
+        {
+          "slot_index": 31,
+          "x": 80,
+          "y": 72,
+          "ingredient": {
+            "item": "minecraft:amethyst_shard"
+          }
+        }
+      ]
+    }
+  ]
+}

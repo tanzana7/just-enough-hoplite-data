@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-21T00:00:00Z",
+  "recipes": [
+    {
+      "result_id": "hoplite:quick_bow",
+      "name": "Shortbow",
+      "category": "combat",
+      "pattern": ["AAA", "ABA", "AAA"],
+      "key": {
+        "A": {"item": "minecraft:copper_ingot"},
+        "B": {"item": "minecraft:bow"}
+      },
+      "result_count": 1,
+      "craft_limit": 1,
+      "page_url": "https://www.hoplite.gg/recipes",
+      "image_url": "https://www.hoplite.gg/recipes/recipe-shortbow.png"
+    },
+    {
+      "result_id": "hoplite:bundled_arrows",
+      "name": "Bundled Arrows",
+      "category": "utility",
+      "pattern": ["AAA", "BBB", "CCC"],
+      "key": {
+        "A": {"item": "minecraft:flint"},
+        "B": {"item": "minecraft:stick"},
+        "C": {"item": "minecraft:feather"}
+      },
+      "result_count": 20,
+      "craft_limit": 4,
+      "page_url": "https://www.hoplite.gg/recipes",
+      "image_url": "https://www.hoplite.gg/recipes/recipe-bundled-arrows.png"
+    }
+  ]
+}
