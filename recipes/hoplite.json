@@ -47,7 +47,10 @@
         "count": 1,
         "hoplite": "hoplite:agony"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "keyIngredients": [
+        "minecraft:player_head"
+      ]
     },
     {
       "category": "legendary",
@@ -137,7 +140,10 @@
         "count": 1,
         "hoplite": "hoplite:ares_blessing"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "keyIngredients": [
+        "minecraft:player_head"
+      ]
     },
     {
       "category": "legendary",
@@ -804,7 +810,10 @@
         "count": 1,
         "hoplite": "hoplite:crystallization_shard"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "keyIngredients": [
+        "minecraft:player_head"
+      ]
     },
     {
       "category": "legendary",
@@ -966,6 +975,46 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:emerald_sword"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "User-provided in-game recipe screenshot (2026-10-23)."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-23T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:ender_pack",
+      "key": {
+        "A": {
+          "item": "minecraft:end_stone"
+        },
+        "B": {
+          "item": "minecraft:ender_pearl"
+        },
+        "C": {
+          "item": "minecraft:compass"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " A "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:ender_pack"
       },
       "type": "crafting_shaped"
     },
@@ -1174,7 +1223,10 @@
         "count": 1,
         "hoplite": "hoplite:golden_head"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "keyIngredients": [
+        "minecraft:player_head"
+      ]
     },
     {
       "category": "legendary",
@@ -2246,7 +2298,10 @@
         "count": 1,
         "hoplite": "hoplite:panacea"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "keyIngredients": [
+        "minecraft:player_head"
+      ]
     },
     {
       "category": "legendary",
@@ -2288,6 +2343,49 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:phantom_bow"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility",
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "User-provided in-game recipe screenshot (2026-10-23)."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-23T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:portable_villager",
+      "key": {
+        "A": {
+          "item": "minecraft:wheat"
+        },
+        "B": {
+          "item": "minecraft:emerald"
+        },
+        "C": {
+          "item": "minecraft:bookshelf"
+        },
+        "D": {
+          "item": "minecraft:composter"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "ACA",
+        "ADA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:portable_villager"
       },
       "type": "crafting_shaped"
     },
@@ -3075,7 +3173,10 @@
         "count": 1,
         "hoplite": "hoplite:suspicious_stew"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "keyIngredients": [
+        "minecraft:player_head"
+      ]
     },
     {
       "category": "legendary",
@@ -3182,7 +3283,10 @@
         "count": 1,
         "hoplite": "hoplite:totem"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "keyIngredients": [
+        "minecraft:ghast_tear"
+      ]
     },
     {
       "category": "weapon",
@@ -3226,7 +3330,13 @@
         "count": 1,
         "hoplite": "hoplite:trident"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "keyIngredients": [
+        {
+          "item": "minecraft:prismarine_shard",
+          "count": 2
+        }
+      ]
     },
     {
       "category": "legendary",

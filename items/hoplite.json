@@ -3320,7 +3320,26 @@
         },
         "count": 1,
         "id": "minecraft:bone"
-      }
+      },
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "User-provided in-game recipe screenshot (2026-10-23)."
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-23T00:00:00Z"
+          },
+          "id": "hoplite:ender_pack_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:ender_pack"
+          ]
+        }
+      ]
     },
     {
       "acquisition": [
@@ -7965,7 +7984,26 @@
         },
         "count": 1,
         "id": "minecraft:villager_spawn_egg"
-      }
+      },
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "User-provided in-game recipe screenshot (2026-10-23)."
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-23T00:00:00Z"
+          },
+          "id": "hoplite:portable_villager_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:portable_villager"
+          ]
+        }
+      ]
     },
     {
       "acquisition": [

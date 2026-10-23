@@ -96,6 +96,7 @@
         "id": {"$ref": "#/$defs/id"},
         "type": {"enum": ["crafting_shaped", "crafting_shapeless", "special"]},
         "result": {"$ref": "#/$defs/result"}, "category": {"type": "string"},
+        "keyIngredients": {"type": "array", "items": {"oneOf": [{"$ref": "#/$defs/id"}, {"$ref": "#/$defs/ingredient"}]}},
         "craft_limits": {"type": "array", "items": {"$ref": "#/$defs/limit"}},
         "evidence": {"$ref": "#/$defs/evidence"}
       }
