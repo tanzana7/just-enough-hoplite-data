@@ -37,6 +37,9 @@
           "item": "minecraft:nether_wart"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         " A ",
@@ -47,10 +50,7 @@
         "count": 1,
         "hoplite": "hoplite:agony"
       },
-      "type": "crafting_shaped",
-      "keyIngredients": [
-        "minecraft:player_head"
-      ]
+      "type": "crafting_shaped"
     },
     {
       "category": "legendary",
@@ -130,6 +130,9 @@
           "item": "minecraft:player_head"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         "AAA",
@@ -140,10 +143,7 @@
         "count": 1,
         "hoplite": "hoplite:ares_blessing"
       },
-      "type": "crafting_shaped",
-      "keyIngredients": [
-        "minecraft:player_head"
-      ]
+      "type": "crafting_shaped"
     },
     {
       "category": "legendary",
@@ -800,6 +800,9 @@
           "item": "minecraft:potion"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         " A ",
@@ -810,10 +813,7 @@
         "count": 1,
         "hoplite": "hoplite:crystallization_shard"
       },
-      "type": "crafting_shaped",
-      "keyIngredients": [
-        "minecraft:player_head"
-      ]
+      "type": "crafting_shaped"
     },
     {
       "category": "legendary",
@@ -980,6 +980,13 @@
     },
     {
       "category": "utility",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
       "evidence": {
         "sources": [
           {
@@ -988,7 +995,7 @@
           }
         ],
         "status": "verified",
-        "verified_at": "2026-10-23T00:00:00Z"
+        "verified_at": "2026-10-24T00:00:00Z"
       },
       "grid": [
         3,
@@ -1213,6 +1220,9 @@
           "item": "minecraft:player_head"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         "AAA",
@@ -1223,10 +1233,7 @@
         "count": 1,
         "hoplite": "hoplite:golden_head"
       },
-      "type": "crafting_shaped",
-      "keyIngredients": [
-        "minecraft:player_head"
-      ]
+      "type": "crafting_shaped"
     },
     {
       "category": "legendary",
@@ -2288,6 +2295,9 @@
           "item": "minecraft:player_head"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         "ABA",
@@ -2298,10 +2308,7 @@
         "count": 1,
         "hoplite": "hoplite:panacea"
       },
-      "type": "crafting_shaped",
-      "keyIngredients": [
-        "minecraft:player_head"
-      ]
+      "type": "crafting_shaped"
     },
     {
       "category": "legendary",
@@ -2348,6 +2355,13 @@
     },
     {
       "category": "utility",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
       "evidence": {
         "sources": [
           {
@@ -2356,7 +2370,7 @@
           }
         ],
         "status": "verified",
-        "verified_at": "2026-10-23T00:00:00Z"
+        "verified_at": "2026-10-24T00:00:00Z"
       },
       "grid": [
         3,
@@ -2700,6 +2714,60 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:reinforced_elytra"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "availability_note": {
+        "en_us": "Team modes only",
+        "ja_jp": "チーム戦のみ"
+      },
+      "category": "utility",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "User-provided in-game Recipe Book image transcribed as a 3x3 grid. Output identity and Nether Reactor Core ingredient were checked against canonical live JEH item identities; the live Revival Star lore says Only available in Teams and Crafts: 1."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-24T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:revival_item",
+      "key": {
+        "A": {
+          "item": "minecraft:golden_apple"
+        },
+        "B": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "hoplite": "hoplite:nether_reactor"
+        },
+        "D": {
+          "item": "minecraft:clock"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:revival_item"
       },
       "type": "crafting_shaped"
     },
@@ -3163,6 +3231,9 @@
           "item": "minecraft:bowl"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         "ABC",
@@ -3173,10 +3244,7 @@
         "count": 1,
         "hoplite": "hoplite:suspicious_stew"
       },
-      "type": "crafting_shaped",
-      "keyIngredients": [
-        "minecraft:player_head"
-      ]
+      "type": "crafting_shaped"
     },
     {
       "category": "legendary",
@@ -3273,6 +3341,9 @@
           "item": "minecraft:ghast_tear"
         }
       },
+      "keyIngredients": [
+        "minecraft:ghast_tear"
+      ],
       "mirror": true,
       "pattern": [
         " A ",
@@ -3283,10 +3354,7 @@
         "count": 1,
         "hoplite": "hoplite:totem"
       },
-      "type": "crafting_shaped",
-      "keyIngredients": [
-        "minecraft:ghast_tear"
-      ]
+      "type": "crafting_shaped"
     },
     {
       "category": "weapon",
@@ -3320,6 +3388,12 @@
           "item": "minecraft:diamond"
         }
       },
+      "keyIngredients": [
+        {
+          "count": 2,
+          "item": "minecraft:prismarine_shard"
+        }
+      ],
       "mirror": true,
       "pattern": [
         " AA",
@@ -3330,13 +3404,7 @@
         "count": 1,
         "hoplite": "hoplite:trident"
       },
-      "type": "crafting_shaped",
-      "keyIngredients": [
-        {
-          "item": "minecraft:prismarine_shard",
-          "count": 2
-        }
-      ]
+      "type": "crafting_shaped"
     },
     {
       "category": "legendary",
