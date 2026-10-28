@@ -68,7 +68,7 @@ jobs:
             echo "::error::JEH_MOD_REPOSITORY must identify the approved Mod repository."
             exit 1
           fi
-          if [[ "$JEH_REF" != "6b547b110875ca8d1289de0a074a98d309a341f3" ]]; then
+          if [[ "$JEH_REF" != "0e8279325d872dfff56655f62bf0c1e0a732152d" ]]; then
             echo "::error::JEH_VALIDATOR_REF is not pinned to the reviewed Mod PR #10 commit."
             exit 1
           fi
