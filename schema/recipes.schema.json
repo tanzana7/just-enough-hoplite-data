@@ -96,6 +96,8 @@
         "id": {"$ref": "#/$defs/id"},
         "type": {"enum": ["crafting_shaped", "crafting_shapeless", "special"]},
         "result": {"$ref": "#/$defs/result"}, "category": {"type": "string"},
+        "keyIngredients": {"type": "array", "items": {"oneOf": [{"$ref": "#/$defs/id"}, {"$ref": "#/$defs/ingredient"}]}},
+        "availability_note": {"type": "object", "required": ["en_us"], "properties": {"en_us": {"type": "string", "minLength": 1}, "ja_jp": {"type": "string", "minLength": 1}}, "additionalProperties": {"type": "string"}},
         "craft_limits": {"type": "array", "items": {"$ref": "#/$defs/limit"}},
         "evidence": {"$ref": "#/$defs/evidence"}
       }

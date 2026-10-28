@@ -2,13 +2,13 @@
   "data_version": 1,
   "files": [
     {
-      "sha256": "ddae1f848ac4c7cb990493e3014b0d0c176c644192244651410245cb391e605a",
-      "size": 374796,
+      "sha256": "fb8066528b7a6f05d822c42b673811a7d7a8272f1c15780356a89e852e3ad305",
+      "size": 376512,
       "url": "https://raw.githubusercontent.com/%3Cowner%3E/just-enough-hoplite-data/0000000000000000000000000000000000000000/items/hoplite.json"
     },
     {
-      "sha256": "34c980002d405e3de32df12d9ed0fac474c7d2cd50ef78150144404b9fd1658d",
-      "size": 93823,
+      "sha256": "63cb0e7fb1dc34f570ee1ba7f47a22401f4895489dd387f8fe36379b17d34c3a",
+      "size": 97737,
       "url": "https://raw.githubusercontent.com/%3Cowner%3E/just-enough-hoplite-data/0000000000000000000000000000000000000000/recipes/hoplite.json"
     }
   ],

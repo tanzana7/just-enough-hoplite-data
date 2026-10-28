@@ -37,6 +37,9 @@
           "item": "minecraft:nether_wart"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         " A ",
@@ -127,6 +130,9 @@
           "item": "minecraft:player_head"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         "AAA",
@@ -794,6 +800,9 @@
           "item": "minecraft:potion"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         " A ",
@@ -966,6 +975,53 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:emerald_sword"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "User-provided in-game recipe screenshot (2026-10-23)."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-24T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:ender_pack",
+      "key": {
+        "A": {
+          "item": "minecraft:end_stone"
+        },
+        "B": {
+          "item": "minecraft:ender_pearl"
+        },
+        "C": {
+          "item": "minecraft:compass"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " A "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:ender_pack"
       },
       "type": "crafting_shaped"
     },
@@ -1164,6 +1220,9 @@
           "item": "minecraft:player_head"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         "AAA",
@@ -2236,6 +2295,9 @@
           "item": "minecraft:player_head"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         "ABA",
@@ -2288,6 +2350,56 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:phantom_bow"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "utility",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "User-provided in-game recipe screenshot (2026-10-23)."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-24T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:portable_villager",
+      "key": {
+        "A": {
+          "item": "minecraft:wheat"
+        },
+        "B": {
+          "item": "minecraft:emerald"
+        },
+        "C": {
+          "item": "minecraft:bookshelf"
+        },
+        "D": {
+          "item": "minecraft:composter"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "ACA",
+        "ADA"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:portable_villager"
       },
       "type": "crafting_shaped"
     },
@@ -2602,6 +2714,60 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:reinforced_elytra"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "availability_note": {
+        "en_us": "Team modes only",
+        "ja_jp": "チーム戦のみ"
+      },
+      "category": "utility",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "User-provided in-game Recipe Book image transcribed as a 3x3 grid. Output identity and Nether Reactor Core ingredient were checked against canonical live JEH item identities; the live Revival Star lore says Only available in Teams and Crafts: 1."
+          }
+        ],
+        "status": "verified",
+        "verified_at": "2026-10-24T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:revival_item",
+      "key": {
+        "A": {
+          "item": "minecraft:golden_apple"
+        },
+        "B": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "hoplite": "hoplite:nether_reactor"
+        },
+        "D": {
+          "item": "minecraft:clock"
+        }
+      },
+      "mirror": true,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:revival_item"
       },
       "type": "crafting_shaped"
     },
@@ -3065,6 +3231,9 @@
           "item": "minecraft:bowl"
         }
       },
+      "keyIngredients": [
+        "minecraft:player_head"
+      ],
       "mirror": true,
       "pattern": [
         "ABC",
@@ -3172,6 +3341,9 @@
           "item": "minecraft:ghast_tear"
         }
       },
+      "keyIngredients": [
+        "minecraft:ghast_tear"
+      ],
       "mirror": true,
       "pattern": [
         " A ",
@@ -3216,6 +3388,12 @@
           "item": "minecraft:diamond"
         }
       },
+      "keyIngredients": [
+        {
+          "count": 2,
+          "item": "minecraft:prismarine_shard"
+        }
+      ],
       "mirror": true,
       "pattern": [
         " AA",

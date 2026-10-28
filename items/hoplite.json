@@ -3153,6 +3153,25 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "User-provided in-game recipe screenshot (2026-10-23)."
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-24T00:00:00Z"
+          },
+          "id": "hoplite:ender_pack_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:ender_pack"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A pack of mystical wolves from the End dimension. RIGHT CLICK while in the End to summon a pack of wolves that will lead you towards the location of the nearest End City."
       },
@@ -7821,6 +7840,25 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "User-provided in-game recipe screenshot (2026-10-23)."
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-24T00:00:00Z"
+          },
+          "id": "hoplite:portable_villager_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:portable_villager"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A special villager egg that allows you to choose the villager's profession when spawning."
       },
@@ -9067,6 +9105,25 @@
       }
     },
     {
+      "acquisition": [
+        {
+          "evidence": {
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "User-provided in-game Recipe Book image transcribed as a 3x3 grid. Output identity and Nether Reactor Core ingredient were checked against canonical live JEH item identities; the live Revival Star lore says Only available in Teams and Crafts: 1."
+              }
+            ],
+            "status": "verified",
+            "verified_at": "2026-10-24T00:00:00Z"
+          },
+          "id": "hoplite:revival_item_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:revival_item"
+          ]
+        }
+      ],
       "description": {
         "en_us": "A star shaped totem with the power to bring allies back into the fight. RIGHT CLICK to respawn a fallen ally."
       },

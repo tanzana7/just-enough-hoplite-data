@@ -1,4 +1,5 @@
 name: validate-and-publish
+
 on:
   pull_request:
     branches: [main]
@@ -7,36 +8,99 @@ on:
     paths-ignore:
       - dist/manifest.json
       - .data-version
+  release:
+    types: [published]
   workflow_dispatch:
+    inputs:
+      validate_published:
+        description: Validate the manifest URLs against anonymously accessible public artifacts
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
 
 concurrency:
-  group: jeh-data-main
+  group: jeh-data-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  validate:
+  source-validation:
+    name: Source validation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install schema validator
+        run: python -m pip install --disable-pip-version-check jsonschema==4.25.1
+      - name: Validate JSON schemas
+        run: python tools/validate_schema.py --data "$GITHUB_WORKSPACE"
+      - name: Validate source identities, references and manifest consistency
+        run: python tools/validate_source.py "$GITHUB_WORKSPACE"
+      - name: Test source and published-manifest guards
+        run: python -m unittest discover -s tools -p 'test_source_validation.py'
+
+  mod-compatibility:
+    name: Private Mod compatibility
+    needs: source-validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '25'
-      - name: Require validator source configuration
+      - name: Require pinned validator configuration
         env:
           JEH_REPO: ${{ vars.JEH_MOD_REPOSITORY }}
           JEH_REF: ${{ vars.JEH_VALIDATOR_REF }}
           JEH_MOD_TOKEN_PRESENT: ${{ secrets.JEH_MOD_READ_TOKEN != '' }}
         run: |
-          test -n "$JEH_REPO"
-          test -n "$JEH_REF"
-          if [ "$JEH_MOD_TOKEN_PRESENT" != "true" ]; then
-            echo "::error::Required secret JEH_MOD_READ_TOKEN is not configured."
+          set -euo pipefail
+          if [[ "$JEH_REPO" != "tanzana7/just-enough-hoplite" ]]; then
+            echo "::error::JEH_MOD_REPOSITORY must identify the approved Mod repository."
             exit 1
           fi
+          if [[ "$JEH_REF" != "0e8279325d872dfff56655f62bf0c1e0a732152d" ]]; then
+            echo "::error::JEH_VALIDATOR_REF is not pinned to the reviewed Mod PR #10 commit."
+            exit 1
+          fi
+          if [[ "$JEH_MOD_TOKEN_PRESENT" != "true" ]]; then
+            echo "::error::Required secret JEH_MOD_READ_TOKEN is unavailable to this workflow event."
+            exit 1
+          fi
+      - name: Check private Mod read access without printing credentials
+        env:
+          JEH_REPO: ${{ vars.JEH_MOD_REPOSITORY }}
+          JEH_REF: ${{ vars.JEH_VALIDATOR_REF }}
+          JEH_MOD_READ_TOKEN: ${{ secrets.JEH_MOD_READ_TOKEN }}
+        run: |
+          set -euo pipefail
+          if ! status=$(curl --silent --show-error --output /dev/null --write-out '%{http_code}' \
+            --header "Authorization: Bearer ${JEH_MOD_READ_TOKEN}" \
+            --header 'Accept: application/vnd.github+json' \
+            "https://api.github.com/repos/${JEH_REPO}/commits/${JEH_REF}"); then
+            echo "::error::Private Mod access preflight could not reach the GitHub API."
+            exit 1
+          fi
+          if [[ "$status" != "200" ]]; then
+            case "$status" in
+              401) reason="credential is expired, revoked, or invalid" ;;
+              403) reason="credential lacks repository read access or requires owner/organization approval" ;;
+              404) reason="repository or pinned commit is unavailable to this credential" ;;
+              *) reason="GitHub API returned HTTP ${status}" ;;
+            esac
+            echo "::error::Private Mod access preflight failed: ${reason}. No response body or credential was logged."
+            exit 1
+          fi
+          echo "Private Mod read access preflight passed (HTTP 200)."
       - name: Checkout pinned JEH core
         uses: actions/checkout@v4
         with:
@@ -49,21 +113,30 @@ jobs:
         env:
           EXPECTED_JEH_SHA: ${{ vars.JEH_VALIDATOR_REF }}
         run: |
+          set -euo pipefail
           actual="$(git -C .jeh rev-parse HEAD)"
-          if [ "$actual" != "$EXPECTED_JEH_SHA" ]; then
+          if [[ "$actual" != "$EXPECTED_JEH_SHA" ]]; then
             echo "::error::Checked out JEH core does not match JEH_VALIDATOR_REF."
             exit 1
           fi
           echo "Pinned JEH core commit verified: $actual"
-      # Source validation deliberately ignores the previous published file hashes.
-      - name: Validate editable data and schema
+      - name: Validate source data with Java validator
         run: ./.jeh/gradlew -p .jeh :core:runValidator -PjehValidationMode=validate-source -PjehDataRoot="$GITHUB_WORKSPACE"
-      - name: Validate JSON Schema documents
+      - name: Run Mod validator unit tests
+        run: ./.jeh/gradlew -p .jeh :core:test
+      - name: Verify Data matches Mod bundled files
         run: |
-          python -m pip install jsonschema==4.25.1
-          python .jeh/tools/validate_schema.py --data "$GITHUB_WORKSPACE"
+          set -euo pipefail
+          cmp items/hoplite.json .jeh/src/main/resources/jeh/bundled/items/hoplite.json
+          cmp recipes/hoplite.json .jeh/src/main/resources/jeh/bundled/recipes/hoplite.json
+          cmp dist/manifest.json .jeh/src/main/resources/jeh/bundled/manifest.json
+          echo "Data items, recipes and source manifest match the pinned Mod bundle byte-for-byte."
       - name: Verify deterministic manifest generation
+        env:
+          JEH_DATA_REPOSITORY: ${{ github.repository }}
+          MERGE_SHA: ${{ github.sha }}
         run: |
+          set -euo pipefail
           fixture_root="$(mktemp -d)"
           trap 'rm -rf "$fixture_root"' EXIT
           for fixture in first second; do
@@ -71,15 +144,34 @@ jobs:
             cp -a .data-version dist items recipes id-redirects.json "$fixture_root/$fixture/"
             ./.jeh/gradlew -p .jeh :core:publishManifest \
               -PjehDataRoot="$fixture_root/$fixture" \
-              -PjehCommit="$GITHUB_SHA" \
+              -PjehCommit="$MERGE_SHA" \
               -PjehPublishedAt=2026-01-01T00:00:00Z
           done
           cmp "$fixture_root/first/.data-version" "$fixture_root/second/.data-version"
           cmp "$fixture_root/first/dist/manifest.json" "$fixture_root/second/dist/manifest.json"
 
+  published-manifest:
+    name: Published artifact validation
+    if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && inputs.validate_published == true)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install schema validator
+        run: python -m pip install --disable-pip-version-check jsonschema==4.25.1
+      - name: Validate anonymous artifact URLs and hashes
+        env:
+          JEH_DATA_REPOSITORY: ${{ vars.JEH_DATA_REPOSITORY || github.repository }}
+        run: python tools/validate_published_manifest.py "$GITHUB_WORKSPACE" "$JEH_DATA_REPOSITORY"
+
   publish:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.actor != 'github-actions[bot]'
-    needs: validate
+    name: Generate and publish manifest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.actor != 'github-actions[bot]' && vars.JEH_ENABLE_DATA_PUBLISH == 'true'
+    needs: [source-validation, mod-compatibility]
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -87,23 +179,21 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Require public repository before publishing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          visibility="$(gh api "repos/${GITHUB_REPOSITORY}" --jq .visibility)"
+          if [[ "$visibility" != "public" ]]; then
+            echo "::error::Data manifest publishing requires the Data repository to be public."
+            exit 1
+          fi
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '25'
-      - name: Require validator source configuration
-        env:
-          JEH_REPO: ${{ vars.JEH_MOD_REPOSITORY }}
-          JEH_REF: ${{ vars.JEH_VALIDATOR_REF }}
-          JEH_MOD_TOKEN_PRESENT: ${{ secrets.JEH_MOD_READ_TOKEN != '' }}
-        run: |
-          test -n "$JEH_REPO"
-          test -n "$JEH_REF"
-          if [ "$JEH_MOD_TOKEN_PRESENT" != "true" ]; then
-            echo "::error::Required secret JEH_MOD_READ_TOKEN is not configured."
-            exit 1
-          fi
-      - name: Checkout pinned JEH core
+      - name: Checkout pinned JEH validator
         uses: actions/checkout@v4
         with:
           repository: ${{ vars.JEH_MOD_REPOSITORY }}
@@ -111,18 +201,9 @@ jobs:
           path: .jeh
           token: ${{ secrets.JEH_MOD_READ_TOKEN }}
           persist-credentials: false
-      - name: Verify pinned JEH core commit
+      - name: Generate and validate public manifest
         env:
-          EXPECTED_JEH_SHA: ${{ vars.JEH_VALIDATOR_REF }}
-        run: |
-          actual="$(git -C .jeh rev-parse HEAD)"
-          if [ "$actual" != "$EXPECTED_JEH_SHA" ]; then
-            echo "::error::Checked out JEH core does not match JEH_VALIDATOR_REF."
-            exit 1
-          fi
-          echo "Pinned JEH core commit verified: $actual"
-      - name: Generate next data version and manifest
-        env:
+          JEH_DATA_REPOSITORY: ${{ github.repository }}
           MERGE_SHA: ${{ github.sha }}
           PUBLISHED_AT: ${{ github.event.head_commit.timestamp }}
         run: |
@@ -130,6 +211,8 @@ jobs:
             -PjehDataRoot="$GITHUB_WORKSPACE" \
             -PjehCommit="$MERGE_SHA" \
             -PjehPublishedAt="$PUBLISHED_AT"
+          python -m pip install --disable-pip-version-check jsonschema==4.25.1
+          python tools/validate_published_manifest.py "$GITHUB_WORKSPACE" "$JEH_DATA_REPOSITORY"
       - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"

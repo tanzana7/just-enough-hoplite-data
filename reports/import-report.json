@@ -245,8 +245,9 @@
     "legendary_items": 51,
     "legendary_recipes": 40,
     "matchers": 55,
+    "normalized_recipe_evidence": 3,
     "recipe_dump_identities": 2,
-    "recipes": 71,
+    "recipes": 74,
     "render_fallbacks": 12,
     "render_stack_autofilled": 19,
     "unresolved": 34
@@ -587,6 +588,38 @@
       "status": "verified"
     }
   },
+  "normalized_recipe_evidence": {
+    "hoplite:ender_pack": {
+      "craft_limit": 1,
+      "pattern": [
+        " A ",
+        "BCB",
+        " A "
+      ],
+      "result_count": 1,
+      "status": "verified"
+    },
+    "hoplite:portable_villager": {
+      "craft_limit": 1,
+      "pattern": [
+        "ABA",
+        "ACA",
+        "ADA"
+      ],
+      "result_count": 1,
+      "status": "verified"
+    },
+    "hoplite:revival_item": {
+      "craft_limit": 1,
+      "pattern": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "result_count": 1,
+      "status": "verified"
+    }
+  },
   "provenance": {
     "hoplite:agony": "currentInGameRecipeEvidence",
     "hoplite:aiglos": "currentInGameF8RecipeDumps",
@@ -608,6 +641,7 @@
     "hoplite:dragon_katana": "legendaryItems",
     "hoplite:eagle_eye_bow": "legendaryItems",
     "hoplite:emerald_sword": "latestLegendaryRecipeEvidence",
+    "hoplite:ender_pack": "normalizedInGameRecipeEvidence",
     "hoplite:enderbow": "legendaryItems",
     "hoplite:explosive_pickaxe": "latestBatch4Evidence",
     "hoplite:freezing_chakram": "currentInGameF8RecipeDumps",
@@ -635,12 +669,14 @@
     "hoplite:obsidian": "userConfirmedCorrections",
     "hoplite:panacea": "currentInGameRecipeEvidence",
     "hoplite:phantom_bow": "currentInGameF8RecipeDumps",
+    "hoplite:portable_villager": "normalizedInGameRecipeEvidence",
     "hoplite:poseidons_trident": "legendaryItems",
     "hoplite:pufferfish_cannon": "legendaryItems",
     "hoplite:quick_bow": "currentOfficialRegularRecipeEvidence",
     "hoplite:quick_sword": "currentInGameRecipeEvidence",
     "hoplite:reaper_scythe": "legendaryItems",
     "hoplite:reinforced_elytra": "currentInGameF8RecipeDumps",
+    "hoplite:revival_item": "normalizedInGameRecipeEvidence",
     "hoplite:ribbit_reel": "currentInGameF8RecipeDumps",
     "hoplite:saddle": "latestLegendaryRecipeEvidence",
     "hoplite:sakura_tessen": "currentInGameF8RecipeDumps",
@@ -1008,6 +1044,13 @@
       "section": "latestLegendaryRecipeEvidence",
       "source_refs": []
     },
+    "hoplite:ender_pack": {
+      "availability_note": null,
+      "evidence_ids": [
+        "user-provided-in-game-recipe-screenshot-2026-10-23"
+      ],
+      "section": "normalizedInGameRecipeEvidence"
+    },
     "hoplite:enderbow": {
       "confidence": "OFFICIAL_EXACT",
       "evidence_ids": [],
@@ -1303,6 +1346,13 @@
       "section": "currentInGameRecipeEvidence",
       "source_refs": []
     },
+    "hoplite:portable_villager": {
+      "availability_note": null,
+      "evidence_ids": [
+        "user-provided-in-game-recipe-screenshot-2026-10-23"
+      ],
+      "section": "normalizedInGameRecipeEvidence"
+    },
     "hoplite:poseidons_trident": {
       "confidence": "COMMUNITY_RECONSTRUCTION",
       "evidence_ids": [],
@@ -1357,6 +1407,16 @@
         "official_patch_2025_04_04",
         "official_patch_2025_06_01"
       ]
+    },
+    "hoplite:revival_item": {
+      "availability_note": {
+        "en_us": "Team modes only",
+        "ja_jp": "チーム戦のみ"
+      },
+      "evidence_ids": [
+        "user-provided-in-game-recipe-book-image"
+      ],
+      "section": "normalizedInGameRecipeEvidence"
     },
     "hoplite:saddle": {
       "confidence": "IN_GAME_VERIFIED",
