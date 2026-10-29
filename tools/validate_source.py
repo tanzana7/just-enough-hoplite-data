@@ -155,13 +155,42 @@ def validate(root: Path) -> None:
     required_revival = {
         ("item", "minecraft:golden_apple"): 1,
         ("item", "minecraft:diamond"): 2,
-        ("hoplite", "hoplite:nether_reactor"): 1,
+        ("item", "minecraft:player_head"): 1,
         ("item", "minecraft:clock"): 1,
     }
     if revival_ingredients != Counter(required_revival):
-        raise ValidationError("Revival Star ingredient identities or quantities differ from the approved recipe")
+        raise ValidationError("Revival Star ingredient identities or quantities differ from the current F8 recipe")
+    if revival.get("pattern") != [" A ", "BCB", " D "]:
+        raise ValidationError("Revival Star grid differs from the current F8 recipe")
+    if revival["result"].get("count") != 1:
+        raise ValidationError("Revival Star result count differs from the current F8 recipe")
     if revival.get("availability_note") != {"en_us": "Team modes only", "ja_jp": "チーム戦のみ"}:
-        raise ValidationError("Revival Star availability note differs from the approved localized text")
+        raise ValidationError("Revival Star availability note differs from its independent item-lore evidence")
+
+    crystal = recipe_by_id.get("hoplite:crystallization_shard")
+    if (
+        not crystal
+        or crystal.get("pattern") != [" A ", "BCB", " B "]
+        or crystal.get("key") != {
+            "A": {"item": "minecraft:player_head"},
+            "B": {"item": "minecraft:amethyst_shard"},
+            "C": {"item": "minecraft:honey_bottle"},
+        }
+        or crystal.get("result") != {"count": 1, "hoplite": "hoplite:crystallization_shard"}
+        or crystal.get("evidence", {}).get("status") != "verified"
+    ):
+        raise ValidationError("Crystallization Shard recipe or evidence status differs from the current F8 observation")
+    crystal_item = item_by_id.get("hoplite:crystallization_shard", {})
+    crystal_matcher = crystal_item.get("matcher", {})
+    if (
+        crystal_matcher.get("item") != "minecraft:amethyst_shard"
+        or crystal_matcher.get("custom_model_data", {}).get("floats") != [1.0]
+        or crystal_matcher.get("custom_data") != {
+            "equals": "crystallization_shard",
+            "path": 'PublicBukkitValues."hoplite:civid"',
+        }
+    ):
+        raise ValidationError("Crystallization Shard matcher must remain distinct from a vanilla Amethyst Shard")
 
     manifest_path = root / "dist/manifest.json"
     if manifest_path.exists():

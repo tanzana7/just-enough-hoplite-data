@@ -26,6 +26,27 @@ class SourceValidationTests(unittest.TestCase):
     def test_current_source_data_passes(self) -> None:
         validate_source.validate(ROOT)
 
+    def test_crystallization_f8_recipe_and_custom_identity_are_enforced(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = self.copy_fixture(Path(temporary))
+            path = root / "recipes/hoplite.json"
+            document = json.loads(path.read_text(encoding="utf-8"))
+            recipe = next(r for r in document["recipes"] if r["id"] == "hoplite:crystallization_shard")
+            recipe["key"]["C"] = {"item": "minecraft:potion"}
+            path.write_text(json.dumps(document), encoding="utf-8")
+            with self.assertRaisesRegex(validate_source.ValidationError, "current F8 observation"):
+                validate_source.validate(root)
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = self.copy_fixture(Path(temporary))
+            path = root / "items/hoplite.json"
+            document = json.loads(path.read_text(encoding="utf-8"))
+            item = next(i for i in document["items"] if i["id"] == "hoplite:crystallization_shard")
+            item["matcher"] = {"item": "minecraft:amethyst_shard"}
+            path.write_text(json.dumps(document), encoding="utf-8")
+            with self.assertRaisesRegex(validate_source.ValidationError, "distinct from a vanilla Amethyst Shard"):
+                validate_source.validate(root)
+
     def test_duplicate_recipe_id_fails(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = self.copy_fixture(Path(temporary))

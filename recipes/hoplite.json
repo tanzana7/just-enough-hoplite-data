@@ -769,20 +769,18 @@
         }
       ],
       "evidence": {
-        "reason": {
-          "en_us": "Equal-priority screenshot sources disagree; retained layout and alternative (pattern/key/result): [{\"key\": {\"A\": {\"item\": \"minecraft:player_head\"}, \"B\": {\"item\": \"minecraft:amethyst_shard\"}, \"C\": {\"item\": \"minecraft:potion\"}}, \"pattern\": [\" A \", \"BCB\", \" B \"], \"result\": {\"count\": 1, \"hoplite\": \"hoplite:crystallization_shard\"}}, {\"key\": {\"A\": {\"item\": \"minecraft:amethyst_shard\"}, \"B\": {\"item\": \"minecraft:powder_snow_bucket\"}, \"C\": {\"item\": \"minecraft:diamond_pickaxe\"}, \"D\": {\"item\": \"minecraft:iron_block\"}}, \"pattern\": [\"ABA\", \"CDC\", \"ADA\"], \"result\": {\"count\": 1, \"hoplite\": \"hoplite:crystallization_shard\"}}]. Confirmation is required."
-        },
         "sources": [
           {
             "kind": "in_game",
-            "note": "currentInGameRecipeEvidence / crystallization_shard / IN_GAME_VERIFIED / evidence=[\"screenshot_18\"] / refs=[]; Potion subtype cannot be determined from the static icon alone."
+            "note": "Prior screenshot evidence contained competing candidate layouts and left potion subtype unresolved; retained as historical provenance, superseded by the newer direct F8 observation below."
           },
           {
             "kind": "in_game",
-            "note": "latestBatch3Evidence / crystallization_shard / IN_GAME_VERIFIED / evidence=[\"batch3_screenshot_17\", \"batch3_screenshot_19\"] / refs=[]; Tooltip confirms display name 結晶化の欠片 and item id minecraft:amethyst_shard. Tooltip text indicates it crystallizes the consumer into an immobile object and grants Knockback Resistance and Resistance II for 15 seconds."
+            "note": "JEH Item Dumper F8 live Recipe GUI, Minecraft 26.3, captured 2026-10-29T00:56:28.028105100Z; result slot (slotIndex=24, x=116, y=54) is minecraft:amethyst_shard count 1 with PublicBukkitValues.hoplite:civid=crystallization_shard and CustomModelData floats=[1.0], confirming Hoplite Crystallization Shard rather than vanilla Amethyst Shard. Grid slots by coordinates: (62,36)=minecraft:player_head x1; (44,54)=minecraft:amethyst_shard x1; (62,54)=minecraft:honey_bottle x1; (80,54)=minecraft:amethyst_shard x1; (62,72)=minecraft:amethyst_shard x1. All three ingredient Amethyst Shards have no custom identity components. Player inventory slots were excluded. This newer direct F8 observation resolves the older disputed candidates: it confirms the player-head/amethyst layout and honey bottle, rejecting the potion placeholder and the powder-snow/diamond-pickaxe alternative. Source file 2026-10-29_095628_032_10386870577647333699.json; SHA-256 93C165302324F57659278201CDCC0011CFCCD599095CF2C905550BD8CC474C8C."
           }
         ],
-        "status": "disputed"
+        "status": "verified",
+        "verified_at": "2026-10-29T00:56:28Z"
       },
       "grid": [
         3,
@@ -797,7 +795,7 @@
           "item": "minecraft:amethyst_shard"
         },
         "C": {
-          "item": "minecraft:potion"
+          "item": "minecraft:honey_bottle"
         }
       },
       "keyIngredients": [
@@ -2734,11 +2732,11 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "User-provided in-game Recipe Book image transcribed as a 3x3 grid. Output identity and Nether Reactor Core ingredient were checked against canonical live JEH item identities; the live Revival Star lore says Only available in Teams and Crafts: 1."
+            "note": "JEH Item Dumper F8 live Recipe GUI, Minecraft 26.3, captured 2026-10-29T00:56:57.807495100Z; result slot (slotIndex=24, x=116, y=54) is minecraft:paper count 1 with custom name Revival Star, PublicBukkitValues.hoplite:civid=revival_item and CustomModelData floats=[70.0]. The crafting-grid slots were identified by coordinates, not slot sequence: (62,36)=minecraft:golden_apple x1; (44,54)=minecraft:diamond x1; (62,54)=minecraft:player_head x1 with no custom data or CustomModelData; (80,54)=minecraft:diamond x1; (62,72)=minecraft:clock x1. Player inventory slots were excluded. This supersedes the 2026-10-23 screenshot transcription only for the C ingredient identity. The dump does not establish craft limit or game mode; existing independent Crafts: 1 / Teams-only evidence is retained. Source file 2026-10-29_095657_811_13377333833619674706.json; SHA-256 F285906CD8F9D6E9BF632CC25BD66A6B64893CAC1558721074DF7DCFB3DA79CB."
           }
         ],
         "status": "verified",
-        "verified_at": "2026-10-24T00:00:00Z"
+        "verified_at": "2026-10-29T00:56:57Z"
       },
       "grid": [
         3,
@@ -2753,7 +2751,7 @@
           "item": "minecraft:diamond"
         },
         "C": {
-          "hoplite": "hoplite:nether_reactor"
+          "item": "minecraft:player_head"
         },
         "D": {
           "item": "minecraft:clock"

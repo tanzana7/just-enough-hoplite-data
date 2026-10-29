@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-29T00:57:33.877067400Z",
+  "source": {
+    "kind": "in_game_f8_item_dumper",
+    "minecraft_version": "26.3",
+    "instance": "GDLauncher Fabric 26.3",
+    "readable_dumps_on_2026_10_29": 54,
+    "screen_class": "net.minecraft.client.gui.screens.inventory.ContainerScreen",
+    "screen_title": "Private-use icon-font title; its semantic text is not encoded in the dump.",
+    "game_mode": null,
+    "raw_dump_policy": "Raw dumps remain local; they include signed player profile texture properties. Only the item/slot fields needed to verify these recipes are recorded here."
+  },
+  "recipes": [
+    {
+      "result_id": "hoplite:revival_item",
+      "display_name": "Revival Star",
+      "dump_file": "2026-10-29_095657_811_13377333833619674706.json",
+      "dump_timestamp": "2026-10-29T00:56:57.807495100Z",
+      "dump_sha256": "F285906CD8F9D6E9BF632CC25BD66A6B64893CAC1558721074DF7DCFB3DA79CB",
+      "result": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54,
+        "base_item": "minecraft:paper",
+        "count": 1,
+        "custom_model_data_floats": [
+          70.0
+        ],
+        "hoplite_civid": "revival_item"
+      },
+      "recipe_grid_by_coordinates": [
+        [
+          {
+            "x": 44,
+            "y": 36,
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "x": 62,
+            "y": 36,
+            "item": "minecraft:golden_apple",
+            "count": 1
+          },
+          {
+            "x": 80,
+            "y": 36,
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        [
+          {
+            "x": 44,
+            "y": 54,
+            "item": "minecraft:diamond",
+            "count": 1
+          },
+          {
+            "x": 62,
+            "y": 54,
+            "item": "minecraft:player_head",
+            "count": 1,
+            "custom_data": null,
+            "custom_model_data": null
+          },
+          {
+            "x": 80,
+            "y": 54,
+            "item": "minecraft:diamond",
+            "count": 1
+          }
+        ],
+        [
+          {
+            "x": 44,
+            "y": 72,
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "x": 62,
+            "y": 72,
+            "item": "minecraft:clock",
+            "count": 1
+          },
+          {
+            "x": 80,
+            "y": 72,
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ]
+      ],
+      "previous_grid": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "updated_grid": [
+        " A ",
+        "BCB",
+        " D "
+      ],
+      "changed_ingredient": {
+        "symbol": "C",
+        "old": "hoplite:nether_reactor",
+        "new": "minecraft:player_head"
+      },
+      "result_count": 1,
+      "craft_limit": {
+        "max": 1,
+        "scope": "unknown",
+        "period": "unknown",
+        "source": "independent live item lore; not asserted by this F8 recipe dump"
+      },
+      "availability": {
+        "en_us": "Team modes only",
+        "ja_jp": "チーム戦のみ",
+        "source": "independent live item lore; not asserted by this F8 recipe dump"
+      },
+      "confirmed": [
+        "result logical identity",
+        "result count",
+        "ingredient identities/counts",
+        "3x3 placement"
+      ],
+      "not_confirmed_by_this_dump": [
+        "game mode",
+        "craft limit",
+        "head identity beyond plain minecraft:player_head stack"
+      ]
+    },
+    {
+      "result_id": "hoplite:crystallization_shard",
+      "display_name": "Crystallization Shard",
+      "dump_file": "2026-10-29_095628_032_10386870577647333699.json",
+      "dump_timestamp": "2026-10-29T00:56:28.028105100Z",
+      "dump_sha256": "93C165302324F57659278201CDCC0011CFCCD599095CF2C905550BD8CC474C8C",
+      "result": {
+        "slot_index": 24,
+        "x": 116,
+        "y": 54,
+        "base_item": "minecraft:amethyst_shard",
+        "count": 1,
+        "custom_model_data_floats": [
+          1.0
+        ],
+        "hoplite_civid": "crystallization_shard"
+      },
+      "recipe_grid_by_coordinates": [
+        [
+          {
+            "x": 44,
+            "y": 36,
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "x": 62,
+            "y": 36,
+            "item": "minecraft:player_head",
+            "count": 1
+          },
+          {
+            "x": 80,
+            "y": 36,
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        [
+          {
+            "x": 44,
+            "y": 54,
+            "item": "minecraft:amethyst_shard",
+            "count": 1,
+            "custom_data": null,
+            "custom_model_data": null
+          },
+          {
+            "x": 62,
+            "y": 54,
+            "item": "minecraft:honey_bottle",
+            "count": 1
+          },
+          {
+            "x": 80,
+            "y": 54,
+            "item": "minecraft:amethyst_shard",
+            "count": 1,
+            "custom_data": null,
+            "custom_model_data": null
+          }
+        ],
+        [
+          {
+            "x": 44,
+            "y": 72,
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "x": 62,
+            "y": 72,
+            "item": "minecraft:amethyst_shard",
+            "count": 1,
+            "custom_data": null,
+            "custom_model_data": null
+          },
+          {
+            "x": 80,
+            "y": 72,
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ]
+      ],
+      "previous_candidates": [
+        "player_head + 3x vanilla amethyst + potion placeholder",
+        "amethyst/powder_snow_bucket/diamond_pickaxe/iron_block layout"
+      ],
+      "updated_grid": [
+        " A ",
+        "BCB",
+        " B "
+      ],
+      "key": {
+        "A": {
+          "item": "minecraft:player_head"
+        },
+        "B": {
+          "item": "minecraft:amethyst_shard"
+        },
+        "C": {
+          "item": "minecraft:honey_bottle"
+        }
+      },
+      "result_count": 1,
+      "status": "verified",
+      "confirmed": [
+        "result is Hoplite Crystallization Shard by civid and CMD",
+        "result count",
+        "ingredient identities/counts",
+        "3x3 placement",
+        "vanilla Amethyst Shard ingredient is uncustomized"
+      ],
+      "game_mode": null
+    }
+  ]
+}
