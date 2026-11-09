@@ -592,30 +592,235 @@
     {
       "aliases": [],
       "evidence": {
+        "status": "verified",
         "sources": [
           {
-            "kind": "official_page",
-            "note": "Existence evidence only; server render stack not captured",
-            "url": "https://www.hoplite.gg/news/patch-notes-jun-1st-2025"
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 live GUI, Minecraft 26.3, captured 2026-11-09: Armadillo Detonator with base item minecraft:crossbow, civid armadillo_detonator, CustomModelData {\"floats\":[5]}."
           }
         ],
-        "status": "verified",
-        "verified_at": "2026-10-19T00:00:00Z"
+        "verified_at": "2026-11-09T22:35:37Z"
       },
       "id": "hoplite:armadillo_detonator",
       "name": {
         "en_us": "Armadillo Detonator"
       },
       "render_stack": {
+        "id": "minecraft:crossbow",
+        "count": 1,
         "components": {
+          "minecraft:unbreakable": {},
+          "minecraft:custom_data": {
+            "PublicBukkitValues": {
+              "hoplite:civid": "armadillo_detonator"
+            }
+          },
+          "minecraft:custom_name": {
+            "text": "Armadillo Detonator",
+            "color": "#FFB300",
+            "italic": false
+          },
+          "minecraft:tooltip_display": {
+            "hidden_components": [
+              "minecraft:unbreakable",
+              "minecraft:attribute_modifiers",
+              "minecraft:jukebox_playable",
+              "minecraft:block_state",
+              "minecraft:pot_decorations",
+              "minecraft:fireworks",
+              "minecraft:banner_patterns",
+              "minecraft:charged_projectiles",
+              "minecraft:instrument",
+              "minecraft:bees",
+              "minecraft:bundle_contents",
+              "minecraft:block_entity_data",
+              "minecraft:container",
+              "minecraft:container_loot",
+              "minecraft:map_id",
+              "minecraft:painting/variant",
+              "minecraft:firework_explosion",
+              "minecraft:potion_contents",
+              "minecraft:written_book_content",
+              "minecraft:tropical_fish/pattern",
+              "minecraft:can_break",
+              "minecraft:can_place_on",
+              "minecraft:dyed_color",
+              "minecraft:trim"
+            ]
+          },
           "minecraft:custom_model_data": {
             "floats": [
               5
             ]
-          }
-        },
-        "count": 1,
-        "id": "minecraft:crossbow"
+          },
+          "minecraft:damage_resistant": {
+            "types": "#minecraft:is_fire"
+          },
+          "minecraft:lore": [
+            {
+              "text": "爆発するアルマジロを発射し、任意のタイミ",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "ングで起爆できる伝説のクロスボウ。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "発射",
+              "extra": [
+                {
+                  "text": "すると、リロードが必要になるまで最大",
+                  "color": "#B0B0B0",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            },
+            {
+              "text": "3",
+              "extra": [
+                {
+                  "text": "匹のアルマジロを発射できます。アルマジ",
+                  "color": "#B0B0B0",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            },
+            {
+              "text": "ロは、着地する前に触れたプレイヤーの上に",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "乗ります。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "20秒のクールダウン",
+              "color": "#615F5F",
+              "italic": false
+            },
+            "",
+            {
+              "text": "左クリック",
+              "extra": [
+                {
+                  "text": "すると、すべてのアクティブなア",
+                  "color": "#B0B0B0",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            },
+            {
+              "text": "ルマジロの起爆を開始し、範囲内にダメージ",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "を与えます。複数のアルマジロからダメージ",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "を受けた敵は、受けるダメージが減少します",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "3秒のクールダウン",
+              "color": "#615F5F",
+              "italic": false
+            },
+            "",
+            {
+              "text": "プレイヤーに付着しているアルマジロは、発",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "射されてから",
+              "extra": [
+                {
+                  "text": "30秒",
+                  "extra": [
+                    {
+                      "text": "後に自動的に起爆します",
+                      "color": "#B0B0B0",
+                      "italic": false
+                    }
+                  ],
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "クラフト数:",
+              "extra": [
+                {
+                  "text": " 1",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "",
+              "extra": [
+                {
+                  "text": "",
+                  "font": "minecraft:icons"
+                },
+                {
+                  "text": " | ",
+                  "extra": [
+                    {
+                      "text": "クリックして",
+                      "extra": [
+                        {
+                          "text": " レシピを表示",
+                          "color": "white",
+                          "italic": false
+                        }
+                      ],
+                      "color": "#B0B0B0",
+                      "italic": false
+                    }
+                  ],
+                  "color": "#615F5F",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            }
+          ]
+        }
       },
       "acquisition": [
         {
@@ -635,7 +840,19 @@
             "hoplite:armadillo_detonator"
           ]
         }
-      ]
+      ],
+      "matcher": {
+        "item": "minecraft:crossbow",
+        "custom_data": {
+          "path": "PublicBukkitValues.\"hoplite:civid\"",
+          "equals": "armadillo_detonator"
+        },
+        "custom_model_data": {
+          "floats": [
+            5
+          ]
+        }
+      }
     },
     {
       "acquisition": [
@@ -2293,30 +2510,186 @@
       ],
       "aliases": [],
       "evidence": {
+        "status": "verified",
         "sources": [
           {
-            "kind": "official_page",
-            "note": "Existence evidence only; server render stack not captured",
-            "url": "https://www.hoplite.gg/news/patch-notes-may-22nd-2026"
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 live GUI, Minecraft 26.3, captured 2026-11-09: Corrupted Crossbow with base item minecraft:crossbow, civid corrupted_crossbow, CustomModelData {\"floats\":[4]}."
           }
         ],
-        "status": "verified",
-        "verified_at": "2026-10-19T00:00:00Z"
+        "verified_at": "2026-11-09T22:35:37Z"
       },
       "id": "hoplite:corrupted_crossbow",
       "name": {
         "en_us": "Corrupted Crossbow"
       },
       "render_stack": {
+        "id": "minecraft:crossbow",
+        "count": 1,
         "components": {
+          "minecraft:unbreakable": {},
+          "minecraft:custom_data": {
+            "PublicBukkitValues": {
+              "hoplite:civid": "corrupted_crossbow"
+            }
+          },
+          "minecraft:custom_name": {
+            "text": "Corrupted Crossbow",
+            "color": "#FFB300",
+            "italic": false
+          },
+          "minecraft:tooltip_display": {
+            "hidden_components": [
+              "minecraft:unbreakable",
+              "minecraft:attribute_modifiers",
+              "minecraft:jukebox_playable",
+              "minecraft:block_state",
+              "minecraft:pot_decorations",
+              "minecraft:fireworks",
+              "minecraft:banner_patterns",
+              "minecraft:charged_projectiles",
+              "minecraft:instrument",
+              "minecraft:bees",
+              "minecraft:bundle_contents",
+              "minecraft:block_entity_data",
+              "minecraft:container",
+              "minecraft:container_loot",
+              "minecraft:map_id",
+              "minecraft:painting/variant",
+              "minecraft:firework_explosion",
+              "minecraft:potion_contents",
+              "minecraft:written_book_content",
+              "minecraft:tropical_fish/pattern",
+              "minecraft:can_break",
+              "minecraft:can_place_on",
+              "minecraft:dyed_color",
+              "minecraft:trim"
+            ]
+          },
           "minecraft:custom_model_data": {
             "floats": [
               4
             ]
-          }
+          },
+          "minecraft:damage_resistant": {
+            "types": "#minecraft:is_fire"
+          },
+          "minecraft:lore": [
+            {
+              "text": "致命的に汚染されたスライムボールを発射す",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "る伝説のクロスボウ。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "射撃",
+              "extra": [
+                {
+                  "text": "することで汚染されたスライムボールを",
+                  "color": "#B0B0B0",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            },
+            {
+              "text": "射出する。 射出されたスライムボールが着",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "弾した場所に",
+              "extra": [
+                {
+                  "text": "毒ガス",
+                  "extra": [
+                    {
+                      "text": "を巻き散らし崩壊を始め",
+                      "color": "#B0B0B0",
+                      "italic": false
+                    }
+                  ],
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "る。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "34秒のクールダウン",
+              "color": "#615F5F",
+              "italic": false
+            },
+            "",
+            {
+              "text": "クラフト数:",
+              "extra": [
+                {
+                  "text": " 1",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "",
+              "extra": [
+                {
+                  "text": "",
+                  "font": "minecraft:icons"
+                },
+                {
+                  "text": " | ",
+                  "extra": [
+                    {
+                      "text": "クリックして",
+                      "extra": [
+                        {
+                          "text": " レシピを表示",
+                          "color": "white",
+                          "italic": false
+                        }
+                      ],
+                      "color": "#B0B0B0",
+                      "italic": false
+                    }
+                  ],
+                  "color": "#615F5F",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            }
+          ]
+        }
+      },
+      "matcher": {
+        "item": "minecraft:crossbow",
+        "custom_data": {
+          "path": "PublicBukkitValues.\"hoplite:civid\"",
+          "equals": "corrupted_crossbow"
         },
-        "count": 1,
-        "id": "minecraft:crossbow"
+        "custom_model_data": {
+          "floats": [
+            4
+          ]
+        }
       }
     },
     {
@@ -2603,23 +2976,196 @@
       ],
       "aliases": [],
       "evidence": {
+        "status": "verified",
         "sources": [
           {
-            "kind": "official_page",
-            "note": "Existence evidence only; server render stack not captured",
-            "url": "https://www.hoplite.gg/news/patchnotes1.0.0"
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 live GUI, Minecraft 26.3, captured 2026-11-09: Dragon Katana with base item minecraft:netherite_sword, civid dragon_katana, CustomModelData {\"floats\":[1]}."
           }
         ],
-        "status": "verified",
-        "verified_at": "2026-10-19T00:00:00Z"
+        "verified_at": "2026-11-09T22:35:37Z"
       },
       "id": "hoplite:dragon_katana",
       "name": {
         "en_us": "Dragon Katana"
       },
       "render_stack": {
+        "id": "minecraft:netherite_sword",
         "count": 1,
-        "id": "minecraft:barrier"
+        "components": {
+          "minecraft:custom_data": {
+            "PublicBukkitValues": {
+              "hoplite:civid": "dragon_katana"
+            }
+          },
+          "minecraft:unbreakable": {},
+          "minecraft:attribute_modifiers": [
+            {
+              "type": "minecraft:attack_damage",
+              "id": "hoplite:modified_damage_item",
+              "amount": 7,
+              "operation": "add_value",
+              "slot": "mainhand"
+            },
+            {
+              "type": "minecraft:attack_speed",
+              "id": "hoplite:modified_damage_item",
+              "amount": -2.4,
+              "operation": "add_value",
+              "slot": "mainhand"
+            }
+          ],
+          "minecraft:custom_name": {
+            "text": "Dragon Katana",
+            "color": "#FFB300",
+            "italic": false
+          },
+          "minecraft:tooltip_display": {
+            "hidden_components": [
+              "minecraft:unbreakable",
+              "minecraft:attribute_modifiers",
+              "minecraft:jukebox_playable",
+              "minecraft:block_state",
+              "minecraft:pot_decorations",
+              "minecraft:fireworks",
+              "minecraft:banner_patterns",
+              "minecraft:charged_projectiles",
+              "minecraft:instrument",
+              "minecraft:bees",
+              "minecraft:bundle_contents",
+              "minecraft:block_entity_data",
+              "minecraft:container",
+              "minecraft:container_loot",
+              "minecraft:map_id",
+              "minecraft:painting/variant",
+              "minecraft:firework_explosion",
+              "minecraft:potion_contents",
+              "minecraft:written_book_content",
+              "minecraft:tropical_fish/pattern",
+              "minecraft:can_break",
+              "minecraft:can_place_on",
+              "minecraft:dyed_color",
+              "minecraft:trim"
+            ]
+          },
+          "minecraft:custom_model_data": {
+            "floats": [
+              1
+            ]
+          },
+          "minecraft:lore": [
+            {
+              "text": "偉大な竜の俊敏さを活用した伝説の武器。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "右クリック",
+              "extra": [
+                {
+                  "text": "して向いている方向にテレポート",
+                  "color": "#B0B0B0",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            },
+            {
+              "text": "する。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "12秒のクールダウン",
+              "color": "#615F5F",
+              "italic": false
+            },
+            "",
+            {
+              "translate": "item.modifiers.mainhand",
+              "color": "gray",
+              "italic": false
+            },
+            {
+              "text": " 8 ",
+              "extra": [
+                {
+                  "translate": "attribute.name.attack_damage"
+                }
+              ],
+              "color": "dark_green",
+              "italic": false
+            },
+            {
+              "text": " 1.6 ",
+              "extra": [
+                {
+                  "translate": "attribute.name.attack_speed"
+                }
+              ],
+              "color": "dark_green",
+              "italic": false
+            },
+            "",
+            {
+              "text": "クラフト数:",
+              "extra": [
+                {
+                  "text": " 1",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "",
+              "extra": [
+                {
+                  "text": "",
+                  "font": "minecraft:icons"
+                },
+                {
+                  "text": " | ",
+                  "extra": [
+                    {
+                      "text": "クリックして",
+                      "extra": [
+                        {
+                          "text": " レシピを表示",
+                          "color": "white",
+                          "italic": false
+                        }
+                      ],
+                      "color": "#B0B0B0",
+                      "italic": false
+                    }
+                  ],
+                  "color": "#615F5F",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            }
+          ]
+        }
+      },
+      "matcher": {
+        "item": "minecraft:netherite_sword",
+        "custom_data": {
+          "path": "PublicBukkitValues.\"hoplite:civid\"",
+          "equals": "dragon_katana"
+        },
+        "custom_model_data": {
+          "floats": [
+            1
+          ]
+        }
       }
     },
     {
@@ -4962,23 +5508,174 @@
       ],
       "aliases": [],
       "evidence": {
+        "status": "verified",
         "sources": [
           {
-            "kind": "official_page",
-            "note": "Existence evidence only; server render stack not captured",
-            "url": "https://www.hoplite.gg/news/patch-notes-apr-4th-2025"
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 live GUI, Minecraft 26.3, captured 2026-11-09: Harpoon Launcher with base item minecraft:blaze_rod, civid harpoon_launcher, CustomModelData {\"floats\":[8]}."
           }
         ],
-        "status": "verified",
-        "verified_at": "2026-10-19T00:00:00Z"
+        "verified_at": "2026-11-09T22:35:37Z"
       },
       "id": "hoplite:harpoon_launcher",
       "name": {
         "en_us": "Harpoon Launcher"
       },
       "render_stack": {
+        "id": "minecraft:blaze_rod",
         "count": 1,
-        "id": "minecraft:barrier"
+        "components": {
+          "minecraft:unbreakable": {},
+          "minecraft:custom_data": {
+            "PublicBukkitValues": {
+              "hoplite:civid": "harpoon_launcher"
+            }
+          },
+          "minecraft:custom_name": {
+            "text": "Harpoon Launcher",
+            "color": "#FFB300",
+            "italic": false
+          },
+          "minecraft:tooltip_display": {
+            "hidden_components": [
+              "minecraft:unbreakable",
+              "minecraft:attribute_modifiers",
+              "minecraft:jukebox_playable",
+              "minecraft:block_state",
+              "minecraft:pot_decorations",
+              "minecraft:fireworks",
+              "minecraft:banner_patterns",
+              "minecraft:charged_projectiles",
+              "minecraft:instrument",
+              "minecraft:bees",
+              "minecraft:bundle_contents",
+              "minecraft:block_entity_data",
+              "minecraft:container",
+              "minecraft:container_loot",
+              "minecraft:map_id",
+              "minecraft:painting/variant",
+              "minecraft:firework_explosion",
+              "minecraft:potion_contents",
+              "minecraft:written_book_content",
+              "minecraft:tropical_fish/pattern",
+              "minecraft:can_break",
+              "minecraft:can_place_on",
+              "minecraft:dyed_color",
+              "minecraft:trim"
+            ]
+          },
+          "minecraft:custom_model_data": {
+            "floats": [
+              8
+            ]
+          },
+          "minecraft:max_stack_size": 1,
+          "minecraft:damage": 0,
+          "minecraft:damage_resistant": {
+            "types": "#minecraft:is_fire"
+          },
+          "minecraft:lore": [
+            {
+              "text": "敵を引き寄せることができる強力な銛を放つ",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "ことができる伝説のランチャー。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "射撃",
+              "extra": [
+                {
+                  "text": "することで銛を発射する。ブロックに刺",
+                  "color": "#B0B0B0",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            },
+            {
+              "text": "さった場合は銛に対して引っ張られる。プレ",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "イヤーに刺さった場合はこちらに引き寄せダ",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "メージを与える。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "22秒のクールダウン",
+              "color": "#615F5F",
+              "italic": false
+            },
+            "",
+            {
+              "text": "クラフト数:",
+              "extra": [
+                {
+                  "text": " 1",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "",
+              "extra": [
+                {
+                  "text": "",
+                  "font": "minecraft:icons"
+                },
+                {
+                  "text": " | ",
+                  "extra": [
+                    {
+                      "text": "クリックして",
+                      "extra": [
+                        {
+                          "text": " レシピを表示",
+                          "color": "white",
+                          "italic": false
+                        }
+                      ],
+                      "color": "#B0B0B0",
+                      "italic": false
+                    }
+                  ],
+                  "color": "#615F5F",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            }
+          ]
+        }
+      },
+      "matcher": {
+        "item": "minecraft:blaze_rod",
+        "custom_data": {
+          "path": "PublicBukkitValues.\"hoplite:civid\"",
+          "equals": "harpoon_launcher"
+        },
+        "custom_model_data": {
+          "floats": [
+            8
+          ]
+        }
       }
     },
     {
@@ -7198,23 +7895,174 @@
       ],
       "aliases": [],
       "evidence": {
+        "status": "verified",
         "sources": [
           {
-            "kind": "official_page",
-            "note": "Existence evidence only; server render stack not captured",
-            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 live GUI, Minecraft 26.3, captured 2026-11-09: Mjolnir with base item minecraft:stone_axe, civid mjolnir, CustomModelData {\"floats\":[1]}."
           }
         ],
-        "status": "verified",
-        "verified_at": "2026-10-19T00:00:00Z"
+        "verified_at": "2026-11-09T22:35:37Z"
       },
       "id": "hoplite:mjolnir",
       "name": {
         "en_us": "Mjolnir"
       },
       "render_stack": {
+        "id": "minecraft:stone_axe",
         "count": 1,
-        "id": "minecraft:barrier"
+        "components": {
+          "minecraft:unbreakable": {},
+          "minecraft:custom_data": {
+            "PublicBukkitValues": {
+              "hoplite:civid": "mjolnir"
+            }
+          },
+          "minecraft:custom_name": {
+            "text": "Mjolnir",
+            "color": "#FFB300",
+            "italic": false
+          },
+          "minecraft:tooltip_display": {
+            "hidden_components": [
+              "minecraft:unbreakable",
+              "minecraft:attribute_modifiers",
+              "minecraft:jukebox_playable",
+              "minecraft:block_state",
+              "minecraft:pot_decorations",
+              "minecraft:fireworks",
+              "minecraft:banner_patterns",
+              "minecraft:charged_projectiles",
+              "minecraft:instrument",
+              "minecraft:bees",
+              "minecraft:bundle_contents",
+              "minecraft:block_entity_data",
+              "minecraft:container",
+              "minecraft:container_loot",
+              "minecraft:map_id",
+              "minecraft:painting/variant",
+              "minecraft:firework_explosion",
+              "minecraft:potion_contents",
+              "minecraft:written_book_content",
+              "minecraft:tropical_fish/pattern",
+              "minecraft:can_break",
+              "minecraft:can_place_on",
+              "minecraft:dyed_color",
+              "minecraft:trim"
+            ]
+          },
+          "minecraft:custom_model_data": {
+            "floats": [
+              1
+            ]
+          },
+          "minecraft:enchantments": {
+            "minecraft:knockback": 1
+          },
+          "minecraft:damage_resistant": {
+            "types": "#minecraft:is_fire"
+          },
+          "minecraft:lore": [
+            {
+              "text": "天から力を借りている伝説の武器。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "投擲",
+              "extra": [
+                {
+                  "text": "あるいは",
+                  "extra": [
+                    {
+                      "text": "近接攻撃",
+                      "extra": [
+                        {
+                          "text": "をすることで雷のダメ",
+                          "color": "#B0B0B0",
+                          "italic": false
+                        }
+                      ],
+                      "color": "white",
+                      "italic": false
+                    }
+                  ],
+                  "color": "#B0B0B0",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            },
+            {
+              "text": "ージを与える。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "16秒のクールダウン",
+              "color": "#615F5F",
+              "italic": false
+            },
+            "",
+            {
+              "text": "クラフト数:",
+              "extra": [
+                {
+                  "text": " 1",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "",
+              "extra": [
+                {
+                  "text": "",
+                  "font": "minecraft:icons"
+                },
+                {
+                  "text": " | ",
+                  "extra": [
+                    {
+                      "text": "クリックして",
+                      "extra": [
+                        {
+                          "text": " レシピを表示",
+                          "color": "white",
+                          "italic": false
+                        }
+                      ],
+                      "color": "#B0B0B0",
+                      "italic": false
+                    }
+                  ],
+                  "color": "#615F5F",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            }
+          ]
+        }
+      },
+      "matcher": {
+        "item": "minecraft:stone_axe",
+        "custom_data": {
+          "path": "PublicBukkitValues.\"hoplite:civid\"",
+          "equals": "mjolnir"
+        },
+        "custom_model_data": {
+          "floats": [
+            1
+          ]
+        }
       }
     },
     {
@@ -10794,30 +11642,162 @@
       ],
       "aliases": [],
       "evidence": {
+        "status": "verified",
         "sources": [
           {
-            "kind": "official_page",
-            "note": "Existence evidence only; server render stack not captured",
-            "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
+            "kind": "in_game",
+            "note": "JEH Item Dumper F8 live GUI, Minecraft 26.3, captured 2026-11-09: Sonic Crossbow with base item minecraft:crossbow, civid sonic_crossbow, CustomModelData {\"floats\":[1]}."
           }
         ],
-        "status": "verified",
-        "verified_at": "2026-10-19T00:00:00Z"
+        "verified_at": "2026-11-09T22:35:37Z"
       },
       "id": "hoplite:sonic_crossbow",
       "name": {
         "en_us": "Sonic Crossbow"
       },
       "render_stack": {
+        "id": "minecraft:crossbow",
+        "count": 1,
         "components": {
+          "minecraft:unbreakable": {},
+          "minecraft:custom_data": {
+            "PublicBukkitValues": {
+              "hoplite:civid": "sonic_crossbow"
+            }
+          },
+          "minecraft:custom_name": {
+            "text": "Sonic Crossbow",
+            "color": "#FFB300",
+            "italic": false
+          },
+          "minecraft:tooltip_display": {
+            "hidden_components": [
+              "minecraft:unbreakable",
+              "minecraft:attribute_modifiers",
+              "minecraft:jukebox_playable",
+              "minecraft:block_state",
+              "minecraft:pot_decorations",
+              "minecraft:fireworks",
+              "minecraft:banner_patterns",
+              "minecraft:charged_projectiles",
+              "minecraft:instrument",
+              "minecraft:bees",
+              "minecraft:bundle_contents",
+              "minecraft:block_entity_data",
+              "minecraft:container",
+              "minecraft:container_loot",
+              "minecraft:map_id",
+              "minecraft:painting/variant",
+              "minecraft:firework_explosion",
+              "minecraft:potion_contents",
+              "minecraft:written_book_content",
+              "minecraft:tropical_fish/pattern",
+              "minecraft:can_break",
+              "minecraft:can_place_on",
+              "minecraft:dyed_color",
+              "minecraft:trim"
+            ]
+          },
           "minecraft:custom_model_data": {
             "floats": [
               1
             ]
-          }
+          },
+          "minecraft:damage_resistant": {
+            "types": "#minecraft:is_fire"
+          },
+          "minecraft:lore": [
+            {
+              "text": "ディープダークが生んだ伝説のクロスボウ。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "射撃",
+              "extra": [
+                {
+                  "text": "することで着地点に巨大な爆発を発生さ",
+                  "color": "#B0B0B0",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            },
+            {
+              "text": "せ、 範囲内のプレイヤーを吹き飛ばすとと",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "もに防御貫通のダメージを与える。",
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            {
+              "text": "22秒のクールダウン",
+              "color": "#615F5F",
+              "italic": false
+            },
+            "",
+            {
+              "text": "クラフト数:",
+              "extra": [
+                {
+                  "text": " 1",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "color": "#B0B0B0",
+              "italic": false
+            },
+            "",
+            {
+              "text": "",
+              "extra": [
+                {
+                  "text": "",
+                  "font": "minecraft:icons"
+                },
+                {
+                  "text": " | ",
+                  "extra": [
+                    {
+                      "text": "クリックして",
+                      "extra": [
+                        {
+                          "text": " レシピを表示",
+                          "color": "white",
+                          "italic": false
+                        }
+                      ],
+                      "color": "#B0B0B0",
+                      "italic": false
+                    }
+                  ],
+                  "color": "#615F5F",
+                  "italic": false
+                }
+              ],
+              "color": "white",
+              "italic": false
+            }
+          ]
+        }
+      },
+      "matcher": {
+        "item": "minecraft:crossbow",
+        "custom_data": {
+          "path": "PublicBukkitValues.\"hoplite:civid\"",
+          "equals": "sonic_crossbow"
         },
-        "count": 1,
-        "id": "minecraft:crossbow"
+        "custom_model_data": {
+          "floats": [
+            1
+          ]
+        }
       }
     },
     {
