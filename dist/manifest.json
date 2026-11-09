@@ -3,13 +3,13 @@
   "update_available": false,
   "files": [
     {
-      "sha256": "5756f4bf4e58d8057e43967ef8d646ac2be896450b40406800386046f76956fb",
-      "size": 376831,
+      "sha256": "60b6220f9942d204625d0312bb7c81e31449cad5dde69c48f1fa21a4883ff960",
+      "size": 378674,
       "url": "https://raw.githubusercontent.com/tanzana7/just-enough-hoplite-data/main/items/hoplite.json"
     },
     {
-      "sha256": "7e3cdda9b413be2fd88137cedbedd59ba95c3325882fadacf08e48b9ca4cc1c6",
-      "size": 99238,
+      "sha256": "9b941c8904040183e8a4c371182952c86013fb7ca3ad498b12fd36f02e95c2c1",
+      "size": 102195,
       "url": "https://raw.githubusercontent.com/tanzana7/just-enough-hoplite-data/main/recipes/hoplite.json"
     }
   ],

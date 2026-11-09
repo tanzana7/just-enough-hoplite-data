@@ -678,7 +678,7 @@
         "sources": [
           {
             "kind": "community",
-            "note": "legendaryItems / corrupted_crossbow / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2026_05_22\"]; Exact slot orientation should be checked in-game. Unofficial recipe data; verify in-game before shipping as authoritative."
+            "note": "legendaryItems / corrupted_crossbow / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2026_05_22\"]; Exact slot orientation should be checked in-game. Unofficial recipe data; verify in-game before shipping as authoritative.; Owner rotation check 2026-11-09: corners Spider Eyes, mid-edges Nether Warts, sides Diamonds, center Crossbow."
           }
         ],
         "status": "unverified"
@@ -690,29 +690,47 @@
       "id": "hoplite:corrupted_crossbow",
       "key": {
         "A": {
-          "item": "minecraft:fermented_spider_eye"
+          "item": "minecraft:spider_eye"
         },
         "B": {
           "item": "minecraft:nether_wart"
         },
         "C": {
-          "item": "minecraft:diamond"
+          "item": "minecraft:crossbow"
         },
         "D": {
-          "item": "minecraft:crossbow"
+          "item": "minecraft:diamond"
         }
       },
       "mirror": true,
       "pattern": [
         "AB ",
-        "CDC",
+        "DCD",
         " BA"
       ],
       "result": {
         "count": 1,
         "hoplite": "hoplite:corrupted_crossbow"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "keyIngredients": [
+        {
+          "count": 2,
+          "item": "minecraft:spider_eye"
+        },
+        {
+          "count": 2,
+          "item": "minecraft:nether_wart"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:crossbow"
+        },
+        {
+          "count": 2,
+          "item": "minecraft:diamond"
+        }
+      ]
     },
     {
       "category": "legendary",
@@ -819,7 +837,7 @@
         "sources": [
           {
             "kind": "community",
-            "note": "legendaryItems / dragon_katana / COMMUNITY_CURRENT / evidence=[] / refs=[\"fandom_dragon_katana\", \"official_patch_2023_12_01\", \"official_image:dragon_katana\", \"official_patch_2025_06_01\", \"official_patch_2025_11_29\", \"official_patch_2026_05_22\"]; Official recipe image is demonstrably stale versus Dec 2023 official patch. Recent community wiki gives a completely newer recipe (Ender Pearl, 2 Diamonds, Dragon Egg, Diamond Sword). Use as current candidate, but verify in-game before release."
+            "note": "legendaryItems / dragon_katana / COMMUNITY_CURRENT / evidence=[] / refs=[\"fandom_dragon_katana\", \"official_patch_2023_12_01\", \"official_image:dragon_katana\", \"official_patch_2025_06_01\", \"official_patch_2025_11_29\", \"official_patch_2026_05_22\"]; Official recipe image is demonstrably stale versus Dec 2023 official patch. Recent community wiki gives a completely newer recipe (Ender Pearl, 2 Diamonds, Dragon Egg, Diamond Sword). Use as current candidate, but verify in-game before release.; Owner rotation check 2026-11-09: layout confirmed: Ender Pearl, Diamonds, Diamond Sword, Dragon Egg."
           }
         ],
         "status": "unverified"
@@ -1438,7 +1456,7 @@
         "sources": [
           {
             "kind": "community",
-            "note": "legendaryItems / harpoon_launcher / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\", \"official_patch_2025_06_01\"]; Exact grid is provisional. Unofficial recipe data; verify in-game before shipping as authoritative."
+            "note": "legendaryItems / harpoon_launcher / COMMUNITY_RECONSTRUCTION / evidence=[] / refs=[\"community_reconstruction\", \"official_patch_2025_04_04\", \"official_patch_2025_06_01\"]; Exact grid is provisional. Unofficial recipe data; verify in-game before shipping as authoritative.; Owner rotation check 2026-11-09: Redstone Block frame, Lead, Trident, Fishing Rod."
           }
         ],
         "status": "unverified"
@@ -1450,29 +1468,47 @@
       "id": "hoplite:harpoon_launcher",
       "key": {
         "A": {
-          "item": "minecraft:lead"
-        },
-        "B": {
           "item": "minecraft:redstone_block"
         },
+        "B": {
+          "item": "minecraft:lead"
+        },
         "C": {
-          "item": "minecraft:fishing_rod"
+          "item": "minecraft:trident"
         },
         "D": {
-          "item": "minecraft:trident"
+          "item": "minecraft:fishing_rod"
         }
       },
       "mirror": true,
       "pattern": [
-        "ABB",
-        " CB",
-        " D "
+        "ABA",
+        "ACA",
+        "ADA"
       ],
       "result": {
         "count": 1,
         "hoplite": "hoplite:harpoon_launcher"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "keyIngredients": [
+        {
+          "count": 6,
+          "item": "minecraft:redstone_block"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:lead"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:trident"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:fishing_rod"
+        }
+      ]
     },
     {
       "category": "legendary",
@@ -2118,7 +2154,7 @@
         "sources": [
           {
             "kind": "official_page",
-            "note": "legendaryItems / mjolnir / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:mjolnir\", \"official_patch_2025_04_04\"]; Older Lunar guide describes a different historical recipe; official current recipe image is preferred.",
+            "note": "legendaryItems / mjolnir / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:mjolnir\", \"official_patch_2025_04_04\"]; Older Lunar guide describes a different historical recipe; official current recipe image is preferred.; Owner rotation check 2026-11-09: middle column Lodestone, Diamond Axe, Magma Cream.",
             "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
           },
           {
@@ -2142,29 +2178,40 @@
       "id": "hoplite:mjolnir",
       "key": {
         "A": {
-          "item": "minecraft:crying_obsidian"
+          "item": "minecraft:lodestone"
         },
         "B": {
-          "item": "minecraft:anvil"
-        },
-        "C": {
           "item": "minecraft:diamond_axe"
         },
-        "D": {
+        "C": {
           "item": "minecraft:magma_cream"
         }
       },
       "mirror": true,
       "pattern": [
-        "ABA",
-        "ACA",
-        "ADA"
+        " A ",
+        " B ",
+        " C "
       ],
       "result": {
         "count": 1,
         "hoplite": "hoplite:mjolnir"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "keyIngredients": [
+        {
+          "count": 1,
+          "item": "minecraft:lodestone"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:diamond_axe"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:magma_cream"
+        }
+      ]
     },
     {
       "category": "special_block",
@@ -3135,7 +3182,7 @@
         "sources": [
           {
             "kind": "official_page",
-            "note": "legendaryItems / sonic_crossbow / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:sonic_crossbow\", \"official_patch_2025_06_01\", \"official_patch_2026_05_22\"]",
+            "note": "legendaryItems / sonic_crossbow / OFFICIAL_EXACT / evidence=[] / refs=[\"official_recipes\", \"official_image:sonic_crossbow\", \"official_patch_2025_06_01\", \"official_patch_2026_05_22\"]; Owner rotation check 2026-11-09: layout confirmed: Disc Fragments, Echo Shard, Diamonds, Crossbow, Firework Star.",
             "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
           },
           {
@@ -3623,6 +3670,74 @@
       "result": {
         "count": 1,
         "hoplite": "hoplite:wither_sickles"
+      },
+      "type": "crafting_shaped"
+    },
+    {
+      "category": "legendary",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "sources": [
+          {
+            "kind": "in_game",
+            "note": "Owner in-game recipe check 2026-11-09 (Minecraft 26.3): top Redstone Torches with Armadillo Scute cross, bottom Diamonds beside TNT; craft limits not shown."
+          }
+        ],
+        "verified_at": "2026-11-09T00:00:00Z"
+      },
+      "grid": [
+        3,
+        3
+      ],
+      "id": "hoplite:armadillo_detonator",
+      "key": {
+        "A": {
+          "item": "minecraft:redstone_torch"
+        },
+        "B": {
+          "item": "minecraft:armadillo_scute"
+        },
+        "C": {
+          "item": "minecraft:diamond"
+        },
+        "D": {
+          "item": "minecraft:tnt"
+        }
+      },
+      "keyIngredients": [
+        {
+          "count": 2,
+          "item": "minecraft:redstone_torch"
+        },
+        {
+          "count": 4,
+          "item": "minecraft:armadillo_scute"
+        },
+        {
+          "count": 2,
+          "item": "minecraft:diamond"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:tnt"
+        }
+      ],
+      "mirror": true,
+      "pattern": [
+        "ABA",
+        "BBB",
+        "CDC"
+      ],
+      "result": {
+        "count": 1,
+        "hoplite": "hoplite:armadillo_detonator"
       },
       "type": "crafting_shaped"
     }

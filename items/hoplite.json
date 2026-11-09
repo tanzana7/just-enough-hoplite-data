@@ -40,7 +40,7 @@
         },
         "custom_model_data": {
           "floats": [
-            0.0
+            0
           ]
         },
         "item": "minecraft:splash_potion"
@@ -57,7 +57,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              0.0
+              0
             ]
           },
           "minecraft:custom_name": {
@@ -218,7 +218,7 @@
         },
         "custom_model_data": {
           "floats": [
-            7.0
+            7
           ]
         },
         "item": "minecraft:bow"
@@ -251,7 +251,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              7.0
+              7
             ]
           },
           "minecraft:custom_name": {
@@ -447,7 +447,7 @@
         },
         "custom_model_data": {
           "floats": [
-            66.0
+            66
           ]
         },
         "item": "minecraft:paper"
@@ -464,7 +464,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              66.0
+              66
             ]
           },
           "minecraft:custom_name": {
@@ -610,13 +610,32 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              5.0
+              5
             ]
           }
         },
         "count": 1,
         "id": "minecraft:crossbow"
-      }
+      },
+      "acquisition": [
+        {
+          "evidence": {
+            "status": "verified",
+            "sources": [
+              {
+                "kind": "in_game",
+                "note": "Owner in-game recipe check 2026-11-09 (Minecraft 26.3): top Redstone Torches with Armadillo Scute cross, bottom Diamonds beside TNT; craft limits not shown."
+              }
+            ],
+            "verified_at": "2026-11-09T00:00:00Z"
+          },
+          "id": "hoplite:armadillo_detonator_craft",
+          "kind": "craft",
+          "recipe_ids": [
+            "hoplite:armadillo_detonator"
+          ]
+        }
+      ]
     },
     {
       "acquisition": [
@@ -670,7 +689,7 @@
         },
         "custom_model_data": {
           "floats": [
-            3.0
+            3
           ]
         },
         "item": "minecraft:bow"
@@ -687,7 +706,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              3.0
+              3
             ]
           },
           "minecraft:custom_name": {
@@ -894,7 +913,7 @@
         },
         "custom_model_data": {
           "floats": [
-            2.0
+            2
           ]
         },
         "item": "minecraft:diamond_boots"
@@ -906,14 +925,14 @@
         "components": {
           "minecraft:attribute_modifiers": [
             {
-              "amount": 3.0,
+              "amount": 3,
               "id": "hoplite:armor",
               "operation": "add_value",
               "slot": "feet",
               "type": "minecraft:armor"
             },
             {
-              "amount": 2.0,
+              "amount": 2,
               "id": "hoplite:toughness_balance",
               "operation": "add_value",
               "slot": "feet",
@@ -927,7 +946,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              2.0
+              2
             ]
           },
           "minecraft:custom_name": {
@@ -1092,7 +1111,7 @@
         },
         "custom_model_data": {
           "floats": [
-            2.0
+            2
           ]
         },
         "item": "minecraft:iron_leggings"
@@ -1104,14 +1123,14 @@
         "components": {
           "minecraft:attribute_modifiers": [
             {
-              "amount": 5.0,
+              "amount": 5,
               "id": "hoplite:armor",
               "operation": "add_value",
               "slot": "legs",
               "type": "minecraft:armor"
             },
             {
-              "amount": 2.0,
+              "amount": 2,
               "id": "hoplite:armor",
               "operation": "add_value",
               "slot": "legs",
@@ -1125,7 +1144,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              2.0
+              2
             ]
           },
           "minecraft:custom_name": {
@@ -1295,7 +1314,7 @@
         },
         "custom_model_data": {
           "floats": [
-            4.0
+            4
           ]
         },
         "item": "minecraft:fishing_rod"
@@ -1312,7 +1331,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              4.0
+              4
             ]
           },
           "minecraft:custom_name": {
@@ -1470,7 +1489,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              9.0
+              9
             ]
           }
         },
@@ -1519,7 +1538,7 @@
         },
         "custom_model_data": {
           "floats": [
-            3.0
+            3
           ]
         },
         "item": "minecraft:crossbow"
@@ -1536,7 +1555,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              3.0
+              3
             ]
           },
           "minecraft:custom_name": {
@@ -1682,7 +1701,7 @@
         },
         "custom_model_data": {
           "floats": [
-            8.0
+            8
           ]
         },
         "item": "minecraft:paper"
@@ -1699,7 +1718,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              8.0
+              8
             ]
           },
           "minecraft:custom_name": {
@@ -1853,7 +1872,7 @@
         },
         "custom_model_data": {
           "floats": [
-            0.0
+            0
           ]
         },
         "item": "minecraft:arrow"
@@ -1870,7 +1889,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              0.0
+              0
             ]
           },
           "minecraft:custom_name": {
@@ -2003,7 +2022,7 @@
         },
         "custom_model_data": {
           "floats": [
-            4.0
+            4
           ]
         },
         "item": "minecraft:iron_chestplate"
@@ -2015,14 +2034,14 @@
         "components": {
           "minecraft:attribute_modifiers": [
             {
-              "amount": 6.0,
+              "amount": 6,
               "id": "hoplite:armor",
               "operation": "add_value",
               "slot": "chest",
               "type": "minecraft:armor"
             },
             {
-              "amount": 2.0,
+              "amount": 2,
               "id": "hoplite:toughness_balance",
               "operation": "add_value",
               "slot": "chest",
@@ -2036,7 +2055,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              4.0
+              4
             ]
           },
           "minecraft:custom_name": {
@@ -2198,7 +2217,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              10.0
+              10
             ]
           }
         },
@@ -2245,7 +2264,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              7.0
+              7
             ]
           }
         },
@@ -2292,7 +2311,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              4.0
+              4
             ]
           }
         },
@@ -2339,7 +2358,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              8.0
+              8
             ]
           }
         },
@@ -2388,7 +2407,7 @@
         },
         "custom_model_data": {
           "floats": [
-            1.0
+            1
           ]
         },
         "item": "minecraft:amethyst_shard"
@@ -2414,7 +2433,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           },
           "minecraft:custom_name": {
@@ -2655,6 +2674,11 @@
           {
             "kind": "in_game",
             "note": "JEH Item Dumper live GUI; page 3; slot 33"
+          },
+          {
+            "kind": "official_page",
+            "note": "Rotated out of the legendary rotation on 2026-11-09; retained in the dataset but hidden in-game.",
+            "url": "https://www.hoplite.gg/"
           }
         ],
         "status": "verified",
@@ -2668,7 +2692,7 @@
         },
         "custom_model_data": {
           "floats": [
-            28.0
+            28
           ]
         },
         "item": "minecraft:bow"
@@ -2687,7 +2711,7 @@
               "type": "minecraft:jump_strength"
             },
             {
-              "amount": 3.0,
+              "amount": 3,
               "id": "hoplite:eagle_eye_bow_safe_fall",
               "operation": "add_value",
               "slot": "mainhand",
@@ -2701,7 +2725,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              28.0
+              28
             ]
           },
           "minecraft:custom_name": {
@@ -2862,7 +2886,8 @@
         },
         "count": 1,
         "id": "minecraft:bow"
-      }
+      },
+      "retired": true
     },
     {
       "aliases": [],
@@ -2949,7 +2974,7 @@
         },
         "custom_model_data": {
           "floats": [
-            3.0
+            3
           ]
         },
         "item": "minecraft:diamond_sword"
@@ -2961,7 +2986,7 @@
         "components": {
           "minecraft:attribute_modifiers": [
             {
-              "amount": 6.0,
+              "amount": 6,
               "id": "hoplite:modified_damage_item",
               "operation": "add_value",
               "slot": "mainhand",
@@ -2982,7 +3007,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              3.0
+              3
             ]
           },
           "minecraft:custom_name": {
@@ -3187,7 +3212,7 @@
         },
         "custom_model_data": {
           "floats": [
-            9.0
+            9
           ]
         },
         "item": "minecraft:bone"
@@ -3204,7 +3229,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              9.0
+              9
             ]
           },
           "minecraft:custom_name": {
@@ -3413,7 +3438,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              7.0
+              7
             ]
           }
         },
@@ -3462,7 +3487,7 @@
         },
         "custom_model_data": {
           "floats": [
-            2.0
+            2
           ]
         },
         "item": "minecraft:diamond_pickaxe"
@@ -3479,7 +3504,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              2.0
+              2
             ]
           },
           "minecraft:custom_name": {
@@ -3651,7 +3676,7 @@
         },
         "custom_model_data": {
           "floats": [
-            13.0
+            13
           ]
         },
         "item": "minecraft:diamond_sword"
@@ -3684,7 +3709,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              13.0
+              13
             ]
           },
           "minecraft:custom_name": {
@@ -3912,7 +3937,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              18.0
+              18
             ]
           }
         },
@@ -3961,7 +3986,7 @@
         },
         "custom_model_data": {
           "floats": [
-            0.0
+            0
           ]
         },
         "item": "minecraft:player_head"
@@ -3979,7 +4004,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              0.0
+              0
             ]
           },
           "minecraft:custom_name": {
@@ -4157,6 +4182,11 @@
           {
             "kind": "in_game",
             "note": "JEH Item Dumper live GUI; page 3; slot 31"
+          },
+          {
+            "kind": "official_page",
+            "note": "Rotated out of the legendary rotation on 2026-11-09; retained in the dataset but hidden in-game.",
+            "url": "https://www.hoplite.gg/"
           }
         ],
         "status": "verified",
@@ -4170,7 +4200,7 @@
         },
         "custom_model_data": {
           "floats": [
-            3.0
+            3
           ]
         },
         "item": "minecraft:stone_axe"
@@ -4187,7 +4217,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              3.0
+              3
             ]
           },
           "minecraft:custom_name": {
@@ -4362,7 +4392,8 @@
         },
         "count": 1,
         "id": "minecraft:stone_axe"
-      }
+      },
+      "retired": true
     },
     {
       "acquisition": [
@@ -4410,7 +4441,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           }
         },
@@ -4446,6 +4477,11 @@
           {
             "kind": "in_game",
             "note": "JEH Item Dumper live GUI; page 3; slot 37"
+          },
+          {
+            "kind": "official_page",
+            "note": "Rotated out of the legendary rotation on 2026-11-09; retained in the dataset but hidden in-game.",
+            "url": "https://www.hoplite.gg/"
           }
         ],
         "status": "verified",
@@ -4459,7 +4495,7 @@
         },
         "custom_model_data": {
           "floats": [
-            4.0
+            4
           ]
         },
         "item": "minecraft:iron_ingot"
@@ -4476,7 +4512,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              4.0
+              4
             ]
           },
           "minecraft:custom_name": {
@@ -4617,7 +4653,8 @@
         },
         "count": 1,
         "id": "minecraft:iron_ingot"
-      }
+      },
+      "retired": true
     },
     {
       "acquisition": [
@@ -4659,7 +4696,7 @@
         },
         "custom_model_data": {
           "floats": [
-            7.0
+            7
           ]
         },
         "item": "minecraft:blaze_rod"
@@ -4676,7 +4713,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              7.0
+              7
             ]
           },
           "minecraft:custom_name": {
@@ -4989,7 +5026,7 @@
         },
         "custom_model_data": {
           "floats": [
-            1.0
+            1
           ]
         },
         "item": "minecraft:diamond_chestplate"
@@ -5006,7 +5043,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           },
           "minecraft:custom_name": {
@@ -5247,7 +5284,7 @@
         },
         "custom_model_data": {
           "floats": [
-            2.0
+            2
           ]
         },
         "item": "minecraft:leather_boots"
@@ -5264,7 +5301,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              2.0
+              2
             ]
           },
           "minecraft:custom_name": {
@@ -5433,7 +5470,7 @@
         },
         "custom_model_data": {
           "floats": [
-            4.0
+            4
           ]
         },
         "item": "minecraft:diamond_pickaxe"
@@ -5450,7 +5487,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              4.0
+              4
             ]
           },
           "minecraft:custom_name": {
@@ -5594,7 +5631,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              3.0
+              3
             ]
           }
         },
@@ -5647,7 +5684,7 @@
         },
         "custom_model_data": {
           "floats": [
-            1.0
+            1
           ]
         },
         "item": "minecraft:sniffer_spawn_egg"
@@ -5664,7 +5701,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           },
           "minecraft:custom_name": {
@@ -5867,7 +5904,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              2.0
+              2
             ]
           }
         },
@@ -5916,7 +5953,7 @@
         },
         "custom_model_data": {
           "floats": [
-            0.0
+            0
           ]
         },
         "item": "minecraft:anvil"
@@ -5933,7 +5970,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              0.0
+              0
             ]
           },
           "minecraft:custom_name": {
@@ -6076,7 +6113,7 @@
         },
         "custom_model_data": {
           "floats": [
-            0.0
+            0
           ]
         },
         "item": "minecraft:golden_apple"
@@ -6093,7 +6130,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              0.0
+              0
             ]
           },
           "minecraft:custom_name": {
@@ -6236,7 +6273,7 @@
         },
         "custom_model_data": {
           "floats": [
-            2.0
+            2
           ]
         },
         "item": "minecraft:netherite_sword"
@@ -6269,7 +6306,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              2.0
+              2
             ]
           },
           "minecraft:custom_name": {
@@ -6429,7 +6466,7 @@
         },
         "custom_model_data": {
           "floats": [
-            1.0
+            1
           ]
         },
         "item": "minecraft:iron_axe"
@@ -6446,7 +6483,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           },
           "minecraft:custom_name": {
@@ -6591,7 +6628,7 @@
         },
         "custom_model_data": {
           "floats": [
-            6.0
+            6
           ]
         },
         "item": "minecraft:diamond_sword"
@@ -6603,7 +6640,7 @@
         "components": {
           "minecraft:attribute_modifiers": [
             {
-              "amount": 6.0,
+              "amount": 6,
               "id": "hoplite:modified_damage_item",
               "operation": "add_value",
               "slot": "mainhand",
@@ -6624,7 +6661,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              6.0
+              6
             ]
           },
           "minecraft:custom_name": {
@@ -6797,7 +6834,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              24.0
+              24
             ]
           }
         },
@@ -6874,7 +6911,7 @@
         },
         "custom_model_data": {
           "floats": [
-            1.0
+            1
           ]
         },
         "item": "minecraft:diamond_sword"
@@ -6886,7 +6923,7 @@
         "components": {
           "minecraft:attribute_modifiers": [
             {
-              "amount": 6.0,
+              "amount": 6,
               "id": "hoplite:modified_damage_item",
               "operation": "add_value",
               "slot": "mainhand",
@@ -6907,7 +6944,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           },
           "minecraft:custom_name": {
@@ -7220,7 +7257,7 @@
         },
         "custom_model_data": {
           "floats": [
-            1.0
+            1
           ]
         },
         "item": "minecraft:barrier"
@@ -7237,7 +7274,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           },
           "minecraft:custom_name": {
@@ -7424,7 +7461,7 @@
         },
         "custom_model_data": {
           "floats": [
-            1.0
+            1
           ]
         },
         "item": "minecraft:potion"
@@ -7441,7 +7478,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           },
           "minecraft:custom_name": {
@@ -7606,6 +7643,11 @@
           {
             "kind": "in_game",
             "note": "JEH Item Dumper live GUI; page 3; slot 32"
+          },
+          {
+            "kind": "official_page",
+            "note": "Rotated out of the legendary rotation on 2026-11-09; retained in the dataset but hidden in-game.",
+            "url": "https://www.hoplite.gg/"
           }
         ],
         "status": "verified",
@@ -7619,7 +7661,7 @@
         },
         "custom_model_data": {
           "floats": [
-            22.0
+            22
           ]
         },
         "item": "minecraft:bow"
@@ -7636,7 +7678,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              22.0
+              22
             ]
           },
           "minecraft:custom_name": {
@@ -7831,7 +7873,8 @@
         },
         "count": 1,
         "id": "minecraft:bow"
-      }
+      },
+      "retired": true
     },
     {
       "acquisition": [
@@ -7874,7 +7917,7 @@
         },
         "custom_model_data": {
           "floats": [
-            0.0
+            0
           ]
         },
         "item": "minecraft:villager_spawn_egg"
@@ -7891,7 +7934,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              0.0
+              0
             ]
           },
           "minecraft:custom_name": {
@@ -8038,7 +8081,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              8.0
+              8
             ]
           }
         },
@@ -8103,7 +8146,7 @@
         },
         "custom_model_data": {
           "floats": [
-            5.0
+            5
           ]
         },
         "item": "minecraft:wooden_shovel"
@@ -8121,7 +8164,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              5.0
+              5
             ]
           },
           "minecraft:custom_name": {
@@ -8292,7 +8335,7 @@
         },
         "custom_model_data": {
           "floats": [
-            4.0
+            4
           ]
         },
         "item": "minecraft:bow"
@@ -8309,7 +8352,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              4.0
+              4
             ]
           },
           "minecraft:custom_name": {
@@ -8451,7 +8494,7 @@
         },
         "custom_model_data": {
           "floats": [
-            2.0
+            2
           ]
         },
         "item": "minecraft:iron_sword"
@@ -8468,7 +8511,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              2.0
+              2
             ]
           },
           "minecraft:custom_name": {
@@ -8590,7 +8633,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           }
         },
@@ -8655,7 +8698,7 @@
         },
         "custom_model_data": {
           "floats": [
-            2.0
+            2
           ]
         },
         "item": "minecraft:stone_hoe"
@@ -8667,14 +8710,14 @@
         "components": {
           "minecraft:attribute_modifiers": [
             {
-              "amount": 0.0,
+              "amount": 0,
               "id": "hoplite:modified_damage_item",
               "operation": "add_value",
               "slot": "mainhand",
               "type": "minecraft:attack_damage"
             },
             {
-              "amount": -2.0,
+              "amount": -2,
               "id": "hoplite:modified_damage_item",
               "operation": "add_value",
               "slot": "mainhand",
@@ -8688,7 +8731,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              2.0
+              2
             ]
           },
           "minecraft:custom_name": {
@@ -8890,6 +8933,11 @@
           {
             "kind": "in_game",
             "note": "JEH Item Dumper live GUI; page 3; slot 28"
+          },
+          {
+            "kind": "official_page",
+            "note": "Rotated out of the legendary rotation on 2026-11-09; retained in the dataset but hidden in-game.",
+            "url": "https://www.hoplite.gg/"
           }
         ],
         "status": "verified",
@@ -8903,7 +8951,7 @@
         },
         "custom_model_data": {
           "floats": [
-            1.0
+            1
           ]
         },
         "item": "minecraft:elytra"
@@ -8915,7 +8963,7 @@
         "components": {
           "minecraft:attribute_modifiers": [
             {
-              "amount": 6.0,
+              "amount": 6,
               "id": "hoplite:reinforced_elytra_armor",
               "operation": "add_value",
               "slot": "chest",
@@ -8929,7 +8977,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           },
           "minecraft:custom_name": {
@@ -9096,7 +9144,8 @@
         },
         "count": 1,
         "id": "minecraft:elytra"
-      }
+      },
+      "retired": true
     },
     {
       "acquisition": [
@@ -9139,7 +9188,7 @@
         },
         "custom_model_data": {
           "floats": [
-            70.0
+            70
           ]
         },
         "item": "minecraft:paper"
@@ -9156,7 +9205,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              70.0
+              70
             ]
           },
           "minecraft:custom_name": {
@@ -9318,7 +9367,7 @@
         },
         "custom_model_data": {
           "floats": [
-            6.0
+            6
           ]
         },
         "item": "minecraft:crossbow"
@@ -9335,7 +9384,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              6.0
+              6
             ]
           },
           "minecraft:custom_name": {
@@ -9520,7 +9569,7 @@
         },
         "custom_model_data": {
           "floats": [
-            0.0
+            0
           ]
         },
         "item": "minecraft:saddle"
@@ -9537,7 +9586,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              0.0
+              0
             ]
           },
           "minecraft:custom_name": {
@@ -9670,7 +9719,7 @@
         },
         "custom_model_data": {
           "floats": [
-            20.0
+            20
           ]
         },
         "item": "minecraft:diamond_sword"
@@ -9703,7 +9752,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              20.0
+              20
             ]
           },
           "minecraft:custom_name": {
@@ -9985,7 +10034,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              5.0
+              5
             ]
           }
         },
@@ -10021,6 +10070,11 @@
           {
             "kind": "in_game",
             "note": "JEH Item Dumper live GUI; page 3; slot 25"
+          },
+          {
+            "kind": "official_page",
+            "note": "Rotated out of the legendary rotation on 2026-11-09; retained in the dataset but hidden in-game.",
+            "url": "https://www.hoplite.gg/"
           }
         ],
         "status": "verified",
@@ -10034,7 +10088,7 @@
         },
         "custom_model_data": {
           "floats": [
-            4.0
+            4
           ]
         },
         "item": "minecraft:diamond_sword"
@@ -10067,7 +10121,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              4.0
+              4
             ]
           },
           "minecraft:custom_name": {
@@ -10260,7 +10314,8 @@
         },
         "count": 1,
         "id": "minecraft:diamond_sword"
-      }
+      },
+      "retired": true
     },
     {
       "acquisition": [
@@ -10343,7 +10398,7 @@
         },
         "custom_model_data": {
           "floats": [
-            3.0
+            3
           ]
         },
         "item": "minecraft:iron_leggings"
@@ -10355,14 +10410,14 @@
         "components": {
           "minecraft:attribute_modifiers": [
             {
-              "amount": 5.0,
+              "amount": 5,
               "id": "hoplite:skeleton_leggings",
               "operation": "add_value",
               "slot": "legs",
               "type": "minecraft:armor"
             },
             {
-              "amount": 2.0,
+              "amount": 2,
               "id": "hoplite:skeleton_leggings",
               "operation": "add_value",
               "slot": "legs",
@@ -10376,7 +10431,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              3.0
+              3
             ]
           },
           "minecraft:custom_name": {
@@ -10579,7 +10634,7 @@
         },
         "custom_model_data": {
           "floats": [
-            1.0
+            1
           ]
         },
         "item": "minecraft:iron_pickaxe"
@@ -10596,7 +10651,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           },
           "minecraft:custom_name": {
@@ -10757,7 +10812,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           }
         },
@@ -10786,7 +10841,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              17.0
+              17
             ]
           }
         },
@@ -10835,7 +10890,7 @@
         },
         "custom_model_data": {
           "floats": [
-            8.0
+            8
           ]
         },
         "item": "minecraft:suspicious_stew"
@@ -10852,7 +10907,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              8.0
+              8
             ]
           },
           "minecraft:custom_name": {
@@ -11024,7 +11079,7 @@
         },
         "custom_model_data": {
           "floats": [
-            1.0
+            1
           ]
         },
         "item": "minecraft:villager_spawn_egg"
@@ -11041,7 +11096,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           },
           "minecraft:custom_name": {
@@ -11233,7 +11288,7 @@
         },
         "custom_model_data": {
           "floats": [
-            0.0
+            0
           ]
         },
         "item": "minecraft:totem_of_undying"
@@ -11250,7 +11305,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              0.0
+              0
             ]
           },
           "minecraft:custom_name": {
@@ -11398,7 +11453,7 @@
         },
         "custom_model_data": {
           "floats": [
-            0.0
+            0
           ]
         },
         "item": "minecraft:trident"
@@ -11415,7 +11470,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              0.0
+              0
             ]
           },
           "minecraft:custom_name": {
@@ -11557,7 +11612,7 @@
         },
         "custom_model_data": {
           "floats": [
-            22.0
+            22
           ]
         },
         "item": "minecraft:diamond_sword"
@@ -11590,7 +11645,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              22.0
+              22
             ]
           },
           "minecraft:custom_name": {
@@ -12002,7 +12057,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              1.0
+              1
             ]
           }
         },
@@ -12051,7 +12106,7 @@
         },
         "custom_model_data": {
           "floats": [
-            0.0
+            0
           ]
         },
         "item": "minecraft:bone"
@@ -12068,7 +12123,7 @@
           },
           "minecraft:custom_model_data": {
             "floats": [
-              0.0
+              0
             ]
           },
           "minecraft:custom_name": {
@@ -12243,7 +12298,7 @@
         "components": {
           "minecraft:custom_model_data": {
             "floats": [
-              3.0
+              3
             ]
           }
         },
