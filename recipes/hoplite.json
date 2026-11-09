@@ -272,7 +272,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "currentInGameRecipeEvidence / bandit_leggings / IN_GAME_VERIFIED / evidence=[\"screenshot_12\"] / refs=[]"
+            "note": "currentInGameRecipeEvidence / bandit_leggings / IN_GAME_VERIFIED / evidence=[\"screenshot_12\"] / refs=[]; Owner in-game check 2026-11-09: melon ingredient is Glistering Melon Slice (きらめくスイカ)."
           }
         ],
         "status": "verified",
@@ -285,7 +285,7 @@
       "id": "hoplite:bandit_leggings",
       "key": {
         "A": {
-          "item": "minecraft:melon_slice"
+          "item": "minecraft:glistering_melon_slice"
         },
         "B": {
           "item": "minecraft:gold_ingot"
@@ -3367,7 +3367,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "latestBatch3Evidence / trident / IN_GAME_VERIFIED / evidence=[\"batch3_screenshot_02\"] / refs=[]"
+            "note": "latestBatch3Evidence / trident / IN_GAME_VERIFIED / evidence=[\"batch3_screenshot_02\"] / refs=[]; Owner in-game check 2026-11-09: middle-left ingredient is Prismarine Crystals, not Prismarine Shard."
           }
         ],
         "status": "verified",
@@ -3380,7 +3380,7 @@
       "id": "hoplite:trident",
       "key": {
         "A": {
-          "item": "minecraft:prismarine_shard"
+          "item": "minecraft:prismarine_crystals"
         },
         "B": {
           "item": "minecraft:diamond"
@@ -3389,7 +3389,7 @@
       "keyIngredients": [
         {
           "count": 2,
-          "item": "minecraft:prismarine_shard"
+          "item": "minecraft:prismarine_crystals"
         }
       ],
       "mirror": true,
