@@ -13,7 +13,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "currentInGameRecipeEvidence / agony / IN_GAME_VERIFIED / evidence=[\"screenshot_17\"] / refs=[]; Potion subtype cannot be determined from the static icon alone."
+            "note": "currentInGameRecipeEvidence / agony / IN_GAME_VERIFIED / evidence=[\"screenshot_17\"] / refs=[]; Potion subtype cannot be determined from the static icon alone.; Owner in-game check 2026-11-09: bottle ingredient is an empty Glass Bottle and the bottom ingredient is a Spider Eye."
           }
         ],
         "status": "unverified"
@@ -31,10 +31,10 @@
           "item": "minecraft:blaze_powder"
         },
         "C": {
-          "item": "minecraft:potion"
+          "item": "minecraft:glass_bottle"
         },
         "D": {
-          "item": "minecraft:nether_wart"
+          "item": "minecraft:spider_eye"
         }
       },
       "keyIngredients": [
@@ -222,7 +222,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "currentInGameRecipeEvidence / axolotl_boots / IN_GAME_VERIFIED / evidence=[\"screenshot_14\"] / refs=[]"
+            "note": "currentInGameRecipeEvidence / axolotl_boots / IN_GAME_VERIFIED / evidence=[\"screenshot_14\"] / refs=[]; Owner in-game check 2026-11-09: fish ingredient is Glow Berries and petal ingredient is Spore Blossom."
           }
         ],
         "status": "verified",
@@ -238,13 +238,13 @@
           "item": "minecraft:axolotl_bucket"
         },
         "B": {
-          "item": "minecraft:tropical_fish"
+          "item": "minecraft:glow_berries"
         },
         "C": {
           "item": "minecraft:diamond_boots"
         },
         "D": {
-          "item": "minecraft:pink_petals"
+          "item": "minecraft:spore_blossom"
         }
       },
       "mirror": true,
@@ -319,7 +319,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "latestBatch4Evidence / barbed_rod / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_01\", \"batch4_screenshot_02\"] / refs=[]; Tooltip: can knock back enemies during combat; durability is consumed when it triggers. Bottom-middle dark lump is inferred as coal from the sprite."
+            "note": "latestBatch4Evidence / barbed_rod / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_01\", \"batch4_screenshot_02\"] / refs=[]; Tooltip: can knock back enemies during combat; durability is consumed when it triggers. Bottom-middle dark lump is inferred as coal from the sprite.; Owner in-game check 2026-11-09: the former coal ingredient is Flint."
           }
         ],
         "status": "unverified"
@@ -337,7 +337,7 @@
           "item": "minecraft:string"
         },
         "C": {
-          "item": "minecraft:coal"
+          "item": "minecraft:flint"
         }
       },
       "mirror": true,
@@ -1939,7 +1939,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "latestBatch4Evidence / lumberjacks_axe / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_07\", \"batch4_screenshot_08\"] / refs=[]; Tooltip: Efficiency I. Tooltip text says it can harvest most trees in one swing."
+            "note": "latestBatch4Evidence / lumberjacks_axe / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_07\", \"batch4_screenshot_08\"] / refs=[]; Tooltip: Efficiency I. Tooltip text says it can harvest most trees in one swing.; Owner in-game check 2026-11-09: the former coal ingredient is Flint."
           }
         ],
         "status": "verified",
@@ -1955,7 +1955,7 @@
           "item": "minecraft:iron_ingot"
         },
         "B": {
-          "item": "minecraft:coal"
+          "item": "minecraft:flint"
         },
         "C": {
           "item": "minecraft:stick"
@@ -2179,7 +2179,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "latestBatch4Evidence / nether_reactor_core / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_16\", \"batch4_screenshot_17\"] / refs=[]; Tooltip: changes nearby blocks into nether-themed blocks, summons nether mobs, and can attract a nether merchant. The output appears as a custom blue cube, but the tooltip shows the underlying item id minecraft:barrier. The blue outer blocks are inferred as light_blue_stained_glass based on the translucent blue sprite."
+            "note": "latestBatch4Evidence / nether_reactor_core / IN_GAME_VERIFIED / evidence=[\"batch4_screenshot_16\", \"batch4_screenshot_17\"] / refs=[]; Tooltip: changes nearby blocks into nether-themed blocks, summons nether mobs, and can attract a nether merchant. The output appears as a custom blue cube, but the tooltip shows the underlying item id minecraft:barrier. The blue outer blocks are inferred as light_blue_stained_glass based on the translucent blue sprite.; Owner in-game check 2026-11-09: the former obsidian ingredient is a Coal Block."
           }
         ],
         "status": "unverified"
@@ -2194,7 +2194,7 @@
           "item": "minecraft:light_blue_stained_glass"
         },
         "B": {
-          "item": "minecraft:obsidian"
+          "item": "minecraft:coal_block"
         },
         "C": {
           "item": "minecraft:gunpowder"
@@ -2265,7 +2265,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "currentInGameRecipeEvidence / panacea / IN_GAME_VERIFIED / evidence=[\"screenshot_16\"] / refs=[]; Potion subtype cannot be determined from the static icon alone; preserve generic minecraft:potion until tooltip/NBT is captured."
+            "note": "currentInGameRecipeEvidence / panacea / IN_GAME_VERIFIED / evidence=[\"screenshot_16\"] / refs=[]; Potion subtype cannot be determined from the static icon alone; preserve generic minecraft:potion until tooltip/NBT is captured.; Owner in-game check 2026-11-09: tulip ingredient accepts any tulip color (tag minecraft:tulips)."
           },
           {
             "kind": "in_game",
@@ -2281,7 +2281,7 @@
       "id": "hoplite:panacea",
       "key": {
         "A": {
-          "item": "minecraft:red_tulip"
+          "tag": "minecraft:tulips"
         },
         "B": {
           "item": "minecraft:potion"
@@ -3257,7 +3257,7 @@
         "sources": [
           {
             "kind": "official_page",
-            "note": "legendaryItems / tim_the_enchanter / OFFICIAL_DERIVED / evidence=[] / refs=[\"official_recipes\", \"official_image:tim_the_enchanter\", \"official_patch_2025_11_29\"]; Nov 2025 official patch explicitly replaces the Enchanting Table with Portable Villager.",
+            "note": "legendaryItems / tim_the_enchanter / OFFICIAL_DERIVED / evidence=[] / refs=[\"official_recipes\", \"official_image:tim_the_enchanter\", \"official_patch_2025_11_29\"]; Nov 2025 official patch explicitly replaces the Enchanting Table with Portable Villager.; Owner in-game check 2026-11-09: the center ingredient is an Enchanting Table (not Portable Villager) and the right-middle ingredient is Glow Berries.",
             "url": "https://www.hoplite.gg/recipes-cantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenowcantseemenow"
           },
           {
@@ -3287,10 +3287,10 @@
           "item": "minecraft:glow_ink_sac"
         },
         "C": {
-          "hoplite": "hoplite:portable_villager"
+          "item": "minecraft:enchanting_table"
         },
         "D": {
-          "item": "minecraft:golden_carrot"
+          "item": "minecraft:glow_berries"
         },
         "E": {
           "item": "minecraft:bookshelf"
@@ -3380,7 +3380,7 @@
       "id": "hoplite:trident",
       "key": {
         "A": {
-          "item": "minecraft:prismarine_crystals"
+          "item": "minecraft:quartz"
         },
         "B": {
           "item": "minecraft:diamond"
@@ -3389,7 +3389,7 @@
       "keyIngredients": [
         {
           "count": 2,
-          "item": "minecraft:prismarine_crystals"
+          "item": "minecraft:quartz"
         }
       ],
       "mirror": true,
