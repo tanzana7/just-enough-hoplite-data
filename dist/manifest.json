@@ -4,12 +4,12 @@
     {
       "sha256": "5756f4bf4e58d8057e43967ef8d646ac2be896450b40406800386046f76956fb",
       "size": 376831,
-      "url": "https://raw.githubusercontent.com/%3Cowner%3E/just-enough-hoplite-data/0000000000000000000000000000000000000000/items/hoplite.json"
+      "url": "https://raw.githubusercontent.com/tanzana7/just-enough-hoplite-data/main/items/hoplite.json"
     },
     {
       "sha256": "46a7fd7446b16c81820226dc56d8f7420928687170302fd2a46850af8e7e06d0",
       "size": 98348,
-      "url": "https://raw.githubusercontent.com/%3Cowner%3E/just-enough-hoplite-data/0000000000000000000000000000000000000000/recipes/hoplite.json"
+      "url": "https://raw.githubusercontent.com/tanzana7/just-enough-hoplite-data/main/recipes/hoplite.json"
     }
   ],
   "id_redirects": {
