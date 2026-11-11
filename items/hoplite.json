@@ -2766,7 +2766,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "JEH Item Dumper live GUI; page 1; slot 40"
+            "note": "JEH Item Dumper live GUI; page 1; slot 40; Name captured per client locale via JEH Item Dumper (en/ja)."
           }
         ],
         "status": "verified",
@@ -2786,7 +2786,8 @@
         "item": "minecraft:amethyst_shard"
       },
       "name": {
-        "en_us": "Crystallization Shard"
+        "en_us": "Crystallization Shard",
+        "ja_jp": "結晶化の欠片"
       },
       "render_stack": {
         "components": {
@@ -6153,7 +6154,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "JEH Item Dumper live GUI; page 2; slot 25"
+            "note": "JEH Item Dumper live GUI; page 2; slot 25; Name captured per client locale via JEH Item Dumper (en/ja)."
           }
         ],
         "status": "verified",
@@ -6173,7 +6174,8 @@
         "item": "minecraft:diamond_pickaxe"
       },
       "name": {
-        "en_us": "Super Smelter's Pickaxe"
+        "en_us": "Super Smelter's Pickaxe",
+        "ja_jp": "すごい精錬者のツルハシ"
       },
       "render_stack": {
         "components": {
@@ -10403,7 +10405,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "JEH Item Dumper live GUI; page 2; slot 24"
+            "note": "JEH Item Dumper live GUI; page 2; slot 24; Name captured per client locale via JEH Item Dumper (en/ja)."
           }
         ],
         "status": "verified",
@@ -10423,7 +10425,8 @@
         "item": "minecraft:saddle"
       },
       "name": {
-        "en_us": "Saddle"
+        "en_us": "Saddle",
+        "ja_jp": "鞍"
       },
       "render_stack": {
         "components": {
@@ -11468,7 +11471,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "JEH Item Dumper live GUI; page 2; slot 19"
+            "note": "JEH Item Dumper live GUI; page 2; slot 19; Name captured per client locale via JEH Item Dumper (en/ja)."
           }
         ],
         "status": "verified",
@@ -11488,7 +11491,8 @@
         "item": "minecraft:iron_pickaxe"
       },
       "name": {
-        "en_us": "Smelter's Pickaxe"
+        "en_us": "Smelter's Pickaxe",
+        "ja_jp": "精錬者のツルハシ"
       },
       "render_stack": {
         "components": {
@@ -12254,7 +12258,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "JEH Item Dumper live GUI; page 1; slot 29"
+            "note": "JEH Item Dumper live GUI; page 1; slot 29; Name captured per client locale via JEH Item Dumper (en/ja)."
           }
         ],
         "status": "verified",
@@ -12274,7 +12278,8 @@
         "item": "minecraft:totem_of_undying"
       },
       "name": {
-        "en_us": "Totem of Undying"
+        "en_us": "Totem of Undying",
+        "ja_jp": "不死のトーテム"
       },
       "render_stack": {
         "components": {
@@ -12419,7 +12424,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "JEH Item Dumper live GUI; page 1; slot 23"
+            "note": "JEH Item Dumper live GUI; page 1; slot 23; Name captured per client locale via JEH Item Dumper (en/ja)."
           }
         ],
         "status": "verified",
@@ -12439,7 +12444,8 @@
         "item": "minecraft:trident"
       },
       "name": {
-        "en_us": "Trident"
+        "en_us": "Trident",
+        "ja_jp": "トライデント"
       },
       "render_stack": {
         "components": {

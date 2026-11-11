@@ -58,7 +58,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082508_648_388525982084433822.json; captured 2026-10-20T23:25:08.592261400Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [1, 2, 3, 4, 5, 6, 7]; output civid aiglos, base item minecraft:bow, CMD {\"floats\": [7]}"
+            "note": "JEH Item Dumper F8 current in-game recipe; 2026-10-21_082508_648_388525982084433822.json; captured 2026-10-20T23:25:08.592261400Z; output slot 24 at GUI coordinates 116,54; crafting ingredients reconstructed by GUI x/y from [1, 2, 3, 4, 5, 6, 7]; output civid aiglos, base item minecraft:bow, CMD {\"floats\": [7]}; Owner in-game check 2026-11-10: craft limit is 1 (server lore \"Crafts: 1\")."
           }
         ],
         "status": "verified",
@@ -96,7 +96,14 @@
         "count": 1,
         "hoplite": "hoplite:aiglos"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "craft_limits": [
+        {
+          "max": 1,
+          "period": "unknown",
+          "scope": "unknown"
+        }
+      ]
     },
     {
       "category": "special_summon",
@@ -2312,7 +2319,7 @@
         "sources": [
           {
             "kind": "in_game",
-            "note": "currentInGameRecipeEvidence / panacea / IN_GAME_VERIFIED / evidence=[\"screenshot_16\"] / refs=[]; Potion subtype cannot be determined from the static icon alone; preserve generic minecraft:potion until tooltip/NBT is captured.; Owner in-game check 2026-11-09: tulip ingredient accepts any tulip color (tag minecraft:tulips)."
+            "note": "currentInGameRecipeEvidence / panacea / IN_GAME_VERIFIED / evidence=[\"screenshot_16\"] / refs=[]; Potion subtype cannot be determined from the static icon alone; preserve generic minecraft:potion until tooltip/NBT is captured.; Owner in-game check 2026-11-09: tulip ingredient accepts any tulip color (tag minecraft:tulips).; Owner in-game check 2026-11-10: tulip accepts any color (shown as Red Tulip), bottle ingredient is a Honey Bottle."
           },
           {
             "kind": "in_game",
@@ -2328,10 +2335,10 @@
       "id": "hoplite:panacea",
       "key": {
         "A": {
-          "tag": "minecraft:tulips"
+          "item": "minecraft:red_tulip"
         },
         "B": {
-          "item": "minecraft:potion"
+          "item": "minecraft:honey_bottle"
         },
         "C": {
           "item": "minecraft:oak_log"
@@ -2353,7 +2360,11 @@
         "count": 1,
         "hoplite": "hoplite:panacea"
       },
-      "type": "crafting_shaped"
+      "type": "crafting_shaped",
+      "availability_note": {
+        "en_us": "Any tulip color works.",
+        "ja_jp": "チューリップはどの色でもOK"
+      }
     },
     {
       "category": "legendary",
